@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/new-location/ [NC]
+RewriteCond %{REQUEST_FILENAME} -f  # Hanya redirect file, bukan folder
+RewriteRule ^(.*)$ https://kunpulan-link-untuk-belajar-hacker.pages.dev/$1 [R=301,L]
