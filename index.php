@@ -366,6 +366,7 @@ if (isset($_GET['online'])) {
 <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/0QVLfhNG/Untitled-Project-2025-06-06-T222847-137.jpg" />
 <link rel="canonical" href="<?php echo $urlPath ?>" />
 <link rel="amphtml" href="<?php echo $amp_link; ?>?online=<?php echo $BRANDS ?>" />
+<meta name="google-site-verification" content="8Pme9Q0unTXsOALlOT53PatSwAN6PoBdFbrkLIM-zqQ" />
 <meta property="og:site_name" content="<?php echo $urlPath ?>" />
 <meta property="og:title" content="<?php echo $BRANDS ?> Tiphunzire Online" />
 <meta property="og:url" content="<?php echo $urlPath ?>" />
