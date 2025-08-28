@@ -829,10 +829,10 @@ ASD;
 echo $asd;
 }
 
-if (isset($_GET['GOOD'])) {
+if (isset($_GET['news'])) {
     $filename = "daftar.txt";
     $lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    $target_string = strtolower($_GET['GOOD']);
+    $target_string = strtolower($_GET['news']);
     foreach ($lines as $item) {
         if (strtolower($item) === $target_string) {
             $BRAND = strtoupper($target_string);
