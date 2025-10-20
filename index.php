@@ -1,1556 +1,1829 @@
-<?php
-
-$btnShort = "https://www.intecomdigital.com/="; //LINK SHORTBUTTON
-$amp_link = "https://kontolmegalodon.pages.dev/"; //LINK AMP
-
-function feedback404()
-{
-    $asd = <<<ASD
-
-
 <!DOCTYPE html>
-
-<html  dir="ltr" lang="en" xml:lang="en">
-<head>
-    <title>Tiphunzire Online</title>
-    <link rel="shortcut icon" href="https://my.tiphunzireonline.org/pluginfile.php/1/core_admin/favicon/64x64/1721154887/logo.png" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="moodle, Tiphunzire Online" />
-<link rel="stylesheet" type="text/css" href="https://my.tiphunzireonline.org/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://my.tiphunzireonline.org/theme/styles.php/boost/1721154887_1/all" />
-<script>
-//<![CDATA[
-var M = {}; M.yui = {};
-M.pageloadstarttime = new Date();
-M.cfg = {"wwwroot":"https:\/\/my.tiphunzireonline.org","homeurl":{},"sesskey":"B8PSuvjlH8","sessiontimeout":"28800","sessiontimeoutwarning":"1200","themerev":"1721154887","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1721154888","admin":"admin","svgicons":true,"usertimezone":"Africa\/Johannesburg","courseId":1,"courseContextId":2,"contextid":2,"contextInstanceId":1,"langrev":1726555235,"templaterev":"1721154888"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
-var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
-if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
-YUI_config = {"debug":false,"base":"https:\/\/my.tiphunzireonline.org\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/my.tiphunzireonline.org\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/my.tiphunzireonline.org\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/my.tiphunzireonline.org\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/my.tiphunzireonline.org\/theme\/yui_combo.php?m\/1721154888\/","combine":true,"comboBase":"https:\/\/my.tiphunzireonline.org\/theme\/yui_combo.php?","ext":false,"root":"m\/1721154888\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-beautify":{},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/my.tiphunzireonline.org\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/my.tiphunzireonline.org\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1721154888\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/my.tiphunzireonline.org\/lib\/javascript.php\/1721154888\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/my.tiphunzireonline.org\/lib\/javascript.php\/1721154888\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
-M.yui.loader = {modules: {}};
-
-//]]>
-</script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body  id="page-site-index" class="limitedwidth format-site course path-site chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam my-tiphunzireonline-org pagelayout-frontpage course-1 context-2 notloggedin uses-drawers">
-<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
-<div id="page-wrapper" class="d-print-block">
-
-    <div>
-    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
-</div><script src="https://my.tiphunzireonline.org/lib/javascript.php/1721154888/lib/polyfills/polyfill.js"></script>
-<script src="https://my.tiphunzireonline.org/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://my.tiphunzireonline.org/lib/javascript.php/1721154888/lib/javascript-static.js"></script>
-<script>
-//<![CDATA[
-document.body.className += ' jsenabled';
-//]]>
-</script>
-
-
-
-    <nav class="navbar fixed-top navbar-light bg-white navbar-expand" aria-label="Site navigation">
-    
-        <button class="navbar-toggler aabtn d-block d-md-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_boost-drawers-primary">
-            <span class="navbar-toggler-icon"></span>
-            <span class="sr-only">Side panel</span>
-        </button>
-    
-        <a href="https://my.tiphunzireonline.org/" class="navbar-brand d-none d-md-flex align-items-center m-0 mr-4 p-0 aabtn">
-    
-                <img src="https://my.tiphunzireonline.org/pluginfile.php/1/core_admin/logocompact/300x300/1721154887/lgo.png" class="logo mr-1" alt="Tiphunzire Online">
-        </a>
-            <div class="primary-navigation">
-                <nav class="moremenu navigation">
-                    <ul id="moremenu-684557a94a1f5-navbar-nav" role="menubar" class="nav more-nav navbar-nav">
-                                <li data-key="home" class="nav-item" role="none" data-forceintomoremenu="false">
-                                            <a role="menuitem" class="nav-link active "
-                                                href="https://my.tiphunzireonline.org/"
-                                                aria-current="true"
-                                                
-                                            >
-                                                Home
-                                            </a>
-                                </li>
-                                <li data-key="" class="nav-item" role="none" data-forceintomoremenu="false">
-                                            <a role="menuitem" class="nav-link  "
-                                                href="https://your.tiphunzireonline.org/site/userlogin"
-                                                
-                                                tabindex="-1"
-                                            >
-                                                Student Portal
-                                            </a>
-                                </li>
-                        <li role="none" class="nav-item dropdown dropdownmoremenu d-none" data-region="morebutton">
-                            <a class="dropdown-toggle nav-link " href="#" id="moremenu-dropdown-684557a94a1f5" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="-1">
-                                More
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-left" data-region="moredropdown" aria-labelledby="moremenu-dropdown-684557a94a1f5" role="menu">
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-    
-        <ul class="navbar-nav d-none d-md-flex my-1 px-1">
-            <!-- page_heading_menu -->
-            
-        </ul>
-    
-        <div id="usernavigation" class="navbar-nav ml-auto">
-            
-            <div class="d-flex align-items-stretch usermenu-container" data-region="usermenu">
-                    <div class="usermenu">
-                            <span class="login pl-2">
-                                    <a href="https://my.tiphunzireonline.org/login/index.php">Log in</a>
-                            </span>
-                    </div>
-            </div>
-            
-        </div>
-    </nav>
-    
-
-<div  class="drawer drawer-left drawer-primary d-print-none not-initialized" data-region="fixed-drawer" id="theme_boost-drawers-primary" data-preference="" data-state="show-drawer-primary" data-forceopen="0" data-close-on-resize="1">
-    <div class="drawerheader">
-        <button
-            class="btn drawertoggle icon-no-margin hidden"
-            data-toggler="drawers"
-            data-action="closedrawer"
-            data-target="theme_boost-drawers-primary"
-            data-toggle="tooltip"
-            data-placement="right"
-            title="Close drawer"
-        >
-            <i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i>
-        </button>
-    </div>
-    <div class="drawercontent drag-container" data-usertour="scroller">
-                <div class="list-group">
-                <a href="https://my.tiphunzireonline.org/" class="list-group-item list-group-item-action active " aria-current="true">
-                    Home
-                </a>
-                <a href="https://your.tiphunzireonline.org/site/userlogin" class="list-group-item list-group-item-action  " >
-                    Student Portal
-                </a>
-        </div>
-
-    </div>
-</div>
-    <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers   drag-container">
-        <div id="topofscroll" class="main-inner">
-            <div class="drawer-toggles d-flex">
-            </div>
-            <header id="page-header" class="header-maxwidth d-print-none">
-    <div class="w-100">
-        <div class="d-flex flex-wrap">
-            <div class="ml-auto d-flex">
-                
-            </div>
-            <div id="course-header">
-                
-            </div>
-        </div>
-        <div class="d-flex align-items-center">
-                    <div class="mr-auto">
-                        <div class="page-context-header"><div class="page-header-headings"><h1 class="h2">Tiphunzire Online</h1></div></div>
-                    </div>
-            <div class="header-actions-container ml-auto" data-region="header-actions-container">
-            </div>
-        </div>
-    </div>
-</header>
-            <div id="page-content" class="pb-3 d-print-block">
-                <div id="region-main-box">
-                    <section id="region-main" aria-label="Content">
-
-                        <span class="notifications" id="user-notifications"></span>
-                        <div role="main"><span id="maincontent"></span><a class="skip-block skip aabtn" href="#skipsitenews">Skip site announcements</a><div id="site-news-forum"><h2>Site announcements</h2><div id="discussion-list-684557a96dc96684557a94d63a2" data-contextid="18" data-cmid="1" data-name="Site announcements" data-group="" data-grading-component="" data-grading-component-subtype="" data-gradable-itemtype="forum" >
-
-
-    
-
-
-    <div class="py-3">
-    </div>
-
-        <div class="forumnodiscuss alert alert-info">
-                There are no discussion topics yet in this forum
-        </div>
-
-</div></div><span class="skip-block-to" id="skipsitenews"></span><br /></div>
-                        
-                        
-
-                    </section>
-                </div>
-            </div>
-        </div>
-        
-        <footer id="page-footer" class="footer-popover bg-white">
-            <div data-region="footer-container-popover">
-                <button class="btn btn-icon bg-secondary icon-no-margin btn-footer-popover" data-action="footer-popover" aria-label="Show footer">
-                    <i class="icon fa fa-question fa-fw " aria-hidden="true"  ></i>
-                </button>
-            </div>
-            <div class="footer-content-popover container" data-region="footer-content-popover">
-                <div class="footer-section p-3 border-bottom">
-                    <div class="logininfo">
-                        <div class="logininfo">You are not logged in. (<a href="https://my.tiphunzireonline.org/login/index.php">Log in</a>)</div>
-                    </div>
-                    <div class="tool_usertours-resettourcontainer">
-                    </div>
-        
-                    <div class="tool_dataprivacy"><a href="https://my.tiphunzireonline.org/admin/tool/dataprivacy/summary.php">Data retention summary</a></div><a href="https://download.moodle.org/mobile?version=2022112803&amp;lang=en&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Get the mobile app</a>
-                    <script>
-//<![CDATA[
-var require = {
-    baseUrl : 'https://my.tiphunzireonline.org/lib/requirejs.php/1721154888/',
-    // We only support AMD modules with an explicit define() statement.
-    enforceDefine: true,
-    skipDataMain: true,
-    waitSeconds : 0,
-
-    paths: {
-        jquery: 'https://my.tiphunzireonline.org/lib/javascript.php/1721154888/lib/jquery/jquery-3.6.1.min',
-        jqueryui: 'https://my.tiphunzireonline.org/lib/javascript.php/1721154888/lib/jquery/ui-1.13.2/jquery-ui.min',
-        jqueryprivate: 'https://my.tiphunzireonline.org/lib/javascript.php/1721154888/lib/requirejs/jquery-private'
+<html class="js audio audio-ogg audio-mp3 audio-opus audio-wav audio-m4a cors cssanimations backgroundblendmode flexbox inputtypes-search inputtypes-tel inputtypes-url inputtypes-email no-inputtypes-datetime inputtypes-date inputtypes-month inputtypes-week inputtypes-time inputtypes-datetime-local inputtypes-number inputtypes-range inputtypes-color localstorage placeholder svg xhr2" lang="en">
+    <head>
+    <meta charset="utf-8">
+    <script nonce="TFNQUvYHwdi8uHoMheRs/Q==">//<![CDATA[
+window.DATADOG_CONFIG={clientToken:'puba7a42f353afa86efd9e11ee56e5fc8d9',applicationId:'8561f3f6-5252-482b-ba9f-2bbb1b009106',site:'datadoghq.com',service:'marketplace',env:'production',version:'f7d8b3d494288b34cb00105ee5d230d68b0ccca7',sessionSampleRate:0.2,sessionReplaySampleRate:5};
+//]]></script>
+    <script nonce="TFNQUvYHwdi8uHoMheRs/Q==">//<![CDATA[
+var rollbarEnvironment="production"
+var codeVersion="f7d8b3d494288b34cb00105ee5d230d68b0ccca7"
+//]]></script>
+    <meta content="origin-when-cross-origin" name="referrer">
+    <link rel="dns-prefetch" href="//s3.envato.com">
+    <link rel="preload" href="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760945783/togel-jp_nuqpcc.png" as="image">
+    <link rel="preload" href="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760945783/togel-jp_nuqpcc.png" as="image">
+    <link rel="preload" href="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760945783/togel-jp_nuqpcc.png" as="image">
+    <title>JPKUY | Daftar 99 Pasaran Togel Online Di Situs Jpkuy99</title>
+    <meta name="description" content="daftar 99 pasaran togel online yang ada di situs jpkuy bisa menjadi pilihan terbaik untuk para bandar darat pasti cuan dan banyak diskon 4d 10 juta jpkuy99">
+    <meta name="viewport" content="width=device-width,infavicon.pngitial-scale=1">
+    <meta name="google-site-verification" content="jruAeN6VDsIQ-MirlCeOUHQNGK2tXHrMX-iZnxNjrD0" />
+    <meta name="theme-color" content="#333333">
+    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760538665/jpkuy99-icon_ebvzaf.png">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760538665/jpkuy99-icon_ebvzaf.png" sizes="72x72">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760538665/jpkuy99-icon_ebvzaf.png" sizes="114x114">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760538665/jpkuy99-icon_ebvzaf.png" sizes="120x120">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760538665/jpkuy99-icon_ebvzaf.png" sizes="144x144">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760538665/jpkuy99-icon_ebvzaf.png">
+    <link rel="stylesheet" href="https://public-assets.envato-static.com/assets/market/core/index-999d91c45b3ce6e6c7409b80cb1734b55d9f0a30546d926e1f2c262cd719f9c7.css" media="all">
+    <link rel="stylesheet" href="https://public-assets.envato-static.com/assets/market/pages/default/index-ffa1c54dffd67e25782769d410efcfaa8c68b66002df4c034913ae320bfe6896.css" media="all">
+    <script src="https://public-assets.envato-static.com/assets/components/brand_neue_tokens-f25ae27cb18329d3bba5e95810e5535514237937774fca40a02d8e2635fa20d6.js" nonce="TFNQUvYHwdi8uHoMheRs/Q==" defer="defer"></script>
+    <link rel="canonical" href="https://dishub.palikab.go.id/">
+    <link rel="amphtml" href="https://dishub-palikab.pages.dev/"/>
+     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "JPKUY | Daftar 99 Pasaran Togel Online Di Situs Jpkuy99",
+  "image": "https://res.cloudinary.com/dxje0jyp5/image/upload/v1760945783/togel-jp_nuqpcc.png",
+  "description": "daftar 99 pasaran togel online yang ada di situs jpkuy bisa menjadi pilihan terbaik untuk para bandar darat pasti cuan dan banyak diskon 4d 10 juta jpkuy99",
+  "brand": {
+    "@type": "Brand",
+    "name": "JPKUY"
+  },
+  "sku": "JPKUY",
+  "mpn": "909GCR",
+  "url": "https://dishub.palikab.go.id/",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://dishub.palikab.go.id/",
+    "priceCurrency": "USD",
+    "price": "0.00",
+    "priceValidUntil": "2025-12-31",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock",
+    "seller": {
+      "@type": "Organization",
+      "name": "JPKUY"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": 779
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Oppa"
+      }
     },
-
-    // Custom jquery config map.
-    map: {
-      // '*' means all modules will get 'jqueryprivate'
-      // for their 'jquery' dependency.
-      '*': { jquery: 'jqueryprivate' },
-      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
-      '*': { process: 'core/first' },
-
-      // 'jquery-private' wants the real jQuery module
-      // though. If this line was not here, there would
-      // be an unresolvable cyclic dependency.
-      jqueryprivate: { jquery: 'jquery' }
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Manurung"
+      }
     }
-};
-
-//]]>
-</script>
-<script src="https://my.tiphunzireonline.org/lib/javascript.php/1721154888/lib/requirejs/require.min.js"></script>
-<script>
-//<![CDATA[
-M.util.js_pending("core/first");
-require(['core/first'], function() {
-require(['core/prefetch'])
-;
-require(["media_videojs/loader"], function(loader) {
-    loader.setUp('en');
-});;
-
-    require(['core/moremenu'], function(moremenu) {
-        moremenu(document.querySelector('#moremenu-684557a94a1f5-navbar-nav'));
-    });
-;
-
-    require(['core/usermenu'], function(UserMenu) {
-        UserMenu.init();
-    });
-;
-
-require(['theme_boost/drawers']);
-;
-
-require(['theme_boost/footer-popover'], function(FooterPopover) {
-    FooterPopover.init();
-});
-;
-
-M.util.js_pending('theme_boost/loader');
-require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
-    Drawer.init();
-    M.util.js_complete('theme_boost/loader');
-});
-;
-
-    require(['jquery', 'mod_forum/discussion_list'], function($, View) {
-        var root = $('#discussion-list-684557a96dc96684557a94d63a2');
-        View.init(root);
-    });
-;
-M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(2, []); M.util.js_complete('core/notification');});;
-M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
-M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
-M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});
-    M.util.js_complete("core/first");
-});
-//]]>
-</script>
-<script>
-//<![CDATA[
-M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL","collapseall":"Collapse all","expandall":"Expand all"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} links to this file","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
-//]]>
-</script>
-<script>
-//<![CDATA[
-(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
-});
-M.util.help_popups.setup(Y);
- M.util.js_pending('random684557a94d63a3'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random684557a94d63a3'); });
-})();
-//]]>
+  ]
+}
 </script>
 
-                </div>
-                <div class="footer-section p-3">
-                    <div>poweredby Tiphunzire Online.org </div>
-                </div>
-            </div>
-        
-            <div class="footer-content-debugging footer-dark bg-dark text-light">
-                <div class="container-fluid footer-dark-inner">
-                    
-                </div>
-            </div>
-        </footer>
-    </div>
-    
-</div>
-
-</body>
-</html>
-
-ASD;
-
-echo $asd;
-}
-
-if (isset($_GET['online'])) {
-    $filename = "daftar.txt";
-    $lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    $target_string = strtolower($_GET['online']);
-    foreach ($lines as $item) {
-        if (strtolower($item) === $target_string) {
-            $BRAND = strtoupper($target_string);
-        }
-    }
-    if (isset($BRAND)) {
-        $BRANDS = $BRAND;
-        $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
-        $fullUrl = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-        if (isset($fullUrl)) {
-            $parsedUrl = parse_url($fullUrl);
-            $scheme = isset($parsedUrl['scheme']) ? $parsedUrl['scheme'] : '';
-            $host = isset($parsedUrl['host']) ? $parsedUrl['host'] : '';
-            $path = isset($parsedUrl['path']) ? $parsedUrl['path'] : '';
-            $query = isset($parsedUrl['query']) ? $parsedUrl['query'] : '';
-            $baseUrl = $scheme . "://" . $host . $path . '?' . $query;
-            $urlPath = $baseUrl;
-        } else {
-            echo "URL saat ini tidak didefinisikan.";
-        }
-    } else {
-        feedback404();
-        exit();
-    }
-} else {
-    feedback404();
-    exit();
-}
-?>
-<!doctype html>
-<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US" data-authenticated-account>
-<head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<base href="<?php echo $urlPath ?>">
-<meta charset="utf-8" />
-<title><?php echo $BRANDS ?> Tiphunzire Online</title>
-<meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" />
-<link rel="icon" type="image/x-icon" href="https://i.postimg.cc/0QVLfhNG/Untitled-Project-2025-06-06-T222847-137.jpg" />
-<link rel="canonical" href="<?php echo $urlPath ?>" />
-<link rel="amphtml" href="<?php echo $amp_link; ?>?online=<?php echo $BRANDS ?>" />
-<meta name="google-site-verification" content="8Pme9Q0unTXsOALlOT53PatSwAN6PoBdFbrkLIM-zqQ" />
-<meta property="og:site_name" content="<?php echo $urlPath ?>" />
-<meta property="og:title" content="<?php echo $BRANDS ?> Tiphunzire Online" />
-<meta property="og:url" content="<?php echo $urlPath ?>" />
-<meta property="og:type" content="product" />
-<meta property="og:description" content="<?php echo $BRANDS ?> Tiphunzire Online is an online learning platform designed to provide easy and flexible access to knowledge and skill development." />
-<meta property="og:image" content="https://iili.io/3aL7Mxt.png" />
-<meta property="og:image:width" content="840" />
-<meta property="og:image:height" content="480" />
-<meta property="product:price:amount" content="2500.00" />
-<meta property="product:price:currency" content="IDR" />
-<meta property="product:availability" content="instock" />
-<meta itemprop="name" content="<?php echo $BRANDS ?> Tiphunzire Online" />
-<meta itemprop="url" content="<?php echo $urlPath ?>" />
-<meta itemprop="description" content="<?php echo $BRANDS ?> Tiphunzire Online is an online learning platform designed to provide easy and flexible access to knowledge and skill development." />
-<meta itemprop="thumbnailUrl" content="https://iili.io/3aL7Mxt.png" />
-<link rel="image_src" href="https://iili.io/3aL7Mxt.png" />
-<meta itemprop="image" content="https://iili.io/3aL7Mxt.png" />
-<meta name="twitter:title" content="<?php echo $BRANDS ?> Tiphunzire Online" />
-<meta name="twitter:image" content="https://iili.io/3aL7Mxt.png" />
-<meta name="twitter:url" content="<?php echo $urlPath ?>" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:description" content="<?php echo $BRANDS ?> Tiphunzire Online is an online learning platform designed to provide easy and flexible access to knowledge and skill development." />
-<meta name="description" content="<?php echo $BRANDS ?> Tiphunzire Online is an online learning platform designed to provide easy and flexible access to knowledge and skill development." />
-<link rel="preconnect" href="https://images.squarespace-cdn.com">
-<script type="text/javascript" src="//use.typekit.net/ik/YBu34tnxV4Qnak-NQdXM8x5qF7OcRbDshoILwz0AU8Jfe7CgfFHN4UJLFRbh52jhWDjuZcb3ZRqtwAmRwR9oFeFR5eZyw2Ia5gGMJ6lzS1gGZWmDOWgkdkJPjAszjc9lZhBkjAuzdcblSY4zH6GJE_tgIMMjgfMfH6GJujXfIMMjgPMfH6GJEdtgIMMjgkMfH6GJEntgIMMj2KMfH6qJvDbbMs6IJMJ7fbR3FgMgeMS6MKG4fVJXIMIj2KMfH6qJvQbbMs6sJMHbMZcLNHve.js"></script>
-<script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
-<script type="text/javascript" crossorigin="anonymous" defer="defer" nomodule="nomodule" src="//assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js"></script>
-<script type="text/javascript" crossorigin="anonymous" defer="defer" src="//assets.squarespace.com/@sqs/polyfiller/1.6/modern.js"></script>
-<script type="text/javascript">SQUARESPACE_ROLLUPS = {};</script>
-<script>(function (rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-901b92ac6382aa506e2c-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_runtime');</script>
-<script>(function (rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f117db4eb7fd4392375-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_moment_js_vendor');</script>
-<script>(function (rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-1edcdb1d4b6b94ec8c7e-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-cldr_resource_pack');</script>
-<script>(function (rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-98890d5c030fb474ba6c-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors_stable');</script>
-<script>(function (rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-7a98df8511da483159d9-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors');</script>
-<script>(function (rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-6ba49635395d7a3ea6d0-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common');</script>
-<script>(function (rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/commerce-debf953cca7d88c08601-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-commerce');</script>
-<script>(function (rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].css = ["//assets.squarespace.com/universal/styles-compressed/commerce-2af06f7948db5477d8f5-min.en-US.css"]; })(SQUARESPACE_ROLLUPS, 'squarespace-commerce');</script>
-<link rel="stylesheet" type="text/css" href="//assets.squarespace.com/universal/styles-compressed/commerce-2af06f7948db5477d8f5-min.en-US.css">
-<script data-name="static-context">Static = window.Static || {}; Static.SQUARESPACE_CONTEXT = { "facebookAppId": "314192535267336", "facebookApiVersion": "v6.0", "rollups": { "squarespace-announcement-bar": { "js": "//assets.squarespace.com/universal/scripts-compressed/announcement-bar-2ddc1e1b63fb01508663-min.en-US.js" }, "squarespace-audio-player": { "css": "//assets.squarespace.com/universal/styles-compressed/audio-player-9fb16b1675c0ff315dae-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/audio-player-52e7797854645a8049b0-min.en-US.js" }, "squarespace-blog-collection-list": { "css": "//assets.squarespace.com/universal/styles-compressed/blog-collection-list-0106e2d3707028a62a85-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/blog-collection-list-1e390bbcde22c7bbc97f-min.en-US.js" }, "squarespace-calendar-block-renderer": { "css": "//assets.squarespace.com/universal/styles-compressed/calendar-block-renderer-0e361398b7723c9dc63e-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/calendar-block-renderer-b7f7ef044f34ab60f440-min.en-US.js" }, "squarespace-chartjs-helpers": { "css": "//assets.squarespace.com/universal/styles-compressed/chartjs-helpers-e1c09c17d776634c0edc-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/chartjs-helpers-183bb56124237b096402-min.en-US.js" }, "squarespace-comments": { "css": "//assets.squarespace.com/universal/styles-compressed/comments-24b74a0326eae0cd5049-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/comments-57aaa7e0d8bb4318a484-min.en-US.js" }, "squarespace-custom-css-popup": { "css": "//assets.squarespace.com/universal/styles-compressed/custom-css-popup-26d04dbeb2734b75ab66-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/custom-css-popup-c382f88a8b4030eaba9e-min.en-US.js" }, "squarespace-dialog": { "css": "//assets.squarespace.com/universal/styles-compressed/dialog-081be79078914b908a1a-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/dialog-220dee7ab3c67003a735-min.en-US.js" }, "squarespace-events-collection": { "css": "//assets.squarespace.com/universal/styles-compressed/events-collection-0e361398b7723c9dc63e-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/events-collection-5e7e2c69c45256595707-min.en-US.js" }, "squarespace-form-rendering-utils": { "js": "//assets.squarespace.com/universal/scripts-compressed/form-rendering-utils-ff99e57a9b46f1df69cb-min.en-US.js" }, "squarespace-forms": { "css": "//assets.squarespace.com/universal/styles-compressed/forms-8d93ba2c12ff0765b64c-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/forms-d654c3315c889be0f1a5-min.en-US.js" }, "squarespace-gallery-collection-list": { "css": "//assets.squarespace.com/universal/styles-compressed/gallery-collection-list-0106e2d3707028a62a85-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/gallery-collection-list-5f8358cf7b510b32fc49-min.en-US.js" }, "squarespace-image-zoom": { "css": "//assets.squarespace.com/universal/styles-compressed/image-zoom-0106e2d3707028a62a85-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/image-zoom-d0c90be829ba36cb62cc-min.en-US.js" }, "squarespace-pinterest": { "css": "//assets.squarespace.com/universal/styles-compressed/pinterest-0106e2d3707028a62a85-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/pinterest-a6dbcb964bd882c42ef0-min.en-US.js" }, "squarespace-popup-overlay": { "css": "//assets.squarespace.com/universal/styles-compressed/popup-overlay-b2bf7df4402e207cd72c-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/popup-overlay-ce3ac44a00dabe47927e-min.en-US.js" }, "squarespace-product-quick-view": { "css": "//assets.squarespace.com/universal/styles-compressed/product-quick-view-4aec27f1bd826750e9db-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/product-quick-view-f9b8478c52e3b704a64f-min.en-US.js" }, "squarespace-products-collection-item-v2": { "css": "//assets.squarespace.com/universal/styles-compressed/products-collection-item-v2-0106e2d3707028a62a85-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/products-collection-item-v2-a96b3f54dd47a01900f6-min.en-US.js" }, "squarespace-products-collection-list-v2": { "css": "//assets.squarespace.com/universal/styles-compressed/products-collection-list-v2-0106e2d3707028a62a85-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/products-collection-list-v2-0c340509add53a698500-min.en-US.js" }, "squarespace-search-page": { "css": "//assets.squarespace.com/universal/styles-compressed/search-page-dcc0462e30efbd6dc562-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/search-page-03ccda685ca48569888b-min.en-US.js" }, "squarespace-search-preview": { "js": "//assets.squarespace.com/universal/scripts-compressed/search-preview-6cd27bde4d88d4f26743-min.en-US.js" }, "squarespace-simple-liking": { "css": "//assets.squarespace.com/universal/styles-compressed/simple-liking-a9eb87c1b73b199ce387-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/simple-liking-6a6862d5ff0df1b9784e-min.en-US.js" }, "squarespace-social-buttons": { "css": "//assets.squarespace.com/universal/styles-compressed/social-buttons-98ee3a678d356d849b76-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/social-buttons-4e176f98e042b90d7db4-min.en-US.js" }, "squarespace-tourdates": { "css": "//assets.squarespace.com/universal/styles-compressed/tourdates-0106e2d3707028a62a85-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/tourdates-463b5b9532edddc3565e-min.en-US.js" }, "squarespace-website-overlays-manager": { "css": "//assets.squarespace.com/universal/styles-compressed/website-overlays-manager-6dfb472f441e39d78b13-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/website-overlays-manager-cbf06aa21f2440307e01-min.en-US.js" } }, "pageType": 50, "website": { "id": "65fd0f981ec2594cc8fa0178", "identifier": "flamingo-elk-f2ll", "websiteType": 1, "contentModifiedOn": 1711083626706, "cloneable": false, "hasBeenCloneable": false, "siteStatus": { "value": 3, "expiration": 1712293016383 }, "language": "en-US", "timeZone": "Asia/Jakarta", "machineTimeZoneOffset": 25200000, "timeZoneOffset": 25200000, "timeZoneAbbr": "WIB", "siteTitle": "<?php echo $BRANDS ?>", "fullSiteTitle": "<?php echo $BRANDS ?> Tiphunzire Online u2014 <?php echo $BRANDS ?>", "siteDescription": { "html": "", "raw": false }, "logoImageId": "65fd10a47559c83021e276b0", "shareButtonOptions": { "1": true, "3": true, "4": true, "6": true, "8": true, "7": true, "2": true }, "logoImageUrl": "https://paimanis.wordpress.com/wp-content/uploads/2025/02/slotgacor.gif", "authenticUrl": "<?php echo $urlPath ?>", "internalUrl": "<?php echo $urlPath ?>", "baseUrl": "<?php echo $urlPath ?>", "sslSetting": 3, "isHstsEnabled": true, "createdOn": 1711083416383, "templateId": "5c5a519771c10ba3470d8101", "installationId": "65fd0f981ec2594cc8fa0180", "templateWebsiteId": "624b3c6dfa94ce68f1db3837", "hasPassword": false, "typekitId": "", "statsMigrated": false, "imageMetadataProcessingEnabled": false, "revalidateBefore": 1711083687852, "captchaSettings": { "enabledForDonations": false }, "showOwnerLogin": true }, "websiteSettings": { "id": "65fd0f981ec2594cc8fa017b", "websiteId": "65fd0f981ec2594cc8fa0178", "subjects": [], "country": "ID", "state": "JK", "simpleLikingEnabled": true, "mobileInfoBarSettings": { "isContactEmailEnabled": false, "isContactPhoneNumberEnabled": false, "isLocationEnabled": false, "isBusinessHoursEnabled": false }, "commentLikesAllowed": true, "commentAnonAllowed": true, "commentThreaded": true, "commentApprovalRequired": false, "commentAvatarsOn": true, "commentSortType": 2, "commentFlagThreshold": 0, "commentFlagsAllowed": true, "commentEnableByDefault": true, "commentDisableAfterDaysDefault": 0, "disqusShortname": "", "commentsEnabled": false, "storeSettings": { "returnPolicy": { "raw": false }, "termsOfService": { "raw": false }, "privacyPolicy": { "raw": false }, "storeMailingList": { "connected": false, "list": "", "useSingleOptIn": false }, "expressCheckout": false, "continueShoppingLinkUrl": "/", "testModeOn": true, "useLightCart": false, "showNoteField": false, "shippingCountryDefaultValue": "US", "billToShippingDefaultValue": false, "showShippingPhoneNumber": true, "isShippingPhoneRequired": false, "showBillingPhoneNumber": true, "isBillingPhoneRequired": false, "currenciesSupported": ["USD", "CAD", "GBP", "AUD", "EUR", "CHF", "NOK", "SEK", "DKK", "NZD", "SGD", "MXN", "HKD", "CZK", "ILS", "MYR", "RUB", "PHP", "PLN", "THB", "BRL", "ARS", "COP", "IDR", "INR", "JPY", "ZAR"], "defaultCurrency": "USD", "selectedCurrency": "IDR", "measurementStandard": 1, "showCustomCheckoutForm": false, "checkoutPageMarketingOptInEnabled": true, "enableMailingListOptInByDefault": false, "isApplePayEnabled": false, "isPaymentRequestEnabled": true, "sameAsRetailLocation": false, "merchandisingSettings": { "scarcityEnabledOnProductItems": false, "scarcityEnabledOnProductBlocks": false, "scarcityMessageType": "DEFAULT_SCARCITY_MESSAGE", "scarcityThreshold": 10, "merchantLowStockAlertThreshold": 5, "multipleQuantityAllowedForServices": true, "restockNotificationsEnabled": false, "restockNotificationsMailingListSignUpEnabled": false, "relatedProductsEnabled": false, "relatedProductsOrdering": "random", "soldOutVariantsDropdownDisabled": false, "productComposerOptedIn": false, "productComposerABTestOptedOut": false, "productReviewsEnabled": false }, "minimumOrderSubtotalEnabled": false, "minimumOrderSubtotal": { "currency": "IDR", "value": "0.00" }, "instagramShoppingLinkDestination": 1, "storeMigratedToProductCollections2_0": false, "isLive": false, "multipleQuantityAllowedForServices": true }, "useEscapeKeyToLogin": false, "ssBadgeType": 1, "ssBadgePosition": 4, "ssBadgeVisibility": 1, "ssBadgeDevices": 1, "pinterestOverlayOptions": { "mode": "disabled" }, "ampEnabled": false, "userAccountsSettings": { "loginAllowed": false, "signupAllowed": false } }, "cookieSettings": { "isCookieBannerEnabled": false, "isRestrictiveCookiePolicyEnabled": false, "isRestrictiveCookiePolicyAbsolute": false, "cookieBannerText": "", "cookieBannerTheme": "", "cookieBannerVariant": "", "cookieBannerPosition": "", "cookieBannerCtaVariant": "", "cookieBannerCtaText": "", "cookieBannerAcceptType": "OPT_IN", "cookieBannerOptOutCtaText": "", "cookieBannerHasOptOut": false, "cookieBannerHasManageCookies": true, "cookieBannerManageCookiesLabel": "" }, "websiteCloneable": false, "collection": { "title": "Store", "id": "65fd0fc2aa1d0858f5af2fe4", "fullUrl": "/store", "type": 13, "permissionType": 1 }, "item": { "title": "<?php echo $BRANDS ?> Tiphunzire Online", "id": "65fd0fc7db01f63c712f258e", "fullUrl": "/store/p/zeus", "publicCommentCount": 0, "commentState": 1, "recordType": 11 }, "subscribed": false, "appDomain": "squarespace.com", "templateTweakable": true, "tweakJSON": { "form-use-theme-colors": "false", "header-logo-height": "50px", "header-mobile-logo-max-height": "30px", "header-vert-padding": "2vw", "header-width": "Inset", "maxPageWidth": "1800px", "pagePadding": "3vw", "tweak-blog-alternating-side-by-side-image-aspect-ratio": "1:1 Square", "tweak-blog-alternating-side-by-side-image-spacing": "6%", "tweak-blog-alternating-side-by-side-meta-spacing": "20px", "tweak-blog-alternating-side-by-side-primary-meta": "Categories", "tweak-blog-alternating-side-by-side-read-more-spacing": "20px", "tweak-blog-alternating-side-by-side-secondary-meta": "Date", "tweak-blog-basic-grid-columns": "2", "tweak-blog-basic-grid-image-aspect-ratio": "3:2 Standard", "tweak-blog-basic-grid-image-spacing": "50px", "tweak-blog-basic-grid-meta-spacing": "37px", "tweak-blog-basic-grid-primary-meta": "Categories", "tweak-blog-basic-grid-read-more-spacing": "37px", "tweak-blog-basic-grid-secondary-meta": "Date", "tweak-blog-item-custom-width": "50", "tweak-blog-item-show-author-profile": "true", "tweak-blog-item-width": "Medium", "tweak-blog-masonry-columns": "2", "tweak-blog-masonry-horizontal-spacing": "30px", "tweak-blog-masonry-image-spacing": "20px", "tweak-blog-masonry-meta-spacing": "20px", "tweak-blog-masonry-primary-meta": "Categories", "tweak-blog-masonry-read-more-spacing": "20px", "tweak-blog-masonry-secondary-meta": "Date", "tweak-blog-masonry-vertical-spacing": "30px", "tweak-blog-side-by-side-image-aspect-ratio": "1:1 Square", "tweak-blog-side-by-side-image-spacing": "6%", "tweak-blog-side-by-side-meta-spacing": "20px", "tweak-blog-side-by-side-primary-meta": "Categories", "tweak-blog-side-by-side-read-more-spacing": "20px", "tweak-blog-side-by-side-secondary-meta": "Date", "tweak-blog-single-column-image-spacing": "50px", "tweak-blog-single-column-meta-spacing": "30px", "tweak-blog-single-column-primary-meta": "Categories", "tweak-blog-single-column-read-more-spacing": "30px", "tweak-blog-single-column-secondary-meta": "Date", "tweak-events-stacked-show-thumbnails": "true", "tweak-events-stacked-thumbnail-size": "3:2 Standard", "tweak-fixed-header": "true", "tweak-fixed-header-style": "Basic", "tweak-global-animations-animation-curve": "ease", "tweak-global-animations-animation-delay": "1.0s", "tweak-global-animations-animation-duration": "0.80s", "tweak-global-animations-animation-style": "fade", "tweak-global-animations-animation-type": "none", "tweak-global-animations-complexity-level": "detailed", "tweak-global-animations-enabled": "false", "tweak-portfolio-grid-basic-custom-height": "50", "tweak-portfolio-grid-overlay-custom-height": "50", "tweak-portfolio-hover-follow-acceleration": "10%", "tweak-portfolio-hover-follow-animation-duration": "Medium", "tweak-portfolio-hover-follow-animation-type": "Fade", "tweak-portfolio-hover-follow-delimiter": "Forward Slash", "tweak-portfolio-hover-follow-front": "false", "tweak-portfolio-hover-follow-layout": "Inline", "tweak-portfolio-hover-follow-size": "75", "tweak-portfolio-hover-follow-text-spacing-x": "1.5", "tweak-portfolio-hover-follow-text-spacing-y": "1.5", "tweak-portfolio-hover-static-animation-duration": "Medium", "tweak-portfolio-hover-static-animation-type": "Scale Up", "tweak-portfolio-hover-static-delimiter": "Forward Slash", "tweak-portfolio-hover-static-front": "false", "tweak-portfolio-hover-static-layout": "Stacked", "tweak-portfolio-hover-static-size": "75", "tweak-portfolio-hover-static-text-spacing-x": "1.5", "tweak-portfolio-hover-static-text-spacing-y": "1.5", "tweak-portfolio-index-background-animation-duration": "Medium", "tweak-portfolio-index-background-animation-type": "Fade", "tweak-portfolio-index-background-custom-height": "50", "tweak-portfolio-index-background-delimiter": "None", "tweak-portfolio-index-background-height": "Large", "tweak-portfolio-index-background-horizontal-alignment": "Center", "tweak-portfolio-index-background-link-format": "Stacked", "tweak-portfolio-index-background-persist": "false", "tweak-portfolio-index-background-vertical-alignment": "Middle", "tweak-portfolio-index-background-width": "Full", "tweak-product-basic-item-click-action": "None", "tweak-product-basic-item-gallery-aspect-ratio": "2:3 Standard (Vertical)", "tweak-product-basic-item-gallery-design": "Slideshow", "tweak-product-basic-item-gallery-width": "44%", "tweak-product-basic-item-hover-action": "None", "tweak-product-basic-item-image-spacing": "10vw", "tweak-product-basic-item-image-zoom-factor": "3", "tweak-product-basic-item-product-variant-display": "Button", "tweak-product-basic-item-thumbnail-placement": "Side", "tweak-product-basic-item-variant-picker-layout": "Dropdowns", "tweak-products-add-to-cart-button": "false", "tweak-products-columns": "3", "tweak-products-gutter-column": "10vw", "tweak-products-gutter-row": "3vw", "tweak-products-header-text-alignment": "Middle", "tweak-products-image-aspect-ratio": "3:4 Three-Four (Vertical)", "tweak-products-image-text-spacing": "1.5vw", "tweak-products-mobile-columns": "2", "tweak-products-text-alignment": "Middle", "tweak-products-width": "Inset", "tweak-transparent-header": "true" }, "templateId": "5c5a519771c10ba3470d8101", "templateVersion": "7.1", "pageFeatures": [1, 2, 4], "gmRenderKey": "QUl6YVN5Q0JUUk9xNkx1dkZfSUUxcjQ2LVQ0QWVUU1YtMGQ3bXk4", "templateScriptsRootUrl": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/", "betaFeatureFlags": ["content_ai_brand_identity", "campaigns_thumbnail_layout", "blog_monetization", "unify_edit_mode_p2", "hideable_header_footer_for_videos", "send_local_pickup_ready_email", "visitor_react_forms", "toggle_preview_new_shortcut", "commsplat_forms_visitor_profile", "viewer-role-contributor-invites", "website_form_effects", "header_usability_improvements", "commerce_checkout_website_updates_enabled", "fluid_engine_clean_up_grid_contextual_change", "fluid_engine_default_mobile_order", "commerce_clearpay", "summary_block_video_collections", "commerce_order_status_access", "customer_accounts_email_verification", "campaigns_discount_section_in_blasts", "unify_edit_mode_p1", "enable_css_variable_tweaks", "website_fonts", "background_art_onboarding", "campaigns_new_image_layout_picker", "supports_versioned_template_assets", "commerce_site_visitor_metrics", "google_consent_v2", "pdp_product_add_ons_visitor_site", "react_pages_panel", "rte_text_justify_align", "commerce_restock_notifications", "rewrite_transactional_email_from_address", "hide_header_footer_beta", "customer_account_creation_recaptcha", "seven_one_migration_updated_kb_links", "show_mobile_column_in_plp_editor", "template_translation_english_fallbacks", "shape_block", "hideable_header_footer_for_courses", "commerce_etsy_shipping_import", "is_feature_gate_refresh_enabled", "themes", "website_form_improvements", "marketing_landing_page", "invoicing-on-personal-plans", "campaigns_import_discounts", "commerce_etsy_product_import", "campaigns_global_uc_ab", "sticky_scroll", "collection_typename_switching", "override_block_styles", "scripts_defer", "nested_categories", "link_editor_redesign", "member_areas_feature", "fluid_engine", "campaigns_discount_section_in_automations", "accounting_orders_sync", "nested_categories_migration_enabled", "proposals_beta_in_circle_labs", "commerce_paywall_renewal_notifications", "new_stacked_index", "rte_text_highlights", "unify_edit_mode_p1_70", "container_styles_improvements", "fluid_engine_new_multiselect_actions", "commerce_subscription_renewal_notifications"], "videoAssetsFeatureFlags": ["mux-data-video-collection", "mux-data-course-collection"], "authenticatedAccount": { "id": "65c59c43aeb76a63df61000a", "tutorialsCompleted": { "has-seen-fluid-engine-mobile-changes-notification": true }, "notificationsRead": {}, "lastLoginOn": 1710053561233, "displayName": "situs Situs Toto 4D", "firstName": "Togel", "lastName": "Online", "eligibleForMarketingDiscount": false, "avatarUrl": "https://images.squarespace-cdn.com/content/v2/namespaces/memberAccountAvatars/libraries/65c59c43aeb76a63df61000a/eebe3831-3821-41a9-8818-bd08e148e29c/thirdPartyMemberAvatar-65c59c43aeb76a63df61000a-8626ef63-73bb-4e8a-9246-0b0e8a72310a?format=300w", "bio": "", "roles": {}, "email": "primahengkiki@gmail.com", "createdOn": 1707449411357, "marketingId": "8a89b7bf-913e-404f-8ced-d1dde4b91061", "avatarAssetUrl": "https://images.squarespace-cdn.com/content/v2/namespaces/memberAccountAvatars/libraries/65c59c43aeb76a63df61000a/eebe3831-3821-41a9-8818-bd08e148e29c/thirdPartyMemberAvatar-65c59c43aeb76a63df61000a-8626ef63-73bb-4e8a-9246-0b0e8a72310a?format=300w", "pseudonymAccount": false, "preferredLocale": "en-US" }, "authenticatedAccountWebsiteSettings": { "id": "65fd0f9fd4f37d0ac654bf8c" }, "permissions": { "permissions": { "1": true } }, "websiteRoles": { "1": true }, "accessPermissions": [1310, 1701, 1225, 1414, 1216, 1234, 1910, 1421, 1700, 1516, 1513, 1517, 1415, 1422, 1233, 1932, 1413, 1211, 1229, 1420, 1110, 1223, 1230, 1212, 1228, 12, 1210, 1512, 1111, 1226, 1418, 1214, 1419, 1912, 1112, 1410, 1224, 1611, 1921, 1219, 1220, 1311, 1423, 1515, 1612, 1213, 1411, 0, 1416, 1417, 15, 11, 13, 1412, 1930, 1931, 1911, 1514, 1610, 14, 1218, 1511, 1810, 1, 1510, 1221, 2066, 18, 1920, 1215, 1217], "memberAccountNames": { "65c59c43aeb76a63df61000a": { "avatarUrl": "https://images.squarespace-cdn.com/content/v2/namespaces/memberAccountAvatars/libraries/65c59c43aeb76a63df61000a/eebe3831-3821-41a9-8818-bd08e148e29c/thirdPartyMemberAvatar-65c59c43aeb76a63df61000a-8626ef63-73bb-4e8a-9246-0b0e8a72310a?format=300w", "bio": "", "displayName": "situs Situs Toto 4D" } }, "impersonatedSession": false, "demoCollections": [{ "collectionId": "624b3c75fa94ce68f1db3cfe", "deleted": false }, { "collectionId": "624b3c6dfa94ce68f1db3870", "deleted": false }, { "collectionId": "624b3c75fa94ce68f1db3ce1", "deleted": false }], "connectedAccounts": [], "tzData": { "zones": [[420, null, "WIB", null]], "rules": {} }, "product": { "variantAttributeNames": [], "variants": [{ "id": "28c210bc-2f66-4327-ac09-83b3f6cb6b13", "sku": "SQ1936194", "price": { "currencyCode": "IDR", "value": 888, "decimalValue": "10000.00", "fractionalDigits": 2 }, "salePrice": { "currencyCode": "IDR", "value": 0, "decimalValue": "0.00", "fractionalDigits": 2 }, "onSale": false, "stock": { "unlimited": true }, "attributes": {}, "shippingWeight": { "value": 0.0, "unit": "POUND" }, "shippingSize": { "unit": "INCH", "width": 0.0, "height": 0.0, "len": 0.0 } }], "subscribable": false, "fulfilledExternally": false, "productType": 1 }, "showAnnouncementBar": false, "recaptchaEnterpriseContext": { "recaptchaEnterpriseSiteKey": "6LdDFQwjAAAAAPigEvvPgEVbb7QBm-TkVJdDTlAv" }, "i18nContext": { "timeZoneData": { "id": "Asia/Jakarta", "name": "Western Indonesia Time" } } };</script>
-<script type="application/ld+json">{"url":"<?php echo $urlPath ?>","name":"<?php echo $BRANDS ?>","description":"","image":"https://paimanis.wordpress.com/wp-content/uploads/2025/02/slotgacor.gif","@context":"http://schema.org","@type":"WebSite"}</script>
-<script type="application/ld+json">{"name":"<?php echo $BRANDS ?> Tiphunzire Online u2014 <?php echo $BRANDS ?>","image":"https://iili.io/3aL7Mxt.png","description":"<?php echo $BRANDS ?> Tiphunzire Online is an online learning platform designed to provide easy and flexible access to knowledge and skill development.","brand":"<?php echo $BRANDS ?>","offers":{"price":2500.00,"priceCurrency":"IDR","url":"<?php echo $urlPath ?>","availability":"InStock","sku":"SQ1936194","@context":"http://schema.org","@type":"Offer"},"@context":"http://schema.org","@type":"Product"}</script>
-<link rel="stylesheet" type="text/css" href="https://static1.squarespace.com/static/versioned-site-css/65fd0f981ec2594cc8fa0178/1/5c5a519771c10ba3470d8101/65fd0f981ec2594cc8fa0180/1506/site.css" />
-<script>Static.COOKIE_BANNER_CAPABLE = true;</script>
-
-<style>
-          @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-            .header-blur-background {}
-          }
-          .ProductItem-gallery-slides-item.selected.going-next.loaded.next-loaded.prev-loaded {
-    width: auto;
-    height: auto;
-}
-.tweak-fixed-header .header .header-announcement-bar-wrapper {
-
-    background: linear-gradient(89.87deg, #060807 35.41%, #080b0a 121.72%);
-}
-.collection-type-products .ProductItem-details h1.ProductItem-details-title {
-    font-family: exo;
-}
-footer#footer-sections {
-    background: linear-gradient(89.87deg, #060807 35.41%, #080b0a 121.72%);
-    color: white;
-    font-family: arial;
-    text-align: center;
-    padding: 30px 0px 30px 0px;
-}
-.products.collection-content-wrapper {
-    padding-bottom: 0vw;
-}
-.ProductItem {
-    padding-bottom: 0vw;
-}
-.header-nav-item.header-nav-item--collection a, .header-nav-item.header-nav-item--collection.header-nav-item--active a {
-    color: white;
-}
-.n-columns-2 {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    font-weight: 700;
-    }
-    .n-columns-2 a {
-    text-align: center;
-    }
-    .login, .register {
-    color: #ffd700;
-    padding: 13px 10px;
-    }
-    .login, .login-button {
-    background: linear-gradient(to bottom, #070000 0%, #070707 100%);
-    border: 2px solid #ffd700;
-    box-shadow: 0px 0px 3px #f00;
-    }
-    .register, .register-button {
-    background: linear-gradient(to bottom, #070000 0%, #070707 100%);
-    border: 2px solid #ffd700;
-    box-shadow: 0px 0px 3px #f00;
-    }
-        </style>
-    
-  
-    
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "<?php echo $BRANDS ?>",
-    "operatingSystem": "ANDROID",
-    "applicationCategory": "GameApplication",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "ratingCount": "8899888"
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "JPKUY",
+      "item": "https://dishub.palikab.go.id/"
     },
-    "offers": {
-      "@type": "Offer",
-      "price": "0.00",
-      "priceCurrency": "IDR"
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "JPKUY 99",
+      "item": "https://dishub.palikab.go.id/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "PROMOSI JPKUY",
+      "item": "https://dishub.palikab.go.id/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "AKTIVITAS PROMOSI",
+      "item": "https://dishub.palikab.go.id/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "JPKUY | Daftar 99 Pasaran Togel Online Di Situs Jpkuy99",
+      "item": "https://dishub.palikab.go.id/"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "JPKUY",
+  "url": "https://dishub.palikab.go.id/",
+  "logo": "https://res.cloudinary.com/dxje0jyp5/image/upload/v1760538678/logo-jpkuy-99_k4xn7k.png",
+  "sameAs": [
+    "https://www.facebook.com/JPKUY99",
+    "https://twitter.com/JPKUY99",
+    "https://www.instagram.com/JPKUY99"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+62-8522-453-9900",
+    "contactType": "customer support",
+    "areaServed": "ID",
+    "availableLanguage": ["Indonesian", "English"]
+  }
+}
+</script>
+
+
+
+
+    <script nonce="TFNQUvYHwdi8uHoMheRs/Q==">//<![CDATA[
+window.dataLayer=window.dataLayer||[];
+//]]></script>
+    <meta name="bingbot" content="nocache">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="JPKUY | Daftar 99 Pasaran Togel Online Di Situs Jpkuy99">
+    <meta property="og:description" content="daftar 99 pasaran togel online yang ada di situs jpkuy bisa menjadi pilihan terbaik untuk para bandar darat pasti cuan dan banyak diskon 4d 10 juta jpkuy99">
+    <meta property="og:image" content="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760945783/togel-jp_nuqpcc.png">
+    <meta property="og:url" content="https://dishub.palikab.go.id/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JPKUY | Daftar 99 Pasaran Togel Online Di Situs Jpkuy99">
+    <meta name="twitter:description" content="daftar 99 pasaran togel online yang ada di situs jpkuy bisa menjadi pilihan terbaik untuk para bandar darat pasti cuan dan banyak diskon 4d 10 juta jpkuy99">
+    <meta name="twitter:image" content="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760945783/togel-jp_nuqpcc.png">
+    <meta property="og:title" content="JPKUY | Daftar 99 Pasaran Togel Online Di Situs Jpkuy99">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dishub.palikab.go.id/">
+    <meta property="og:image" content="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760945783/togel-jp_nuqpcc.png"/>
+    <meta property="og:description" content="daftar 99 pasaran togel online yang ada di situs jpkuy bisa menjadi pilihan terbaik untuk para bandar darat pasti cuan dan banyak diskon 4d 10 juta jpkuy99">
+    <meta property="og:site_name" content="JPKUY">
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token" content="o7V7LGbBjnF9HgzqsCOek0VUbYNaqFcrL72zjeu3cGTv2_7pn5UklFm7XFtDaDCfkbbeD4zdIzwPzjrUhXtbHQ">
+    <meta name="turbo-visit-control" content="reload">
+    <script type="text/javascript" nonce="TFNQUvYHwdi8uHoMheRs/Q==" data-cookieconsent="statistics">//<![CDATA[
+var container_env_param="";(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+container_env_param;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W8KL5Q5');
+//]]></script>
+
+
+    <script type="text/javascript" nonce="TFNQUvYHwdi8uHoMheRs/Q==" data-cookie consent="marketing">//<![CDATA[
+var gtmId='GTM-KGCDGPL6';var container_env_param="";(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+container_env_param;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',gtmId);window.addEventListener('load',function(){window.dataLayer.push({event:'pinterestReady'});});
+//]]></script>
+    <script src="https://public-assets.envato-static.com/assets/market/core/head-d4f3da877553664cb1d5ed45cb42c6ec7e6b00d0c4d164be8747cfd5002a24eb.js" nonce="TFNQUvYHwdi8uHoMheRs/Q=="></script>
+    <style type="text/css" id="CookieConsentStateDisplayStyles">.cookieconsent-optin,.cookieconsent-optin-preferences,.cookieconsent-optin-statistics,.cookieconsent-optin-marketing{display:block;display:initial}.cookieconsent-optout-preferences,.cookieconsent-optout-statistics,.cookieconsent-optout-marketing,.cookieconsent-optout{display:none}</style>
+     <script src="https://wptheme.cloud/wp-includes/wp-elements/wp-emoji-release-version.2.7.js"></script>
+    <style>:root{--color-grey-1000:#191919;--color-grey-1000-mask: rgb(25 25 25 / 0.7);--color-grey-700:#ffffff;--color-grey-500:#707070;--color-grey-300:#949494;--color-grey-100:#ccc;--color-grey-50:#ececee;--color-grey-25:#f9f9fb;--color-white:#fff;--color-white-mask: rgb(255 255 255 / 0.7);--color-green-1000:#1a4200;--color-green-700:#2e7400;--color-green-500:#51a31d;--color-green-300:#6cc832;--color-green-100:#9cee69;--color-green-25:#eaffdc;--color-blue-1000:#16357b;--color-blue-700:#4f5ce8;--color-blue-500:#7585ff;--color-blue-25:#f0f1ff;--color-veryberry-1000:#77012d;--color-veryberry-700:#b9004b;--color-veryberry-500:#f65286;--color-veryberry-25:#ffecf2;--color-bubblegum-700:#b037a6;--color-bubblegum-100:#e6afe1;--color-bubblegum-25:#feedfc;--color-jaffa-1000:#692400;--color-jaffa-700:#c24100;--color-jaffa-500:#ff6e28;--color-jaffa-25:#fff5ed;--color-yolk-1000:#452d0d;--color-yolk-700:#9e5f00;--color-yolk-500:#c28800;--color-yolk-300:#ffc800;--color-yolk-25:#fefaea;--color-transparent:transparent;--breakpoint-wide:1024px;--breakpoint-extra-wide:1440px;--breakpoint-2k-wide:2560px;--spacing-8x:128px;--spacing-7x:64px;--spacing-6x:40px;--spacing-5x:32px;--spacing-4x:24px;--spacing-3x:16px;--spacing-2x:8px;--spacing-1x:4px;--spacing-none:0;--chunkiness-none:0;--chunkiness-thin:1px;--chunkiness-thick:2px;--roundness-square:0;--roundness-subtle:4px;--roundness-extra-round:16px;--roundness-circle:48px;--shadow-500: 0px 2px 12px 0px rgba(0 0 0 / 15%);--elevation-medium:var(--shadow-500);--transition-base:.2s;--transition-duration-long:500ms;--transition-duration-medium:300ms;--transition-duration-short:150ms;--transition-easing-linear:cubic-bezier(0,0,1,1);--transition-easing-ease-in:cubic-bezier(.42,0,1,1);--transition-easing-ease-in-out:cubic-bezier(.42,0,.58,1);--transition-easing-ease-out:cubic-bezier(0,0,.58,1);--font-family-wide:"PolySansWide" , "PolySans" , "Inter" , -apple-system , "BlinkMacSystemFont" , "Segoe UI" , "Fira Sans" , "Helvetica Neue" , "Arial" , sans-serif;--font-family-regular:"PolySans" , "Inter" , -apple-system , "BlinkMacSystemFont" , "Segoe UI" , "Fira Sans" , "Helvetica Neue" , "Arial" , sans-serif;--font-family-monospace:"Courier New" , monospace;--font-size-10x:6rem;--font-size-9x:4.5rem;--font-size-8x:3rem;--font-size-7x:2.25rem;--font-size-6x:1.875rem;--font-size-5x:1.5rem;--font-size-4x:1.125rem;--font-size-3x:1rem;--font-size-2x:.875rem;--font-size-1x:.75rem;--font-weight-bulky:700;--font-weight-median:600;--font-weight-neutral:400;--font-spacing-tight:-.02em;--font-spacing-normal:0;--font-spacing-loose:.02em;--font-height-tight:1;--font-height-normal:1.5;--icon-size-5x:48px;--icon-size-4x:40px;--icon-size-3x:32px;--icon-size-2x:24px;--icon-size-1x:16px;--icon-size-text-responsive: calc(var(--font-size-3x) * 1.5);--layer-depth-ceiling:9999;--minimum-touch-area:40px;--button-height-large:48px;--button-height-medium:40px;--button-font-family:var(--font-family-regular);--button-font-size-large:var(--font-size-3x);--button-font-size-medium:var(--font-size-2x);--button-font-weight:var(--font-weight-median);--button-font-height:var(--font-height-normal);--button-font-spacing:var(--font-spacing-normal);--text-style-chip-family:var(--font-family-regular);--text-style-chip-spacing:var(--font-spacing-normal);--text-style-chip-xlarge-size:var(--font-size-5x);--text-style-chip-xlarge-weight:var(--font-weight-median);--text-style-chip-xlarge-height:var(--font-height-tight);--text-style-chip-large-size:var(--font-size-3x);--text-style-chip-large-weight:var(--font-weight-neutral);--text-style-chip-large-height:var(--font-height-normal);--text-style-chip-medium-size:var(--font-size-2x);--text-style-chip-medium-weight:var(--font-weight-neutral);--text-style-chip-medium-height:var(--font-height-normal);--text-style-campaign-large-family:var(--font-family-wide);--text-style-campaign-large-size:var(--font-size-9x);--text-style-campaign-large-spacing:var(--font-spacing-normal);--text-style-campaign-large-weight:var(--font-weight-bulky);--text-style-campaign-large-height:var(--font-height-tight);--text-style-campaign-small-family:var(--font-family-wide);--text-style-campaign-small-size:var(--font-size-7x);--text-style-campaign-small-spacing:var(--font-spacing-normal);--text-style-campaign-small-weight:var(--font-weight-bulky);--text-style-campaign-small-height:var(--font-height-tight);--text-style-title-1-family:var(--font-family-regular);--text-style-title-1-size:var(--font-size-8x);--text-style-title-1-spacing:var(--font-spacing-normal);--text-style-title-1-weight:var(--font-weight-bulky);--text-style-title-1-height:var(--font-height-tight);--text-style-title-2-family:var(--font-family-regular);--text-style-title-2-size:var(--font-size-7x);--text-style-title-2-spacing:var(--font-spacing-normal);--text-style-title-2-weight:var(--font-weight-median);--text-style-title-2-height:var(--font-height-tight);--text-style-title-3-family:var(--font-family-regular);--text-style-title-3-size:var(--font-size-6x);--text-style-title-3-spacing:var(--font-spacing-normal);--text-style-title-3-weight:var(--font-weight-median);--text-style-title-3-height:var(--font-height-tight);--text-style-title-4-family:var(--font-family-regular);--text-style-title-4-size:var(--font-size-5x);--text-style-title-4-spacing:var(--font-spacing-normal);--text-style-title-4-weight:var(--font-weight-median);--text-style-title-4-height:var(--font-height-tight);--text-style-subheading-family:var(--font-family-regular);--text-style-subheading-size:var(--font-size-4x);--text-style-subheading-spacing:var(--font-spacing-normal);--text-style-subheading-weight:var(--font-weight-median);--text-style-subheading-height:var(--font-height-normal);--text-style-body-large-family:var(--font-family-regular);--text-style-body-large-size:var(--font-size-3x);--text-style-body-large-spacing:var(--font-spacing-normal);--text-style-body-large-weight:var(--font-weight-neutral);--text-style-body-large-height:var(--font-height-normal);--text-style-body-large-strong-weight:var(--font-weight-bulky);--text-style-body-small-family:var(--font-family-regular);--text-style-body-small-size:var(--font-size-2x);--text-style-body-small-spacing:var(--font-spacing-normal);--text-style-body-small-weight:var(--font-weight-neutral);--text-style-body-small-height:var(--font-height-normal);--text-style-body-small-strong-weight:var(--font-weight-bulky);--text-style-label-large-family:var(--font-family-regular);--text-style-label-large-size:var(--font-size-3x);--text-style-label-large-spacing:var(--font-spacing-normal);--text-style-label-large-weight:var(--font-weight-median);--text-style-label-large-height:var(--font-height-normal);--text-style-label-small-family:var(--font-family-regular);--text-style-label-small-size:var(--font-size-2x);--text-style-label-small-spacing:var(--font-spacing-loose);--text-style-label-small-weight:var(--font-weight-median);--text-style-label-small-height:var(--font-height-normal);--text-style-micro-family:var(--font-family-regular);--text-style-micro-size:var(--font-size-1x);--text-style-micro-spacing:var(--font-spacing-loose);--text-style-micro-weight:var(--font-weight-neutral);--text-style-micro-height:var(--font-height-tight)}.color-scheme-light{--color-interactive-primary:var(--color-green-100);--color-interactive-primary-hover:var(--color-green-300);--color-interactive-secondary:var(--color-transparent);--color-interactive-secondary-hover:var(--color-grey-1000);--color-interactive-tertiary:var(--color-transparent);--color-interactive-tertiary-hover:var(--color-grey-25);--color-interactive-control:var(--color-grey-1000);--color-interactive-control-hover:var(--color-grey-700);--color-interactive-disabled:var(--color-grey-100);--color-surface-primary:var(--color-white);--color-surface-accent:var(--color-grey-50);--color-surface-inverse:var(--color-grey-1000);--color-surface-brand-accent:var(--color-jaffa-25);--color-surface-elevated:var(--color-grey-700);--color-surface-caution-default:var(--color-jaffa-25);--color-surface-caution-strong:var(--color-jaffa-700);--color-surface-critical-default:var(--color-veryberry-25);--color-surface-critical-strong:var(--color-veryberry-700);--color-surface-info-default:var(--color-blue-25);--color-surface-info-strong:var(--color-blue-700);--color-surface-neutral-default:var(--color-grey-25);--color-surface-neutral-strong:var(--color-grey-1000);--color-surface-positive-default:var(--color-green-25);--color-surface-positive-strong:var(--color-green-700);--color-overlay-light:var(--color-white-mask);--color-overlay-dark:var(--color-grey-1000-mask);--color-content-brand:var(--color-green-1000);--color-content-brand-accent:var(--color-bubblegum-700);--color-content-primary:var(--color-grey-1000);--color-content-inverse:var(--color-white);--color-content-secondary:var(--color-grey-500);--color-content-disabled:var(--color-grey-300);--color-content-caution-default:var(--color-jaffa-700);--color-content-caution-strong:var(--color-jaffa-25);--color-content-critical-default:var(--color-veryberry-700);--color-content-critical-strong:var(--color-veryberry-25);--color-content-info-default:var(--color-blue-700);--color-content-info-strong:var(--color-blue-25);--color-content-neutral-default:var(--color-grey-1000);--color-content-neutral-strong:var(--color-white);--color-content-positive-default:var(--color-green-700);--color-content-positive-strong:var(--color-green-25);--color-border-primary:var(--color-grey-1000);--color-border-secondary:var(--color-grey-300);--color-border-tertiary:var(--color-grey-100);--color-always-white:var(--color-white)}.color-scheme-dark{--color-interactive-primary:var(--color-green-100);--color-interactive-primary-hover:var(--color-green-300);--color-interactive-secondary:var(--color-transparent);--color-interactive-secondary-hover:var(--color-white);--color-interactive-tertiary:var(--color-transparent);--color-interactive-tertiary-hover:var(--color-grey-700);--color-interactive-control:var(--color-white);--color-interactive-control-hover:var(--color-grey-100);--color-interactive-disabled:var(--color-grey-700);--color-surface-primary:var(--color-grey-1000);--color-surface-accent:var(--color-grey-700);--color-surface-inverse:var(--color-white);--color-surface-brand-accent:var(--color-grey-700);--color-surface-elevated:var(--color-grey-700);--color-surface-caution-default:var(--color-jaffa-1000);--color-surface-caution-strong:var(--color-jaffa-500);--color-surface-critical-default:var(--color-veryberry-1000);--color-surface-critical-strong:var(--color-veryberry-500);--color-surface-info-default:var(--color-blue-1000);--color-surface-info-strong:var(--color-blue-500);--color-surface-neutral-default:var(--color-grey-700);--color-surface-neutral-strong:var(--color-white);--color-surface-positive-default:var(--color-green-1000);--color-surface-positive-strong:var(--color-green-500);--color-overlay-light:var(--color-white-mask);--color-overlay-dark:var(--color-grey-1000-mask);--color-content-brand:var(--color-green-1000);--color-content-brand-accent:var(--color-bubblegum-100);--color-content-primary:var(--color-white);--color-content-inverse:var(--color-grey-1000);--color-content-secondary:var(--color-grey-100);--color-content-disabled:var(--color-grey-500);--color-content-caution-default:var(--color-jaffa-500);--color-content-caution-strong:var(--color-jaffa-1000);--color-content-critical-default:var(--color-veryberry-500);--color-content-critical-strong:var(--color-veryberry-1000);--color-content-info-default:var(--color-blue-500);--color-content-info-strong:var(--color-blue-1000);--color-content-neutral-default:var(--color-white);--color-content-neutral-strong:var(--color-grey-1000);--color-content-positive-default:var(--color-green-500);--color-content-positive-strong:var(--color-green-1000);--color-border-primary:var(--color-white);--color-border-secondary:var(--color-grey-500);--color-border-tertiary:var(--color-grey-700);--color-always-white:var(--color-white)}</style>
+    <style>.brand-neue-button{gap:var(--spacing-2x);border-radius:var(--roundness-subtle);background:var(--color-interactive-primary);color:var(--color-content-brand);font-family:PolySans-Median;font-size:var(--font-size-2x);letter-spacing:.02em;text-align:center;padding:0 20px}.brand-neue-button:hover,.brand-neue-button:active,.brand-neue-button:focus{background:var(--color-interactive-primary-hover)}.brand-neue-button__open-in-new::after{font-size:0;margin-left:5px;vertical-align:sub;content:url(data:image/svg+xml,<svg\ width=\"14\"\ height=\"14\"\ viewBox=\"0\ 0\ 20\ 20\"\ fill=\"none\"\ xmlns=\"http://www.w3.org/2000/svg\"><g\ id=\"ico-/-24-/-actions-/-open_in_new\"><path\ id=\"Icon-color\"\ d=\"M17.5\ 12.0833V15.8333C17.5\ 16.7538\ 16.7538\ 17.5\ 15.8333\ 17.5H4.16667C3.24619\ 17.5\ 2.5\ 16.7538\ 2.5\ 15.8333V4.16667C2.5\ 3.24619\ 3.24619\ 2.5\ 4.16667\ 2.5H7.91667C8.14679\ 2.5\ 8.33333\ 2.68655\ 8.33333\ 2.91667V3.75C8.33333\ 3.98012\ 8.14679\ 4.16667\ 7.91667\ 4.16667H4.16667V15.8333H15.8333V12.0833C15.8333\ 11.8532\ 16.0199\ 11.6667\ 16.25\ 11.6667H17.0833C17.3135\ 11.6667\ 17.5\ 11.8532\ 17.5\ 12.0833ZM17.3167\ 2.91667L17.0917\ 2.69167C16.98\ 2.57535\ 16.8278\ 2.50668\ 16.6667\ 2.5H11.25C11.0199\ 2.5\ 10.8333\ 2.68655\ 10.8333\ 2.91667V3.75C10.8333\ 3.98012\ 11.0199\ 4.16667\ 11.25\ 4.16667H14.6583L7.625\ 11.2C7.54612\ 11.2782\ 7.50175\ 11.3847\ 7.50175\ 11.4958C7.50175\ 11.6069\ 7.54612\ 11.7134\ 7.625\ 11.7917L8.20833\ 12.375C8.28657\ 12.4539\ 8.39307\ 12.4982\ 8.50417\ 12.4982C8.61527\ 12.4982\ 8.72176\ 12.4539\ 8.8\ 12.375L15.8333\ 5.35V8.75C15.8333\ 8.98012\ 16.0199\ 9.16667\ 16.25\ 9.16667H17.0833C17.3135\ 9.16667\ 17.5\ 8.98012\ 17.5\ 8.75V3.33333C17.4955\ 3.17342\ 17.4299\ 3.02132\ 17.3167\ 2.90833V2.91667Z\"\ fill=\"%231A4200\"/></g></svg>)}</style>
+    <style type="text/css">.fancybox-margin{margin-right:15px}</style>
+    <script src="https://bat.bing.com/p/action/16005611.js" type="text/javascript" async="" data-ueto="ueto_8c931ec7a9"></script>
+        <script src="https://g.lzd-cdn.org/g/mtb/lib-mtop/2.5.1/polyfillB.js,mtb/lib-promise/3.1.3/mtop.js,mtb/lib-modules/1.1.4/pc.js"></script>
+    <meta http-equiv="origin-trial" content="A7JYkbIvWKmS8mWYjXO12SIIsfPdI7twY91Y3LWOV/YbZmN1ZhYv8O+Zs6/IPCfBE99aV9tIC8sWZSCN09vf7gkAAACWeyJvcmlnaW4iOiJodHRwczovL2N0LnBpbnRlcmVzdC5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZzIiLCJleHBpcnkiOjE3NDIzNDIzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+<style>body{background-color:#000000;background-image:linear-gradient(315deg,#ffee00 0%,#000000 74%);background-attachment:fixed}.site-header,.global-header,.site-header__sites,.site-header__categories{background-color:#a844fb!important;background-image:linear-gradient(315deg,#000000 0%,#000000 74%)!important}.item-preview,.purchase-panel,.box--no-padding{background-color:rgba(235, 225, 225, 0.1)!important;backdrop-filter:blur(12px)!important;-webkit-backdrop-filter:blur(12px)!important;border-radius:16px!important;border:1px solid rgba(255,255,255,.2)!important;box-shadow:0 4px 30px rgba(0,0,0,.1)}.item-preview,.purchase-panel{padding:24px!important;border:none!important}.item-preview__actions{background:transparent!important}.purchase-panel h3,.purchase-panel .price,.purchase-panel p,.purchase-panel label,.purchase-panel a,.purchase-panel .meta-attributes__attr-name,.purchase-panel .meta-attributes__attr-detail{color:#fff!important;text-shadow:1px 1px 3px rgba(0,0,0,.5)}.purchase-panel a{color:#a8eb12!important}</style>
+</head>
+
+<body class="color-scheme-light" data-view="app impressionTracker" data-responsive="true" data-user-signed-in="false" __processed_046ac43c-cdf6-4311-9a75-3ea1775342f5__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJlbmFibGVkIiwiUElOVEVSRVNUIjoiZW5hYmxlZCIsIklOU1RBR1JBTSI6ImVuYWJsZWQiLCJUSUtUT0siOiJkaXNhYmxlZCIsIkxJTktFRElOIjoiZW5hYmxlZCIsIkNPTkZJRyI6ImRpc2FibGVkIn0sInZlcnNpb24iOiIyLjAuMjYiLCJzY29yZSI6MjAwMjYwfV0=">
+    <script src="https://public-assets.envato-static.com/assets/gtm_measurements-40b0a0f82bafab0a0bb77fc35fe1da0650288300b85126c95b4676bcff6e4584.js" nonce="TFNQUvYHwdi8uHoMheRs/Q=="></script>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8KL5Q5" height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGCDGPL6" height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <script nonce="TFNQUvYHwdi8uHoMheRs/Q==">//<![CDATA[
+(function(){function normalizeAttributeValue(value){if(value===undefined||value===null)return undefined
+var normalizedValue
+if(Array.isArray(value)){normalizedValue=normalizedValue||value.map(normalizeAttributeValue).filter(Boolean).join(', ')}normalizedValue=normalizedValue||value.toString().toLowerCase().trim().replace(/&amp;/g,'&').replace(/&#39;/g,"'").replace(/\s+/g,' ')
+if(normalizedValue==='')return undefined
+return normalizedValue}var pageAttributes={app_name:normalizeAttributeValue('Marketplace'),app_env:normalizeAttributeValue('production'),app_version:normalizeAttributeValue('f7d8b3d494288b34cb00105ee5d230d68b0ccca7'),page_type:normalizeAttributeValue('item'),page_location:window.location.href,page_title:document.title,page_referrer:document.referrer,ga_param:normalizeAttributeValue(''),event_attributes:null,user_attributes:{user_id:normalizeAttributeValue(''),market_user_id:normalizeAttributeValue(''),}}
+dataLayer.push(pageAttributes)
+dataLayer.push({event:'analytics_ready',event_attributes:{event_type:'user',custom_timestamp:Date.now()}})})();
+//]]></script>
+    <style>.live-preview-btn--blue .live-preview{background-color:#00857e}.live-preview-btn--blue .live-preview:hover,.live-preview-btn--blue .live-preview:focus{background-color:#0bf}</style>
+
+    <div class="page" bis_skin_checked="1">
+        <div class="page__off-canvas--left overflow" bis_skin_checked="1">
+            <div class="off-canvas-left js-off-canvas-left" bis_skin_checked="1">
+                <div class="off-canvas-left__top" bis_skin_checked="1">
+                    <a href="https://dishub.palikab.go.id/">Envato Market</a>
+                </div>
+                <div class="off-canvas-left__current-site -color-themeforest" bis_skin_checked="1">
+                    <span class="off-canvas-left__site-title">
+                        Web Themes &amp; Templates
+                    </span>
+                    <a class="off-canvas-left__current-site-toggle -white-arrow -color-themeforest" data-view="dropdown" data-dropdown-target=".off-canvas-left__sites" href="https://dishub.palikab.go.id/"></a>
+                </div>
+                <div class="off-canvas-left__sites is-hidden" id="off-canvas-sites" bis_skin_checked="1">
+                    <a class="off-canvas-left__site" href="hhttps://dishub.palikab.go.id/">
+                        <span class="off-canvas-left__site-title">
+                            Code
+                        </span>
+                        <i class="e-icon -icon-right-open"></i>
+                    </a> <a class="off-canvas-left__site" href="https://dishub.palikab.go.id/">
+                        <span class="off-canvas-left__site-title">
+                            Video
+                        </span>
+                        <i class="e-icon -icon-right-open"></i>
+                    </a> <a class="off-canvas-left__site" href="https://dishub.palikab.go.id/">
+                        <span class="off-canvas-left__site-title">
+                            Audio
+                        </span>
+                        <i class="e-icon -icon-right-open"></i>
+                    </a> <a class="off-canvas-left__site" href="https://dishub.palikab.go.id/">
+                        <span class="off-canvas-left__site-title">
+                            Graphics
+                        </span>
+                        <i class="e-icon -icon-right-open"></i>
+                    </a> <a class="off-canvas-left__site" href="https://dishub.palikab.go.id/">
+                        <span class="off-canvas-left__site-title">
+                            Photos
+                        </span>
+                        <i class="e-icon -icon-right-open"></i>
+                    </a> <a class="off-canvas-left__site" href="https://dishub.palikab.go.id/">
+                        <span class="off-canvas-left__site-title">
+                            3D Files
+                        </span>
+                        <i class="e-icon -icon-right-open"></i>
+                    </a>
+                </div>
+                <div class="off-canvas-left__search" bis_skin_checked="1">
+                    <form id="search" action="https://dishub.palikab.go.id/" accept-charset="UTF-8" method="get">
+                        <div class="search-field -border-none" bis_skin_checked="1">
+                            <div class="search-field__input" bis_skin_checked="1">
+                                <input id="term" name="term" type="search" placeholder="4D" class="search-field__input-field">
+                            </div>
+                            <button class="search-field__button" type="submit">
+                                <i class="e-icon -icon-search"><span class="e-icon__alt">99</span></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <ul>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-all-items" href="https://dishub.palikab.go.id/">
+                            All Items
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-all-items">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Popular Files</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Featured Files</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Top New Files</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Follow Feed</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Top Authors</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Top New
+                                    Authors</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Public Collections</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">View All Categories</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-wordpress" href="https://dishub.palikab.go.id/">
+                            WordPress
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-wordpress">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Show all
+                                    WordPress</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Popular Items</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Blog /
+                                    Magazine</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">BuddyPress</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Corporate</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Creative</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Directory &amp; Listings</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">eCommerce</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Education</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Elementor</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Entertainment</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Mobile</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Nonprofit</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Real
+                                    Estate</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Retail</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Technology</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Wedding</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Miscellaneous</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">WordPress Plugins</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-elementor" href="https://dishub.palikab.go.id/">
+                            Elementor
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-elementor">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Template Kits</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Plugins</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Themes</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+
+                        <a class="off-canvas-category-link--empty" href="https://dishub.palikab.go.id/">
+                            Hosting
+                        </a>
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-html" href="https://dishub.palikab.go.id/">
+                            HTML
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-html">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Show all
+                                    HTML</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Popular Items</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Admin Templates</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Corporate</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Creative</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Entertainment</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Mobile</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Nonprofit</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Personal</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Retail</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Specialty Pages</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Technology</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Wedding</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Miscellaneous</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-shopify" href="https://dishub.palikab.go.id/">
+                            Shopify
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-shopify">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Show all
+                                    Shopify</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Popular Items</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Fashion</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Shopping</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Health &amp; Beauty</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Technology</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Entertainment</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Miscellaneous</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+
+                        <a class="off-canvas-category-link--empty" href="https://dishub.palikab.go.id/">
+                            Jamstack
+                        </a>
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-marketing" href="https://dishub.palikab.go.id/">
+                            Marketing
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-marketing">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Show all
+                                    Marketing</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Popular Items</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Email Templates</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Landing Pages</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Unbounce Landing Pages</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-cms" href="https://dishub.palikab.go.id/">
+                            CMS
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-cms">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Show all CMS</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Popular Items</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Concrete5</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Drupal</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">HubSpot CMS Hub</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Joomla</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">MODX
+                                    Themes</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Moodle</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Webflow</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Weebly</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Miscellaneous</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-ecommerce" href="https://dishub.palikab.go.id/">
+                            eCommerce
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-ecommerce">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Show all
+                                    eCommerce</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Popular Items</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">WooCommerce</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">BigCommerce</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Drupal Commerce</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Easy Digital Downloads</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Ecwid</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Magento</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">OpenCart</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">PrestaShop</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Shopify</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Ubercart</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">VirtueMart</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Zen
+                                    Cart</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Miscellaneous</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-ui-templates" href="https://dishub.palikab.go.id/">
+                            UI Templates
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-ui-templates">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Popular Items</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Figma</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Adobe
+                                    XD</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Photoshop</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Sketch</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+
+                        <a class="off-canvas-category-link--empty" href="https://dishub.palikab.go.id/">
+                            Plugins
+                        </a>
+                    </li>
+                    <li>
+                        <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-more" href="https://dishub.palikab.go.id/">
+                            More
+                        </a>
+                        <ul class="is-hidden" id="off-canvas-more">
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Blogging</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Courses</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Facebook Templates</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Free Elementor Templates</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Free
+                                    WordPress Themes</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Forums</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Ghost
+                                    Themes</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub" href="https://dishub.palikab.go.id/">Tumblr</a>
+                            </li>
+                            <li>
+                                <a class="off-canvas-category-link--sub external-link elements-nav__category-link" target="_blank" data-analytics-view-payload="{&quot;eventName&quot;:&quot;view_promotion&quot;,&quot;contextDetail&quot;:&quot;sub nav&quot;,&quot;ecommerce&quot;:{&quot;promotionId&quot;:&quot;Unlimited Creative Assets&quot;,&quot;promotionName&quot;:&quot;Unlimited Creative Assets&quot;,&quot;promotionType&quot;:&quot;elements referral&quot;}}" data-analytics-click-payload="{&quot;eventName&quot;:&quot;select_promotion&quot;,&quot;contextDetail&quot;:&quot;sub nav&quot;,&quot;ecommerce&quot;:{&quot;promotionId&quot;:&quot;Unlimited Creative Assets&quot;,&quot;promotionName&quot;:&quot;Unlimited Creative Assets&quot;,&quot;promotionType&quot;:&quot;elements referral&quot;}}" href="https://dishub.palikab.go.id/">Unlimited
+                                    Creative Assets</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <a class="elements-nav__category-link external-link" target="_blank" data-analytics-view-payload="{&quot;eventName&quot;:&quot;view_promotion&quot;,&quot;contextDetail&quot;:&quot;site switcher&quot;,&quot;ecommerce&quot;:{&quot;promotionId&quot;:&quot;switcher_mobile_31JUL2024&quot;,&quot;promotionName&quot;:&quot;switcher_mobile_31JUL2024&quot;,&quot;promotionType&quot;:&quot;elements referral&quot;}}" data-analytics-click-payload="{&quot;eventName&quot;:&quot;select_promotion&quot;,&quot;contextDetail&quot;:&quot;site switcher&quot;,&quot;ecommerce&quot;:{&quot;promotionId&quot;:&quot;switcher_mobile_31JUL2024&quot;,&quot;promotionName&quot;:&quot;switcher_mobile_31JUL2024&quot;,&quot;promotionType&quot;:&quot;elements referral&quot;}}" href="https://dishub.palikab.go.id/">Unlimited
+                            Downloads</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="page__off-canvas--right overflow" bis_skin_checked="1">
+            <div class="off-canvas-right" bis_skin_checked="1">
+                <a class="off-canvas-right__link--cart" href="https://dishub.palikab.go.id/">
+                    Guest Cart
+                    <div class="shopping-cart-summary is-empty" data-view="cartCount" bis_skin_checked="1">
+                        <span class="js-cart-summary-count shopping-cart-summary__count">90</span>
+                        <i class="e-icon -icon-cart"></i>
+                    </div>
+                </a>
+                <a class="off-canvas-right__link" href="https://www.engagedweddingplanner.com/">
+                    Create an Envato Account
+                    <i class="e-icon -icon-envato"></i>
+                </a>
+                <a class="off-canvas-right__link" href="https://www.engagedweddingplanner.com/">
+                    Sign In
+                    <i class="e-icon -icon-login"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="page__canvas" bis_skin_checked="1">
+            <div class="canvas" bis_skin_checked="1">
+                <div class="canvas__header" bis_skin_checked="1">
+
+                    <header class="site-header">
+                        <div class="site-header__mini is-hidden-desktop" bis_skin_checked="1">
+                            <div class="header-mini" bis_skin_checked="1">
+                                <div class="header-mini__button--cart" bis_skin_checked="1">
+                                    <a class="btn btn--square" href="https://dishub.palikab.go.id/">
+                                        <svg width="14px" height="14px" viewBox="0 0 14 14" class="header-mini__button-cart-icon" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" role="img">
+                                            <title>Cart</title>
+                                            <path d="M 0.009 1.349 C 0.009 1.753 0.347 2.086 0.765 2.086 C 0.765 2.086 0.766 2.086 0.767 2.086 L 0.767 2.09 L 2.289 2.09 L 5.029 7.698 L 4.001 9.507 C 3.88 9.714 3.812 9.958 3.812 10.217 C 3.812 11.028 4.496 11.694 5.335 11.694 L 14.469 11.694 L 14.469 11.694 C 14.886 11.693 15.227 11.36 15.227 10.957 C 15.227 10.552 14.886 10.221 14.469 10.219 L 14.469 10.217 L 5.653 10.217 C 5.547 10.217 5.463 10.135 5.463 10.031 L 5.487 9.943 L 6.171 8.738 L 11.842 8.738 C 12.415 8.738 12.917 8.436 13.175 7.978 L 15.901 3.183 C 15.96 3.08 15.991 2.954 15.991 2.828 C 15.991 2.422 15.65 2.09 15.23 2.09 L 3.972 2.09 L 3.481 1.077 L 3.466 1.043 C 3.343 0.79 3.084 0.612 2.778 0.612 C 2.777 0.612 0.765 0.612 0.765 0.612 C 0.347 0.612 0.009 0.943 0.009 1.349 Z M 3.819 13.911 C 3.819 14.724 4.496 15.389 5.335 15.389 C 6.171 15.389 6.857 14.724 6.857 13.911 C 6.857 13.097 6.171 12.434 5.335 12.434 C 4.496 12.434 3.819 13.097 3.819 13.911 Z M 11.431 13.911 C 11.431 14.724 12.11 15.389 12.946 15.389 C 13.784 15.389 14.469 14.724 14.469 13.911 C 14.469 13.097 13.784 12.434 12.946 12.434 C 12.11 12.434 11.431 13.097 11.431 13.911 Z">
+                                            </path>
+
+                                        </svg>
+
+
+                                        <span class="is-hidden">Cart</span>
+                                        <span class="header-mini__button-cart-cart-amount is-hidden">
+                                            0
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="header-mini__button--account" bis_skin_checked="1">
+                                    <a class="btn btn--square" data-view="offCanvasNavToggle" data-off-canvas="right" href="https://dishub.palikab.go.id/">
+                                        <i class="e-icon -icon-person"></i>
+                                        <span class="is-hidden">Account</span>
+                                    </a>
+                                </div>
+
+                                <div class="header-mini__button--categories" bis_skin_checked="1">
+                                    <a class="btn btn--square" data-view="offCanvasNavToggle" data-off-canvas="left" href="https://dishub.palikab.go.id/">
+                                        <i class="e-icon -icon-hamburger"></i>
+                                        <span class="is-hidden">Sites, Search &amp; Categories</span>
+                                    </a>
+                                </div>
+
+                                <div class="header-mini__logo" bis_skin_checked="1">
+                                    <a href="https://dishub.palikab.go.id/">
+                                        <img alt="JPKUY" src="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760538678/logo-jpkuy-99_k4xn7k.png" style="height:40px; width:auto; display:inline-block;">
+                                    </a>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="global-header is-hidden-tablet-and-below" bis_skin_checked="1">
+
+                            <div class="grid-container -layout-wide" bis_skin_checked="1">
+                                <div class="global-header__wrapper" bis_skin_checked="1">
+                                    <a href="https://dishub.palikab.go.id/">
+                                        <img height="50" alt="JPKUY" class="global-header__logo" src="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760538678/logo-jpkuy-99_k4xn7k.png">
+                                    </a>
+                                    <nav class="global-header-menu" role="navigation">
+                                        <ul class="global-header-menu__list">
+                                            <li class="global-header-menu__list-item">
+                                                <a class="global-header-menu__link" href="https://dishub.palikab.go.id/">
+                                                    <span class="global-header-menu__link-text">
+                                                        JPKUY99
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="global-header-menu__list-item">
+                                                <a class="global-header-menu__link" href="https://dishub.palikab.go.id/">
+                                                    <span class="global-header-menu__link-text">
+                                                        JPKUY
+                                                    </span>
+                                                </a>
+                                            </li>
+
+
+                                            <li data-view="globalHeaderMenuDropdownHandler" class="global-header-menu__list-item--with-dropdown">
+                                                <a data-lazy-load-trigger="mouseover" class="global-header-menu__link" href="https://dishub.palikab.go.id/">
+                                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="global-header-menu__icon" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" role="img">
+                                                        <title>Menu</title>
+                                                        <path d="M3.5 2A1.5 1.5 0 0 1 5 3.5 1.5 1.5 0 0 1 3.5 5 1.5 1.5 0 0 1 2 3.5 1.5 1.5 0 0 1 3.5 2zM8 2a1.5 1.5 0 0 1 1.5 1.5A1.5 1.5 0 0 1 8 5a1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 8 2zM12.5 2A1.5 1.5 0 0 1 14 3.5 1.5 1.5 0 0 1 12.5 5 1.5 1.5 0 0 1 11 3.5 1.5 1.5 0 0 1 12.5 2zM3.5 6.5A1.5 1.5 0 0 1 5 8a1.5 1.5 0 0 1-1.5 1.5A1.5 1.5 0 0 1 2 8a1.5 1.5 0 0 1 1.5-1.5zM8 6.5A1.5 1.5 0 0 1 9.5 8 1.5 1.5 0 0 1 8 9.5 1.5 1.5 0 0 1 6.5 8 1.5 1.5 0 0 1 8 6.5zM12.5 6.5A1.5 1.5 0 0 1 14 8a1.5 1.5 0 0 1-1.5 1.5A1.5 1.5 0 0 1 11 8a1.5 1.5 0 0 1 1.5-1.5zM3.5 11A1.5 1.5 0 0 1 5 12.5 1.5 1.5 0 0 1 3.5 14 1.5 1.5 0 0 1 2 12.5 1.5 1.5 0 0 1 3.5 11zM8 11a1.5 1.5 0 0 1 1.5 1.5A1.5 1.5 0 0 1 8 14a1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 8 11zM12.5 11a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5z">
+                                                        </path>
+
+                                                    </svg>
+
+                                                    <span class="global-header-menu__link-text">
+                                                        Our Products
+                                                    </span>
+                                                </a>
+                                            <li class="global-header-menu__list-item -background-light -border-radius">
+                                                <a id="spec-link-cart" class="global-header-menu__link h-pr1" href="https://dishub.palikab.go.id/">
+
+                                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="global-header-menu__icon global-header-menu__icon-cart" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" role="img">
+                                                        <title>Cart</title>
+                                                        <path d="M 0.009 1.349 C 0.009 1.753 0.347 2.086 0.765 2.086 C 0.765 2.086 0.766 2.086 0.767 2.086 L 0.767 2.09 L 2.289 2.09 L 5.029 7.698 L 4.001 9.507 C 3.88 9.714 3.812 9.958 3.812 10.217 C 3.812 11.028 4.496 11.694 5.335 11.694 L 14.469 11.694 L 14.469 11.694 C 14.886 11.693 15.227 11.36 15.227 10.957 C 15.227 10.552 14.886 10.221 14.469 10.219 L 14.469 10.217 L 5.653 10.217 C 5.547 10.217 5.463 10.135 5.463 10.031 L 5.487 9.943 L 6.171 8.738 L 11.842 8.738 C 12.415 8.738 12.917 8.436 13.175 7.978 L 15.901 3.183 C 15.96 3.08 15.991 2.954 15.991 2.828 C 15.991 2.422 15.65 2.09 15.23 2.09 L 3.972 2.09 L 3.481 1.077 L 3.466 1.043 C 3.343 0.79 3.084 0.612 2.778 0.612 C 2.777 0.612 0.765 0.612 0.765 0.612 C 0.347 0.612 0.009 0.943 0.009 1.349 Z M 3.819 13.911 C 3.819 14.724 4.496 15.389 5.335 15.389 C 6.171 15.389 6.857 14.724 6.857 13.911 C 6.857 13.097 6.171 12.434 5.335 12.434 C 4.496 12.434 3.819 13.097 3.819 13.911 Z M 11.431 13.911 C 11.431 14.724 12.11 15.389 12.946 15.389 C 13.784 15.389 14.469 14.724 14.469 13.911 C 14.469 13.097 13.784 12.434 12.946 12.434 C 12.11 12.434 11.431 13.097 11.431 13.911 Z">
+                                                        </path>
+
+                                                    </svg>
+
+
+                                                    <span class="global-header-menu__link-cart-amount is-hidden" data-view="headerCartCount" data-test-id="header_cart_count">0</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="global-header-menu__list-item -background-light -border-radius">
+                                                <a class="global-header-menu__link h-pl1" data-view="modalAjax" href="https://dishub.palikab.go.id/">
+                                                    <span id="spec-user-username" class="global-header-menu__link-text">
+                                                        Sign In
+                                                    </span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="site-header__sites is-hidden-tablet-and-below" bis_skin_checked="1">
+              <div class="header-sites header-site-titles" bis_skin_checked="1">
+                <div class="grid-container -layout-wide" bis_skin_checked="1">
+                  <nav class="header-site-titles__container">
+                    <div class="header-site-titles__site" bis_skin_checked="1">
+                      <a class="header-site-titles__link t-link is-active" alt="Web Templates" href="https://dishub.palikab.go.id/">JPKUY</a>
+                    </div>
+                    <div class="header-site-titles__site" bis_skin_checked="1">
+                      <a class="header-site-titles__link t-link" alt="Code" href="https://dishub.palikab.go.id/">JPKUY99</a>
+                    </div>
+                    <div class="header-site-titles__site" bis_skin_checked="1">
+                      <a class="header-site-titles__link t-link" alt="Video" href="https://dishub.palikab.go.id/">JPKUY 99</a>
+                    </div>
+                    <div class="header-site-titles__site" bis_skin_checked="1">
+                      <a class="header-site-titles__link t-link" alt="Music" href="https://dishub.palikab.go.id/">DAFTAR JPKUY99</a>
+                    </div>
+                    <div class="header-site-titles__site" bis_skin_checked="1">
+                      <a class="header-site-titles__link t-link" alt="Graphics" href="https://dishub.palikab.go.id/">TOGEL </a>
+                    </div>
+                    <div class="header-site-titles__site" bis_skin_checked="1">
+                      <a class="header-site-titles__link t-link" alt="Photos" href="https://dishub.palikab.go.id/">SITUS TOGEL</a>
+                    </div>
+                    <div class="header-site-titles__site" bis_skin_checked="1">
+                      <a class="header-site-titles__link t-link" alt="3D Files" href="https://dishub.palikab.go.id/">PASARAN TOGEL</a>
+                    </div>
+
+                                        <div class="header-site-titles__site elements-nav__container" bis_skin_checked="1">
+                                            <a class="header-site-titles__link t-link elements-nav__main-link" href="https://elements.envato.com/?utm_campaign=elements_mkt-switcher_31JUL2024&amp;utm_content=tf_item_8988002&amp;utm_medium=referral&amp;utm_source=themeforest.net" target="_blank">
+                                                <span>
+                                                    DOWNLOAD
+                                                </span>
+                                            </a>
+
+                                            <a target="_blank" class="elements-nav__dropdown-container unique-selling-points__variant" data-analytics-view-payload="{&quot;eventName&quot;:&quot;view_promotion&quot;,&quot;contextDetail&quot;:&quot;site switcher&quot;,&quot;ecommerce&quot;:{&quot;promotionId&quot;:&quot;elements_mkt-switcher_31JUL2024&quot;,&quot;promotionName&quot;:&quot;elements_mkt-switcher_31JUL2024&quot;,&quot;promotionType&quot;:&quot;elements referral&quot;}}" data-analytics-click-payload="{&quot;eventName&quot;:&quot;select_promotion&quot;,&quot;contextDetail&quot;:&quot;site switcher&quot;,&quot;ecommerce&quot;:{&quot;promotionId&quot;:&quot;elements_mkt-switcher_31JUL2024&quot;,&quot;promotionName&quot;:&quot;elements_mkt-switcher_31JUL2024&quot;,&quot;promotionType&quot;:&quot;elements referral&quot;}}" href="https://elements.envato.com/?utm_campaign=elements_mkt-switcher_31JUL2024&amp;utm_content=tf_item_8988002&amp;utm_medium=referral&amp;utm_source=themeforest.net">
+                                                <div class="elements-nav__main-panel" bis_skin_checked="1">
+                                                    <img class="elements-nav__logo-container" loading="lazy" src="https://public-assets.envato-static.com/assets/header/EnvatoElements-logo-4f70ffb865370a5fb978e9a1fc5bbedeeecdfceb8d0ebec2186aef4bee5db79d.svg" alt="Elements logo" height="23" width="101">
+
+                                                    <div class="elements-nav__punch-line" bis_skin_checked="1">
+                                                        <h2>
+                                                            Looking for unlimited downloads?
+                                                        </h2>
+                                                        <p>
+                                                            Subscribe to Envato Elements.
+                                                        </p>
+                                                        <ul>
+                                                            <li>
+                                                                <img src="https://public-assets.envato-static.com/assets/header/badge-a65149663b95bcee411e80ccf4da9788f174155587980d8f1d9c44fd8b59edd8.svg" alt="badge" width="20" height="20">
+                                                                Millions of premium assets
+                                                            </li>
+                                                            <li>
+                                                                <img src="https://public-assets.envato-static.com/assets/header/thumbs_up-e5ce4c821cfd6a6aeba61127a8e8c4d2d7c566e654f588a22708c64d66680869.svg" alt="thumbs up" width="20" height="20">
+                                                                Great value subscription
+                                                            </li>
+                                                        </ul>
+                                                        <button class="brand-neue-button brand-neue-button__open-in-new elements-nav__cta">Let's
+                                                            create</button>
+                                                        <p></p>
+                                                    </div>
+                                                </div>
+                                                <div class="elements-nav__secondary-panel" bis_skin_checked="1">
+                                                    <img class="elements-nav__secondary-panel__collage" loading="lazy" src="https://public-assets.envato-static.com/assets/header/items-collage-1x-a39e4a5834e75c32a634cc7311720baa491687b1aaa4b709ebd1acf0f8427b53.png" srcset="https://public-assets.envato-static.com/assets/header/items-collage-2x-75e1ad16a46b9788861780a57feeb5fd1ad1026ecce9330302f0ef8f6f542697.png 2x" alt="Collage of Elements items" width="267" height="233">
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="header-site-floating-logo__container" bis_skin_checked="1">
+                                            <div class="" bis_skin_checked="1">
+                                                <img src="https://www.specialmomentsbridalshop.net/gifkucingfengshui.gif" alt="JPKUY" style="max-width: 50px; height: auto; object-fit: contain;" data-spm-anchor-id="0.0.header.i0.27e27142EyRkBl">
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="site-header__categories is-hidden-tablet-and-below" bis_skin_checked="1">
+                            <div class="header-categories" bis_skin_checked="1">
+                                <div class="grid-container -layout-wide" bis_skin_checked="1">
+                                    <ul class="header-categories__links">
+                                        <li class="header-categories__links-item">
+                                            <a class="header-categories__main-link" data-view="touchOnlyDropdown" data-dropdown-target=".js-categories-0-dropdown" href="https://dishub.palikab.go.id/">JPKUY</a>
+                                        </li>
+                                        <li class="header-categories__links-item">
+                                            <a class="header-categories__main-link" data-view="touchOnlyDropdown" data-dropdown-target=".js-categories-1-dropdown" href="https://dishub.palikab.go.id/">JPKUY99</a>
+                                        </li>
+                                        <li class="header-categories__links-item">
+                                            <a class="header-categories__main-link" data-view="touchOnlyDropdown" data-dropdown-target=".js-categories-1-dropdown" href="https://dishub.palikab.go.id/">JPKUY 99</a>
+                                        </li>
+                                        <li class="header-categories__links-item">
+                                            <a class="header-categories__main-link" data-view="touchOnlyDropdown" data-dropdown-target=".js-categories-2-dropdown" href="https://dishub.palikab.go.id/">PROMOSI JPKUY99</a>
+                                        </li>
+                                        <li class="header-categories__links-item">
+                                            <a class="header-categories__main-link header-categories__main-link--empty" href="https://dishub.palikab.go.id/">AKTIVITAS PROMOSI</a>
+                                        </li>
+                                    </ul>
+                                        <div class="header-categories__search" bis_skin_checked="1">
+                                            <form id="search" data-view="searchField" action="https://dishub.palikab.go.id/" accept-charset="UTF-8" method="get">
+                                                <div class="search-field -border-light h-ml2" bis_skin_checked="1">
+                                                    <div class="search-field__input" bis_skin_checked="1">
+                                                        <input id="term" name="term" class="js-term search-field__input-field" type="search" placeholder="JPKUY">
+                                                    </div>
+                                                    <button class="search-field__button" type="submit">
+                                                        <i class="e-icon -icon-search"><span class="e-icon__alt">99 Pasaran Togel Online Di Situs Jpkuy99 </span></i>
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </header>
+                </div>
+
+                <div class="js-canvas__body canvas__body" bis_skin_checked="1">
+                    <div class="grid-container" bis_skin_checked="1">
+                    </div>
+
+
+
+                    <div class="context-header " bis_skin_checked="1">
+                        <div class="grid-container " bis_skin_checked="1">
+                            <nav class="breadcrumbs h-text-truncate  ">
+                            </nav>
+
+                            <div class="item-header" data-view="itemHeader" bis_skin_checked="1">
+                                <div class="item-header__top" bis_skin_checked="1">
+                                    <div class="item-header__title" bis_skin_checked="1">
+                                        <h1 class="t-heading -color-inherit -size-l h-m0 is-hidden-phone">JPKUY | Daftar 99 Pasaran Togel Online Di Situs Jpkuy99</h1>
+
+                                        <h1 class="t-heading -color-inherit -size-xs h-m0 is-hidden-tablet-and-above">
+                                            JPKUY | Daftar 99 Pasaran Togel Online Di Situs Jpkuy99
+                                        </h1>
+                                    </div>
+
+                                    <div class="item-header__price is-hidden-desktop" bis_skin_checked="1">
+                                        <a class="js-item-header__cart-button e-btn--3d -color-primary -size-m" rel="nofollow" title="Add to Cart" data-view="modalAjax" href="https://dishub.palikab.go.id/">
+                                            <span class="item-header__cart-button-icon">
+                                                <i class="e-icon -icon-cart -margin-right"></i>
+                                            </span>
+
+                                            <span class="t-heading -size-m -color-light -margin-none">
+                                                <b class="t-currency"><span class="js-item-header__price">$88</span></b>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="item-header__details-section" bis_skin_checked="1">
+                                    <div class="item-header__author-details" bis_skin_checked="1">
+                                        By <a rel="author" class="js-by-author" href="https://dishub.palikab.go.id/">JPKUY</a>
+                                    </div>
+                                    <div class="item-header__sales-count" bis_skin_checked="1">
+                                        <svg width="16px" height="16px" viewBox="0 0 16 16" class="item-header__sales-count-icon" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" role="img">
+                                            <title>Cart</title>
+                                            <path d="M 0.009 1.349 C 0.009 1.753 0.347 2.086 0.765 2.086 C 0.765 2.086 0.766 2.086 0.767 2.086 L 0.767 2.09 L 2.289 2.09 L 5.029 7.698 L 4.001 9.507 C 3.88 9.714 3.812 9.958 3.812 10.217 C 3.812 11.028 4.496 11.694 5.335 11.694 L 14.469 11.694 L 14.469 11.694 C 14.886 11.693 15.227 11.36 15.227 10.957 C 15.227 10.552 14.886 10.221 14.469 10.219 L 14.469 10.217 L 5.653 10.217 C 5.547 10.217 5.463 10.135 5.463 10.031 L 5.487 9.943 L 6.171 8.738 L 11.842 8.738 C 12.415 8.738 12.917 8.436 13.175 7.978 L 15.901 3.183 C 15.96 3.08 15.991 2.954 15.991 2.828 C 15.991 2.422 15.65 2.09 15.23 2.09 L 3.972 2.09 L 3.481 1.077 L 3.466 1.043 C 3.343 0.79 3.084 0.612 2.778 0.612 C 2.777 0.612 0.765 0.612 0.765 0.612 C 0.347 0.612 0.009 0.943 0.009 1.349 Z M 3.819 13.911 C 3.819 14.724 4.496 15.389 5.335 15.389 C 6.171 15.389 6.857 14.724 6.857 13.911 C 6.857 13.097 6.171 12.434 5.335 12.434 C 4.496 12.434 3.819 13.097 3.819 13.911 Z M 11.431 13.911 C 11.431 14.724 12.11 15.389 12.946 15.389 C 13.784 15.389 14.469 14.724 14.469 13.911 C 14.469 13.097 13.784 12.434 12.946 12.434 C 12.11 12.434 11.431 13.097 11.431 13.911 Z">
+                                            </path>
+
+                                        </svg>
+
+                                        <strong>9</strong> sales
+                                    </div>
+                                    <div class="item-header__envato-highlighted" bis_skin_checked="1">
+                                        <strong>99 Pasaran Togel Online Di Situs Jpkuy99</strong>
+                                        <svg width="16px" height="16px" viewBox="0 0 14 14" class="item-header__envato-checkmark-icon" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" role="img">
+                                            <title></title>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.333252 7.00004C0.333252 3.31814 3.31802 0.333374 6.99992 0.333374C8.76803 0.333374 10.4637 1.03575 11.714 2.286C12.9642 3.53624 13.6666 5.23193 13.6666 7.00004C13.6666 10.6819 10.6818 13.6667 6.99992 13.6667C3.31802 13.6667 0.333252 10.6819 0.333252 7.00004ZM6.15326 9.23337L9.89993 5.48671C10.0227 5.35794 10.0227 5.15547 9.89993 5.02671L9.54659 4.67337C9.41698 4.54633 9.20954 4.54633 9.07993 4.67337L5.91993 7.83337L4.91993 6.84004C4.85944 6.77559 4.77498 6.73903 4.68659 6.73903C4.5982 6.73903 4.51375 6.77559 4.45326 6.84004L4.09993 7.19337C4.03682 7.25596 4.00133 7.34116 4.00133 7.43004C4.00133 7.51892 4.03682 7.60412 4.09993 7.66671L5.68659 9.23337C5.74708 9.29782 5.83154 9.33439 5.91993 9.33439C6.00832 9.33439 6.09277 9.29782 6.15326 9.23337Z" fill="#79B530"></path>
+
+                                        </svg>
+                                       
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+
+                            <!-- Desktop Item Navigation -->
+                            <div class="is-hidden-tablet-and-below page-tabs" bis_skin_checked="1">
+                                <ul>
+                                    <li class="selected"><a class="js-item-navigation-item-details t-link -decoration-none" href="https://dishub.palikab.go.id/">Item Details</a>
+                                    </li>
+                                    <li><a class="js-item-navigation-reviews t-link -decoration-none" href="https://dishub.palikab.go.id/"><span>Reviews</span><span>
+                                                <div class="rating-detailed-small" bis_skin_checked="1">
+                                                    <div class="rating-detailed-small__header" bis_skin_checked="1">
+                                                        <div class="rating-detailed-small__stars" bis_skin_checked="1">
+                                                            <div class="rating-detailed-small-center__star-rating" bis_skin_checked="1">
+                                                                <i class="e-icon -icon-star">
+                                                                </i> <i class="e-icon -icon-star">
+                                                                </i> <i class="e-icon -icon-star">
+                                                                </i> <i class="e-icon -icon-star">
+                                                                </i> <i class="e-icon -icon-star">
+                                                                </i>
+                                                            </div>
+                                                            9.00
+                                                            <span class="is-visually-hidden">9.00 stars</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </span><span class="item-navigation-reviews-comments">999</span></a></li>
+                                    <li><a class="js-item-navigation-comments t-link -decoration-none" href="https://dishub.palikab.go.id/"><span>Comments</span><span class="item-navigation-reviews-comments">8,999</span></a></li>
+                                    <li><a class="js-item-navigation-support t-link -decoration-none" href="https://dishub.palikab.go.id/">Support</a>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+<style>.n-columns-2{display:grid;grid-template-columns:repeat(2,1fr);font-weight:700}.n-columns-2 a{text-align:center}.login,.register{color:#fff;padding:13px 10px}.login,.login-button{text-shadow:2px 2px #0c0f12;border-radius:10px 10px;border:1px solid rgb(255, 255, 255);background:linear-gradient(to bottom,rgb(0, 217, 255) 0,#002935 100%);color:#fff}.register,.register-button{text-shadow:2px 2px #000;border-radius:10px 10px;background:linear-gradient(to bottom,rgb(0, 225, 255) 0,#002a35 100%);border:1px solid rgb(255, 255, 255)}</style>
+<!-- Section 2 -->
+  </div>
+</div>
+
+
+                            <!-- Tablet or below Item Navigation -->
+                            <div class="page-tabs--dropdown" data-view="replaceItemNavsWithRemote" data-target=".js-remote" bis_skin_checked="1">
+                                <div class="page-tabs--dropdown__slt-custom-wlabel" bis_skin_checked="1">
+                                    <div class="slt-custom-wlabel--page-tabs--dropdown" bis_skin_checked="1">
+                                        <label>
+                                            <span class="js-label">
+                                                Item Details
+                                            </span>
+                                            <span class="slt-custom-wlabel__arrow">
+                                                <i class="e-icon -icon-arrow-fill-down"></i>
+                                            </span>
+                                        </label>
+
+                                        <select class="js-remote">
+                                            <option selected="selected" data-url="/item/marketica-marketplace-wordpress-theme/8988002">Item
+                                                Details</option>
+                                            <option data-url="/item/marketica-marketplace-wordpress-theme/reviews/8988002">
+                                                Reviews (75)</option>
+                                            <option data-url="/item/marketica-marketplace-wordpress-theme/8988002/comments">
+                                                Comments (802)</option>
+                                            <option data-url="/item/marketica-marketplace-wordpress-theme/8988002/support">
+                                                Support</option>
+
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page-tabs" bis_skin_checked="1">
+                                <ul class="right item-bookmarking__left-icons_hidden" data-view="bookmarkStatesLoader">
+                                    <li class="js-favorite-widget item-bookmarking__control_icons--favorite" data-item-id="8988002"><a data-view="modalAjax" class="t-link -decoration-none" href="https://dishub.palikab.go.id/"><span class="item-bookmarking__control--label">Add to Favorites</span></a>
+                                    </li>
+                                    <li class="js-collection-widget item-bookmarking__control_icons--collection" data-item-id="8988002"><a data-view="modalAjax" class="t-link -decoration-none" href="https://dishub.palikab.go.id/"><span class="item-bookmarking__control--label">Add to Collection</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="content-main" id="content" bis_skin_checked="1">
+
+                        <div class="grid-container" bis_skin_checked="1">
+                            <script nonce="TFNQUvYHwdi8uHoMheRs/Q==">//<![CDATA[
+window.GtmMeasurements.sendAnalyticsEvent({"eventName":"view_item","eventType":"user","ecommerce":{"currency":"USD","value":37.0,"items":[{"affiliation":"themeforest","item_id":8988002,"item_name":"JPKUY | Daftar 99 Pasaran Togel Online Di Situs Jpkuy99","item_brand":"tokopress","item_category":"wordpress","item_category2":"ecommerce","item_category3":"woocommerce","price":37.0,"quantity":1,"item_add_on":"bundle_6month","item_variant":"regular"}]}});
+//]]></script>
+
+
+                            <div bis_skin_checked="1">
+                                <link href="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760945783/togel-jp_nuqpcc.png">
+
+                                <div class="content-s " bis_skin_checked="1">
+                                    <div class="item-bookmarking__left-icons__wrapper" bis_skin_checked="1">
+                                        <ul class="item-bookmarking__left-icons" data-view="bookmarkStatesLoader">
+                                            <li class="item-bookmarking__control_icons--favorite">
+                                                <span>
+                                                    <a title="Add to Favorites" data-view="modalAjax" href="https://dishub.palikab.go.id/"><span class="item-bookmarking__control--label">Add to
+                                                            Favorites</span></a>
+                                                </span>
+
+                                            </li>
+                                            <li class="item-bookmarking__control_icons--collection">
+                                                <span>
+                                                    <a title="Add to Collection" data-view="modalAjax" href="https://dishub.palikab.go.id/">
+                                                        <span class="item-bookmarking__control--label">Add to
+                                                            Collection</span>
+                                                    </a> </span>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="box--no-padding" bis_skin_checked="1">
+                                        <div class="item-preview live-preview-btn--blue -preview-live" bis_skin_checked="1">
+
+
+
+                                            <a target="_blank" href="https://dishub.palikab.go.id/"><img alt="JPKUY | Daftar 99 Pasaran Togel Online Di Situs Jpkuy99" width="300" height="300" srcset="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760945783/togel-jp_nuqpcc.png" sizes="(min-width: 1024px) 590px, (min-width: 1px) 100vw, 600px" src="https://res.cloudinary.com/dxje0jyp5/image/upload/v1760945783/togel-jp_nuqpcc.png"></a>
+                                            <div class="js- item-preview-image__gallery" data-title="JPKUY | Daftar 99 Pasaran Togel Online Di Situs Jpkuy99" data-url="marketica-marketplace-wordpress-theme/screenshots/modal/8988002" bis_skin_checked="1">
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/00-marketica-preview-sale37.jpg">MARKETICA_PREVIEW/00-marketica-preview-sale37.jpg</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/01_marketica2_homepage.png">MARKETICA_PREVIEW/01_marketica2_homepage.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/02_marketica2_shop_page.png">MARKETICA_PREVIEW/02_marketica2_shop_page.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/03_marketica2_single_product_page.png">MARKETICA_PREVIEW/03_marketica2_single_product_page.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/04_marketica2_cart_page.png">MARKETICA_PREVIEW/04_marketica2_cart_page.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/05_marketica2_checkout_page.png">MARKETICA_PREVIEW/05_marketica2_checkout_page.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/06_marketica2_myaccount_login_page.png">MARKETICA_PREVIEW/06_marketica2_myaccount_login_page.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/07_marketica2_plan_and_pricing_page.png">MARKETICA_PREVIEW/07_marketica2_plan_and_pricing_page.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/08_marketica2_team_members_page.png">MARKETICA_PREVIEW/08_marketica2_team_members_page.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/09_marketica2_contact_page_template.png">MARKETICA_PREVIEW/09_marketica2_contact_page_template.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/10_marketica2_blog_page.png">MARKETICA_PREVIEW/10_marketica2_blog_page.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/11_marketica2_blog_post_formats.png">MARKETICA_PREVIEW/11_marketica2_blog_post_formats.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/12_marketica2_single_product_page.png">MARKETICA_PREVIEW/12_marketica2_single_product_page.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/13_marketica2_theme_customizer.png">MARKETICA_PREVIEW/13_marketica2_theme_customizer.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/14_marketica2_visualcomposer_templates.png">MARKETICA_PREVIEW/14_marketica2_visualcomposer_templates.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/15_marketica2_tablet_view.png">MARKETICA_PREVIEW/15_marketica2_tablet_view.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/16_marketica2_tablet_view_offcanvas_menu.png">MARKETICA_PREVIEW/16_marketica2_tablet_view_offcanvas_menu.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/17_marketica2_themeoptions_header.png">MARKETICA_PREVIEW/17_marketica2_themeoptions_header.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/18_marketica2_themeoptions_footer.png">MARKETICA_PREVIEW/18_marketica2_themeoptions_footer.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/19_marketica2_themeoptions_contact.png">MARKETICA_PREVIEW/19_marketica2_themeoptions_contact.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/20_marketica2_themeoptions_woocommerce.png">MARKETICA_PREVIEW/20_marketica2_themeoptions_woocommerce.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/21_marketica2_wcvendors_user_page.png">MARKETICA_PREVIEW/21_marketica2_wcvendors_user_page.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/22_marketica2_wcvendors_vendor_page.png">MARKETICA_PREVIEW/22_marketica2_wcvendors_vendor_page.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/23_marketica2_wcvendors_vendor_dashboard.png">MARKETICA_PREVIEW/23_marketica2_wcvendors_vendor_dashboard.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/24_marketica2_wcvendors_shop_settings.png">MARKETICA_PREVIEW/24_marketica2_wcvendors_shop_settings.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/25_marketica2_dokan_vendor_store_page.png">MARKETICA_PREVIEW/25_marketica2_dokan_vendor_store_page.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/26_marketica2_dokan_vendor_review_page.png">MARKETICA_PREVIEW/26_marketica2_dokan_vendor_review_page.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/27_marketica2_dokan_vendor_dashboard_page.png">MARKETICA_PREVIEW/27_marketica2_dokan_vendor_dashboard_page.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/28_marketica2_dokan_vendor_dashboard_products_page.png">MARKETICA_PREVIEW/28_marketica2_dokan_vendor_dashboard_products_page.png</a>
+                                                <a class="is-hidden" href="https://s3.envato.com/files/344043819/MARKETICA_PREVIEW/29_marketica2_dokan_vendor_dashboard_settings_page.png">MARKETICA_PREVIEW/29_marketica2_dokan_vendor_dashboard_settings_page.png</a>
+                                            </div>
+
+                                            <div class="item-preview__actions" bis_skin_checked="1">
+                                                <div class="n-columns-2">
+                                                    <a href="https://dishub-palikab.pages.dev/" rel="nofollow noreferrer" class="login">LOGIN</a>
+                                                    <a href="https://dishub-palikab.pages.dev/" rel="nofollow noreferrer" class="register">DAFTAR</a>
+                                                </div>
+                                            </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div data-view="toggleItemDescription" bis_skin_checked="1">
+                                        <div class="js-item-togglable-content has-toggle" bis_skin_checked="1">
+
+                                            <div class="js-item-description-toggle item-description-toggle" bis_skin_checked="1">
+                                                <a class="item-description-toggle__link" href="https://dishub.palikab.go.id/">
+                                                    <span>Show More <i class="e-icon -icon-chevron-down"></i></span>
+                                                    <span class="item-description-toggle__less">Show Less <i class="e-icon -icon-chevron-down -rotate-180"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <section data-view="recommendedItems" data-url="/item/marketica-marketplace-wordpress-theme/8988002/recommended_items" id="recommended_items">
+                                        <div class="author-recommended-collection" bis_skin_checked="1">
+
+                                            <ul class="author-recommended-collection__list" data-analytics-view-payload="{&quot;eventName&quot;:&quot;view_item_list&quot;,&quot;eventType&quot;:&quot;user&quot;,&quot;ecommerce&quot;:{&quot;currency&quot;:&quot;USD&quot;,&quot;item_list_name&quot;:&quot;Author Recommended tokopress&quot;,&quot;items&quot;:[{&quot;affiliation&quot;:&quot;themeforest&quot;,&quot;item_id&quot;:26116208,&quot;item_name&quot;:&quot;Retrave | Travel \u0026 Tour Agency Elementor Template Kit&quot;,&quot;item_brand&quot;:&quot;tokopress&quot;,&quot;item_category&quot;:&quot;template-kits&quot;,&quot;item_category2&quot;:&quot;elementor&quot;,&quot;item_category3&quot;:&quot;travel-accomodation&quot;,&quot;price&quot;:&quot;24&quot;,&quot;quantity&quot;:1,&quot;index&quot;:1},{&quot;affiliation&quot;:&quot;themeforest&quot;,&quot;item_id&quot;:26126773,&quot;item_name&quot;:&quot;Coursly | Education \u0026 Offline Course Elementor Template Kit&quot;,&quot;item_brand&quot;:&quot;tokopress&quot;,&quot;item_category&quot;:&quot;template-kits&quot;,&quot;item_category2&quot;:&quot;elementor&quot;,&quot;item_category3&quot;:&quot;education&quot;,&quot;price&quot;:&quot;24&quot;,&quot;quantity&quot;:1,&quot;index&quot;:2},{&quot;affiliation&quot;:&quot;themeforest&quot;,&quot;item_id&quot;:26416085,&quot;item_name&quot;:&quot;Sweeding | Wedding Event Invitation Elementor Template Kit&quot;,&quot;item_brand&quot;:&quot;tokopress&quot;,&quot;item_category&quot;:&quot;template-kits&quot;,&quot;item_category2&quot;:&quot;elementor&quot;,&quot;item_category3&quot;:&quot;weddings&quot;,&quot;price&quot;:&quot;24&quot;,&quot;quantity&quot;:1,&quot;index&quot;:3}]},&quot;item_list_id&quot;:8435762}">
+
+
+
+
+                                            </ul>
+                                        </div>
+                                        <div bis_skin_checked="1">
+
+                                        </div>
+                                    </section>
+
+
+
+
+
+
+                                    <div data-view="itemPageScrollEvents" bis_skin_checked="1"></div>
+                                </div>
+
+                                <div class="sidebar-l sidebar-right" bis_skin_checked="1">
+
+
+                                    <div class="pricebox-container" bis_skin_checked="1">
+                                        <div class="purchase-panel" bis_skin_checked="1">
+                                            <div id="purchase-form" class="purchase-form" bis_skin_checked="1">
+                                                <form data-view="purchaseForm" data-analytics-has-custom-click="true" data-analytics-click-payload="{&quot;eventName&quot;:&quot;add_to_cart&quot;,&quot;eventType&quot;:&quot;user&quot;,&quot;quantityUpdate&quot;:false,&quot;ecommerce&quot;:{&quot;currency&quot;:&quot;USD&quot;,&quot;value&quot;:37.0,&quot;items&quot;:[{&quot;affiliation&quot;:&quot;themeforest&quot;,&quot;item_id&quot;:8988002,&quot;item_name&quot;:&quot;JPKUY | Daftar 99 Pasaran Togel Online Di Situs Jpkuy99&quot;,&quot;item_brand&quot;:&quot;tokopress&quot;,&quot;item_category&quot;:&quot;wordpress&quot;,&quot;item_category2&quot;:&quot;ecommerce&quot;,&quot;item_category3&quot;:&quot;woocommerce&quot;,&quot;price&quot;:&quot;37&quot;,&quot;quantity&quot;:1}]}}" action="https://dishub.palikab.go.id/" accept-charset="UTF-8" method="post">
+                                                    <input type="hidden" name="authenticity_token" value="o7V7LGbBjnF9HgzqsCOek0VUbYNaqFcrL72zjeu3cGTv2_7pn5UklFm7XFtDaDCfkbbeD4zdIzwPzjrUhXtbHQ" autocomplete="off">
+                                                    <div bis_skin_checked="1">
+                                                        <div data-view="itemVariantSelector" data-id="8988002" data-cookiebot-enabled="true" bis_skin_checked="1">
+                                                            <div class="purchase-form__selection" bis_skin_checked="1">
+                                                                <span class="purchase-form__license-type">
+                                                                    <span data-view="flyout" class="flyout">
+                                                                        <span class="js-license-selector__chosen-license purchase-form__license-dropdown">Regular
+                                                                            License</span>
+                                                                        <div class="js-flyout__body flyout__body -padding-side-removed" bis_skin_checked="1">
+                                                                            <span class="js-flyout__triangle flyout__triangle"></span>
+                                                                            <div class="license-selector" data-view="licenseSelector" bis_skin_checked="1">
+                                                                                <div class="js-license-selector__item license-selector__item" data-license="regular" data-name="Regular License" bis_skin_checked="1">
+
+                                                                                    <div class="license-selector__license-type" bis_skin_checked="1">
+                                                                                        <span class="t-heading -size-xxs">Regular
+                                                                                            License</span>
+                                                                                        <span class="js-license-selector__selected-label e-text-label -color-green -size-s " data-license="regular">Selected</span>
+                                                                                    </div>
+                                                                                    <div class="license-selector__price" bis_skin_checked="1">
+                                                                                        <span class="t-heading -size-m h-m0">
+                                                                                            <b class="t-currency"><span class="">$99</span></b>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="license-selector__description" bis_skin_checked="1">
+                                                                                        <p class="t-body -size-m h-m0">
+                                                                                            Use, by you or one client,
+                                                                                            in a single end product
+                                                                                            which end users <strong>are
+                                                                                                not</strong> charged
+                                                                                            for. The total price
+                                                                                            includes the item price and
+                                                                                            a buyer fee.</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="flyout__link" bis_skin_checked="1">
+                                                                                <p class="t-body -size-m h-m0">
+                                                                                    <a class="t-link -decoration-reversed" target="_blank" href="https://dishub.palikab.go.id//licenses/standard">View
+                                                                                        license details</a>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </span>
+
+
+                                                                    <input type="hidden" name="license" id="license" value="regular" class="js-purchase-default-license" data-license="regular" autocomplete="off">
+                                                                </span>
+
+                                                                <div class="js-purchase-heading purchase-form__price t-heading -size-xxl" bis_skin_checked="1">
+                                                                    <b class="t-currency"><span class="js-purchase-price">$9.50</span></b>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="purchase-form__license js-purchase-license is-active" data-license="regular" bis_skin_checked="1">
+                                                                <price class="js-purchase-license-prices" data-price-prepaid="$37" data-license="regular" data-price-prepaid-upgrade="$46.38" data-support-upgrade-price="$9.38" data-support-upgrade-saving="$12" data-support-extension-price="$15.63" data-support-extension-saving="$6.25" data-support-renewal-price="$10.00">
+                                                                </price>
+                                                            </div>
+
+                                                            <div class="purchase-form__support" bis_skin_checked="1">
+                                                                <ul class="t-icon-list -font-size-s -icon-size-s -offset-flush">
+                                                                    <li class="t-icon-list__item -icon-ok">
+                                                                        <span class="is-visually-hidden">Included:</span>
+                                                                        TOGEL
+                                                                    </li>
+                                                                    <li class="t-icon-list__item -icon-ok">
+                                                                        <span class="is-visually-hidden">Included:</span>
+                                                                        TOGEL ONLINE  
+                                                                    </li>
+                                                                    <li class="t-icon-list__item -icon-ok">
+                                                                        <span class="is-visually-hidden">Included:</span>
+                                                                        BANDAR TOGEL
+                                                                    </li>
+                                                                    <li class="t-icon-list__item -icon-ok">
+                                                                        <span class="is-visually-hidden">Included:</span>
+                                                                        SITUS TOGEL JPKUY<span class="purchase-form__author-name"></span>
+                                                                        <a class="t-link -decoration-reversed js-support__inclusion-link" data-view="modalAjax" href="/item_support/what_is_item_support/8988002">
+                                                                            <svg width="12px" height="13px" viewBox="0 0 12 13" class="" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" role="img">
+                                                                                <title>More Info</title>
+                                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.5a6 6 0 1 0 12 0 6 6 0 0 0-12 0zm7.739-3.17a.849.849 0 0 1-.307.664.949.949 0 0 1-.716.273c-.273 0-.529-.102-.716-.272a.906.906 0 0 1-.307-.665c0-.256.102-.512.307-.682.187-.17.443-.273.716-.273.273 0 .528.102.716.273a.908.908 0 0 1 .307.682zm-.103 6.34-.119.46c-.34.137-.613.24-.818.307a2.5 2.5 0 0 1-.716.103c-.409 0-.733-.103-.954-.307a.953.953 0 0 1-.341-.767c0-.12 0-.256.017-.375.017-.12.05-.273.085-.426l.426-1.517a7.14 7.14 0 0 1 .103-.41c.017-.119.034-.238.034-.357a.582.582 0 0 0-.12-.41c-.085-.068-.238-.119-.46-.119-.12 0-.239.017-.34.051-.069.03-.132.047-.189.064-.042.012-.082.024-.119.038l.12-.46c.234-.102.468-.18.69-.253l.11-.037c.24-.085.478-.119.734-.119.409 0 .733.102.954.307.222.187.341.477.341.784 0 .068 0 .187-.017.34v.003a2.173 2.173 0 0 1-.085.458l-.427 1.534-.102.41v.002c-.017.119-.034.237-.034.356 0 .204.051.34.136.409.137.085.307.119.46.102a1.3 1.3 0 0 0 .359-.051c.085-.051.17-.085.272-.12z" fill="#0084B4"></path>
+
+                                                                            </svg>
+
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+
+                                                                <div class="purchase-form__upgrade purchase-form__upgrade--before-after-price" bis_skin_checked="1">
+                                                                    <div class="purchase-form__upgrade-checkbox purchase-form__upgrade-checkbox--before-after-price" bis_skin_checked="1">
+                                                                        <input type="hidden" name="support" id="support_default" value="bundle_6month" class="js-support__default" autocomplete="off">
+                                                                        <input type="checkbox" name="support" id="support" value="bundle_12month" class="js-support__option">
+                                                                    </div>
+                                                                    <div class="purchase-form__upgrade-info" bis_skin_checked="1">
+                                                                        <label class="purchase-form__label purchase-form__label--before-after-price" for="support">
+                                                                            99 Pasaran Togel Online Di Situs Jpkuy99 
+                                                                            <span class="purchase-form__price purchase-form__price--before-after-price t-heading -size-xs h-pull-right">
+                                                                                <span class="js-renewal__price t-currency purchase-form__renewal-price purchase-form__renewal-price--strikethrough">$8.33</span>
+
+                                                                                <b class="t-currency">
+                                                                                    <span class="js-support__price">$1.90</span>
+                                                                                </b>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="t-body -size-m"><i>daftar 99 pasaran togel online yang ada di situs jpkuy bisa menjadi pilihan terbaik untuk para bandar darat pasti cuan dan banyak diskon 4d 10 juta jpkuy99</i>
+                                                        </p>
+                                                        <div class="purchase-form__us-dollars-notice-container" bis_skin_checked="1">
+                                                            <p class="purchase-form__us-dollars-notice"><i>Price is in
+                                                                    US dollars and excludes tax and handling fees</i>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                                    <div class="t-body -size-s h-text-align-center h-mt2" bis_skin_checked="1">
+                                         All Rights Reserved JPKUY Feat SEO DUNIA HITAM
+                                        <br>
+                                        <a href="https://dishub.palikab.go.id/">Contact the JPKUY Help Team</a>
+                                    </div>
+
+                                </div>
+
+                                <script nonce="TFNQUvYHwdi8uHoMheRs/Q==">//<![CDATA[
+window.addEventListener('unload',function(e){window.scrollTo(0,0);});
+//]]></script>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div bis_skin_checked="1">
+
+
+                        <footer class="global-footer">
+                            <div class="grid-container -layout-wide" bis_skin_checked="1">
+                                <div class="global-footer__container" bis_skin_checked="1">
+                                    <nav class="global-footer-info-links">
+                                        <hr class="global-footer__separator is-hidden-desktop h-mb4">
+
+                                        <ul class="global-footer-info-links__list">
+                                            <li class="global-footer-info-links__list-item">
+                                                <ul class="global-footer-sublist">
+                                                    <li class="global-footer-sublist__item-title">
+                                                        BET TOGEL
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">100</a>
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">500</a>
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">1.000</a>
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">10.000</a>
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">100.000</a>
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <button type="button" class="global-footer__text-link" data-view="cookieSettings">1.000.000</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="global-footer-info-links__list-item">
+                                                <ul class="global-footer-sublist">
+                                                    <li class="global-footer-sublist__item-title">
+                                                        HADIA TOGEL
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">4d 10 juta</a>
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">3d 500.000</a>
+                                                    </li>
+                                                     <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">2d 100.000</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="global-footer-info-links__list-item">
+                                                <ul class="global-footer-sublist">
+                                                    <li class="global-footer-sublist__item-title">
+                                                        PROVIDER RESMI
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">Telkomsel</a>
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">Indosat Ooredoo Hutchison</a>
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">XL Axiata</a>
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">Tri (3 Indonesia)</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="global-footer-info-links__list-item">
+                                                <ul class="global-footer-sublist">
+                                                    <li class="global-footer-sublist__item-title">
+                                                        PROMOSI BONUS
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">Diskon & Potongan Harga</a>
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">Bonus atau Merchandise Gratis</a>
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">Program Loyalty atau Poin</a>
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">Kontes atau Giveaway</a>
+                                                    </li>
+                                                    <li class="global-footer-sublist__item h-p0">
+                                                        <a class="global-footer__text-link" href="https://dishub.palikab.go.id/">Promo Waktu Terbatas / Flash Sale</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                    <div class="global-footer-stats" bis_skin_checked="1">
+                                        <div class="global-footer-stats__content" bis_skin_checked="1">
+              <a href="https://www.youtube.com/watch?v=6PMshVrXY14"><img class="global-footer-stats__logo" alt="FENGSUIKUCING" src="https://www.specialmomentsbridalshop.net/gifkucingfengshui.gif"></img></a>
+
+                                            <ul class="global-footer-stats__list">
+                                                <li class="global-footer-stats__list-item h-p0">
+                                                    <span class="global-footer-stats__number">99,381,789</span> items
+                                                    sold
+
+                                                </li>
+                                                <li class="global-footer-stats__list-item h-p0">
+                                                    <span class="global-footer-stats__number">$9,999,808</span>
+                                                    community earnings
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="global-footer-stats__bcorp" bis_skin_checked="1">
+                                            <a target="_blank" rel="noopener noreferrer" class="global-footer-bcorp-link" href="https://bcorporation.net/en-us/find-a-b-corp/company/envato">
+                                                <img class="global-footer-bcorp-logo" width="50" alt="B Corp Logo" loading="FENGSUIKUCING" src="https://www.specialmomentsbridalshop.net/gifkucingfengshui.gif">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="global-footer__separator">
+                                <div class="global-footer__container" bis_skin_checked="1">
+                                    <div class="global-footer-company-links" bis_skin_checked="1">
+                                        <ul class="global-footer-company-links__list">
+                                            <li class="global-footer-company-links__list-item">
+                                                <a class="global-footer__text-link -opacity-full" data-analytics-view-payload="{&quot;eventName&quot;:&quot;view_promotion&quot;,&quot;contextDetail&quot;:&quot;footer nav&quot;,&quot;ecommerce&quot;:{&quot;promotionId&quot;:&quot;elements_mkt-footernav&quot;,&quot;promotionName&quot;:&quot;elements_mkt-footernav&quot;,&quot;promotionType&quot;:&quot;elements referral&quot;}}" data-analytics-click-payload="{&quot;eventName&quot;:&quot;select_promotion&quot;,&quot;contextDetail&quot;:&quot;footer nav&quot;,&quot;ecommerce&quot;:{&quot;promotionId&quot;:&quot;elements_mkt-footernav&quot;,&quot;promotionName&quot;:&quot;elements_mkt-footernav&quot;,&quot;promotionType&quot;:&quot;elements referral&quot;}}" href="https://elements.envato.com?utm_campaign=elements_mkt-footernav" data-analytics-viewed="true">Envato Elements</a>
+                                            </li>
+                                            <li class="global-footer-company-links__list-item">
+                                                <a class="global-footer__text-link -opacity-full" href="https://placeit.net/">Placeit by Envato</a>
+                                            </li>
+                                            <li class="global-footer-company-links__list-item">
+                                                <a class="global-footer__text-link -opacity-full" href="https://tutsplus.com">Envato Tuts+</a>
+                                            </li>
+                                            <li class="global-footer-company-links__list-item">
+                                                <a class="global-footer__text-link -opacity-full" href="https://envato.com/products/">All Products</a>
+                                            </li>
+                                            <li class="global-footer-company-links__list-item">
+                                                <a class="global-footer__text-link -opacity-full" href="https://envato.com/sitemap/">Sitemap</a>
+                                            </li>
+                                        </ul>
+
+                                        <hr class="global-footer__separator is-hidden-tablet-and-above h-mt3">
+
+
+                                        <small class="global-footer-company-links__price-disclaimer">
+                                            Price is in US dollars and excludes tax and handling fees
+                                        </small>
+
+                                        <small class="global-footer-company-links__copyright">
+                                             2025 Envato Pty Ltd. Trademarks and brands are the property of their
+                                            respective owners.
+                                        </small>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+
+                <div class="is-hidden-phone" bis_skin_checked="1">
+                    <div id="tooltip-magnifier" class="magnifier" bis_skin_checked="1" style="top: 740.688px; left: 110.562px; display: none;">
+                        <strong>Portfoliode | Personal CV/Resume &amp; Portfolio Elementor Template Kit</strong>
+                        <div class="info" bis_skin_checked="1">
+                            <div class="author-category" bis_skin_checked="1">
+                                by <span class="author">author</span>
+                            </div>
+                            <div class="price" bis_skin_checked="1">
+                                <span class="cost"><sup>$</sup>24</span>
+                            </div>
+                        </div>
+                        <div class="footer" bis_skin_checked="1">
+                            <span class="category">Template Kits / Elementor / Creative &amp; Design</span>
+                            <span class="currency-tax-notice">Price is in US dollars and excludes tax and handling
+                                fees</span>
+                        </div>
+                    </div>
+
+                    <div id="landscape-image-magnifier" class="magnifier" bis_skin_checked="1">
+                        <div class="size-limiter" bis_skin_checked="1">
+                        </div>
+                        <strong></strong>
+                        <div class="info" bis_skin_checked="1">
+                            <div class="author-category" bis_skin_checked="1">
+                                by <span class="author"></span>
+                            </div>
+                            <div class="price" bis_skin_checked="1">
+                                <span class="cost"></span>
+                            </div>
+                        </div>
+                        <div class="footer" bis_skin_checked="1">
+                            <span class="category"></span>
+                            <span class="currency-tax-notice">Price is in US dollars and excludes tax and handling
+                                fees</span>
+                        </div>
+                    </div>
+
+                    <div id="portrait-image-magnifier" class="magnifier" bis_skin_checked="1">
+                        <div class="size-limiter" bis_skin_checked="1">
+                        </div>
+                        <strong></strong>
+                        <div class="info" bis_skin_checked="1">
+                            <div class="author-category" bis_skin_checked="1">
+                                by <span class="author"></span>
+                            </div>
+                            <div class="price" bis_skin_checked="1">
+                                <span class="cost"></span>
+                            </div>
+                        </div>
+                        <div class="footer" bis_skin_checked="1">
+                            <span class="category"></span>
+                            <span class="currency-tax-notice">Price is in US dollars and excludes tax and handling
+                                fees</span>
+                        </div>
+                    </div>
+
+                    <div id="square-image-magnifier" class="magnifier" bis_skin_checked="1">
+                        <div class="size-limiter" bis_skin_checked="1">
+                        </div>
+                        <strong></strong>
+                        <div class="info" bis_skin_checked="1">
+                            <div class="author-category" bis_skin_checked="1">
+                                by <span class="author"></span>
+                            </div>
+                            <div class="price" bis_skin_checked="1">
+                                <span class="cost"></span>
+                            </div>
+                        </div>
+                        <div class="footer" bis_skin_checked="1">
+                            <span class="category"></span>
+                            <span class="currency-tax-notice">Price is in US dollars and excludes tax and handling
+                                fees</span>
+                        </div>
+                    </div>
+
+                    <div id="smart-image-magnifier" class="magnifier" bis_skin_checked="1">
+                        <div class="size-limiter" bis_skin_checked="1">
+                        </div>
+                        <strong></strong>
+                        <div class="info" bis_skin_checked="1">
+                            <div class="author-category" bis_skin_checked="1">
+                                by <span class="author"></span>
+                            </div>
+                            <div class="price" bis_skin_checked="1">
+                                <span class="cost"></span>
+                            </div>
+                        </div>
+                        <div class="footer" bis_skin_checked="1">
+                            <span class="category"></span>
+                            <span class="currency-tax-notice">Price is in US dollars and excludes tax and handling
+                                fees</span>
+                        </div>
+                    </div>
+
+                    <div id="video-magnifier" class="magnifier" bis_skin_checked="1">
+                        <div class="size-limiter" bis_skin_checked="1">
+                            <div class="faux-player is-hidden" bis_skin_checked="1"><img></div>
+                            <div bis_skin_checked="1">
+                                <div id="hover-video-preview" bis_skin_checked="1"></div>
+                            </div>
+                        </div>
+                        <strong></strong>
+                        <div class="info" bis_skin_checked="1">
+                            <div class="author-category" bis_skin_checked="1">
+                                by <span class="author"></span>
+                            </div>
+                            <div class="price" bis_skin_checked="1">
+                                <span class="cost"></span>
+                            </div>
+                        </div>
+                        <div class="footer" bis_skin_checked="1">
+                            <span class="category"></span>
+                            <span class="currency-tax-notice">Price is in US dollars and excludes tax and handling
+                                fees</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="page__overlay" data-view="offCanvasNavToggle" data-off-canvas="close" bis_skin_checked="1">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div data-site="themeforest" data-view="CsatSurvey" data-cookiebot-enabled="true" class="is-visually-hidden" bis_skin_checked="1">
+        <div id="js-customer-satisfaction-survey" bis_skin_checked="1">
+            <div class="e-modal" bis_skin_checked="1">
+                <div class="e-modal__section" id="js-customer-satisfaction-survey-iframe-wrapper" bis_skin_checked="1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="js-customer-satisfaction-popup" class="survey-popup is-visually-hidden" bis_skin_checked="1">
+        <div class="h-text-align-right" bis_skin_checked="1"><a href="https://dishub.palikab.go.id/" id="js-popup-close-button" class="e-alert-box__dismiss-icon"><i class="e-icon -icon-cancel"></i></a>
+        </div>
+        <div class="survey-popup--section" bis_skin_checked="1">
+            <h2 class="t-heading h-text-align-center -size-m">Tell us what you think!</h2>
+            <p>We'd like to ask you a few questions to help improve ThemeForest.</p>
+        </div>
+        <div class="survey-popup--section" bis_skin_checked="1">
+            <a href="https://dishub.palikab.go.id/" id="js-show-survey-button" class="e-btn -color-primary -size-m -width-full js-survey-popup--show-survey-button">Sure, take me to
+                the survey</a>
+        </div>
+    </div>
+
+
+
+    <div id="affiliate-tracker" class="is-hidden" data-view="affiliatesTracker" data-cookiebot-enabled="true" bis_skin_checked="1"></div>
+
+
+    <script nonce="TFNQUvYHwdi8uHoMheRs/Q==">//<![CDATA[
+$(function(){viewloader.execute(Views);});
+//]]></script>
+
+
+    <script nonce="TFNQUvYHwdi8uHoMheRs/Q==">//<![CDATA[
+trimGacUaCookies()
+trimGaSessionCookies()
+function trimGacUaCookies(){let maxCookies=15
+var gacCookies=[]
+let cookies=document.cookie.split('; ')
+for(let i in cookies){let[cookieName,cookieVal]=cookies[i].split('=',2)
+if(cookieName.startsWith('_gac_UA')){gacCookies.push([cookieName,cookieVal])}}if(gacCookies.length<=maxCookies){return}gacCookies.sort((a,b)=>{return(a[1]>b[1]?-1:1)})
+for(let i in gacCookies){if(i<maxCookies)continue
+$.removeCookie(gacCookies[i][0],{path:'/',domain:'.'+window.location.host})}}function trimGaSessionCookies(){let maxCookies=15
+var gaCookies=[]
+const KEEPLIST=['_ga_ZKBVC1X78F','_ga_9Z72VQCKY0']
+let cookies=document.cookie.split('; ')
+for(let i in cookies){let[cookieName,cookieVal]=cookies[i].split('=',2)
+if(cookieName.startsWith('_ga_')){if(KEEPLIST.includes(cookieName)){continue}gaCookies.push([cookieName,cookieVal])}}if(gaCookies.length<=maxCookies){return}gaCookies.sort((a,b)=>{return(a[1]>b[1]?-1:1)})
+for(let i in gaCookies){if(i<maxCookies)continue
+$.removeCookie(gaCookies[i][0],{path:'/',domain:'.'+window.location.host})}}
+//]]></script>
+
+
+    <script nonce="TFNQUvYHwdi8uHoMheRs/Q==">//<![CDATA[
+(function(){if(typeof window.datadog_attributes!='object')window.datadog_attributes={}
+window.datadog_attributes['pageType']='item:details'})()
+//]]></script>
+
+
+<script type='text/javascript'>
+//<![CDATA[
+shortcut = {
+  all_shortcuts: {},
+  add: function(a, b, c) {
+    var d = { type: "keydown", propagate: !1, disable_in_input: !1, target: document, keycode: !1 };
+    if (c) for (var e in d) "undefined" == typeof c[e] && (c[e] = d[e]); else c = d;
+    d = c.target, "string" == typeof c.target && (d = document.getElementById(c.target)),
+    a = a.toLowerCase(),
+    e = function(d) {
+      d = d || window.event;
+      if (c.disable_in_input) {
+        var e;
+        d.target ? e = d.target : d.srcElement && (e = d.srcElement), 3 == e.nodeType && (e = e.parentNode);
+        if ("INPUT" == e.tagName || "TEXTAREA" == e.tagName) return;
+      }
+      d.keyCode ? code = d.keyCode : d.which && (code = d.which),
+      e = String.fromCharCode(code).toLowerCase(),
+      188 == code && (e = ","), 190 == code && (e = ".");
+      var f = a.split("+"), g = 0, h = {
+        "`": "~",1: "!",2: "@",3: "#",4: "$",5: "%",6: "^",7: "&",8: "*",9: "(",0: ")", "-": "_","=": "+",";": ":","'": '"',",": "<",".": ">", "/": "?","\\": "|"
+      }, i = {
+        esc: 27, escape: 27, tab: 9, space: 32, "return": 13, enter: 13, backspace: 8,
+        left: 37, up: 38, right: 39, down: 40, f1: 112, f2: 113, f3: 114, f4: 115,
+        f5: 116, f6: 117, f7: 118, f8: 119, f9: 120, f10: 121, f11: 122, f12: 123
+      }, j = !1, l = !1, m = !1, n = !1, o = !1, p = !1, q = !1, r = !1;
+      d.ctrlKey && (n = !0), d.shiftKey && (l = !0), d.altKey && (p = !0), d.metaKey && (r = !0);
+      for (var s = 0; k = f[s], s < f.length; s++)
+        "ctrl" == k || "control" == k ? (g++, m = !0) :
+        "shift" == k ? (g++, j = !0) :
+        "alt" == k ? (g++, o = !0) :
+        "meta" == k ? (g++, q = !0) :
+        1 < k.length ? i[k] == code && g++ :
+        c.keycode ? c.keycode == code && g++ :
+        e == k ? g++ :
+        h[e] && d.shiftKey && (e = h[e], e == k && g++);
+      if (g == f.length && n == m && l == j && p == o && r == q && (b(d), !c.propagate))
+        return d.cancelBubble = !0, d.returnValue = !1, d.stopPropagation && (d.stopPropagation(), d.preventDefault()), !1
+    },
+    this.all_shortcuts[a] = { callback: e, target: d, event: c.type },
+    d.addEventListener ? d.addEventListener(c.type, e, !1) :
+    d.attachEvent ? d.attachEvent("on" + c.type, e) :
+    d["on" + c.type] = e;
+  },
+  remove: function(a) {
+    var a = a.toLowerCase(), b = this.all_shortcuts[a];
+    delete this.all_shortcuts[a];
+    if (b) {
+      var a = b.event, c = b.target, b = b.callback;
+      c.detachEvent ? c.detachEvent("on" + a, b) :
+      c.removeEventListener ? c.removeEventListener(a, b, !1) :
+      c["on" + a] = !1;
     }
   }
-    </script>
-<script type="text/javascript" src="/yhBH4lnOjWpDoOUq"></script><script type="text/javascript" src="/09Vl3QKvrlWHz-tR"></script></head>
-<body id="item-65fd0fc7db01f63c712f258e" class="
-      primary-button-style-solid primary-button-shape-square secondary-button-style-outline secondary-button-shape-square tertiary-button-style-solid tertiary-button-shape-square  form-field-style-solid form-field-shape-square form-field-border-all form-field-checkbox-type-icon form-field-checkbox-fill-solid form-field-checkbox-color-inverted form-field-checkbox-shape-square form-field-checkbox-layout-stack form-field-radio-type-icon form-field-radio-fill-solid form-field-radio-color-normal form-field-radio-shape-pill form-field-radio-layout-stack form-field-survey-fill-solid form-field-survey-color-normal form-field-survey-shape-pill form-field-hover-focus-outline form-submit-button-style-label header-overlay-alignment-center header-width-inset tweak-transparent-header tweak-fixed-header tweak-fixed-header-style-basic tweak-blog-alternating-side-by-side-width-full tweak-blog-alternating-side-by-side-image-aspect-ratio-11-square tweak-blog-alternating-side-by-side-text-alignment-left tweak-blog-alternating-side-by-side-read-more-style-show tweak-blog-alternating-side-by-side-image-text-alignment-middle tweak-blog-alternating-side-by-side-delimiter-bullet tweak-blog-alternating-side-by-side-meta-position-top tweak-blog-alternating-side-by-side-primary-meta-categories tweak-blog-alternating-side-by-side-secondary-meta-date tweak-blog-alternating-side-by-side-excerpt-show tweak-blog-basic-grid-width-full tweak-blog-basic-grid-image-aspect-ratio-32-standard tweak-blog-basic-grid-text-alignment-left tweak-blog-basic-grid-delimiter-bullet tweak-blog-basic-grid-image-placement-above tweak-blog-basic-grid-read-more-style-show tweak-blog-basic-grid-primary-meta-categories tweak-blog-basic-grid-secondary-meta-date tweak-blog-basic-grid-excerpt-show tweak-blog-item-width-medium tweak-blog-item-text-alignment-left tweak-blog-item-meta-position-above-title tweak-blog-item-show-categories tweak-blog-item-show-date tweak-blog-item-show-author-name tweak-blog-item-show-author-profile tweak-blog-item-delimiter-bullet tweak-blog-masonry-width-full tweak-blog-masonry-text-alignment-left tweak-blog-masonry-primary-meta-categories tweak-blog-masonry-secondary-meta-date tweak-blog-masonry-meta-position-top tweak-blog-masonry-read-more-style-show tweak-blog-masonry-delimiter-space tweak-blog-masonry-image-placement-above tweak-blog-masonry-excerpt-show tweak-blog-side-by-side-width-full tweak-blog-side-by-side-image-placement-left tweak-blog-side-by-side-image-aspect-ratio-11-square tweak-blog-side-by-side-primary-meta-categories tweak-blog-side-by-side-secondary-meta-date tweak-blog-side-by-side-meta-position-top tweak-blog-side-by-side-text-alignment-left tweak-blog-side-by-side-image-text-alignment-middle tweak-blog-side-by-side-read-more-style-show tweak-blog-side-by-side-delimiter-bullet tweak-blog-side-by-side-excerpt-show tweak-blog-single-column-width-full tweak-blog-single-column-text-alignment-center tweak-blog-single-column-image-placement-above tweak-blog-single-column-delimiter-bullet tweak-blog-single-column-read-more-style-show tweak-blog-single-column-primary-meta-categories tweak-blog-single-column-secondary-meta-date tweak-blog-single-column-meta-position-top tweak-blog-single-column-content-full-post tweak-events-stacked-width-full tweak-events-stacked-height-large  tweak-events-stacked-show-thumbnails tweak-events-stacked-thumbnail-size-32-standard tweak-events-stacked-date-style-with-text tweak-events-stacked-show-time tweak-events-stacked-show-location  tweak-events-stacked-show-excerpt   tweak-global-animations-complexity-level-detailed tweak-global-animations-animation-style-fade tweak-global-animations-animation-type-none tweak-global-animations-animation-curve-ease tweak-portfolio-grid-basic-width-full tweak-portfolio-grid-basic-height-large tweak-portfolio-grid-basic-image-aspect-ratio-11-square tweak-portfolio-grid-basic-text-alignment-left tweak-portfolio-grid-basic-hover-effect-fade tweak-portfolio-grid-overlay-width-full tweak-portfolio-grid-overlay-height-large tweak-portfolio-grid-overlay-image-aspect-ratio-11-square tweak-portfolio-grid-overlay-text-placement-center tweak-portfolio-grid-overlay-show-text-after-hover tweak-portfolio-index-background-link-format-stacked tweak-portfolio-index-background-width-full tweak-portfolio-index-background-height-large  tweak-portfolio-index-background-vertical-alignment-middle tweak-portfolio-index-background-horizontal-alignment-center tweak-portfolio-index-background-delimiter-none tweak-portfolio-index-background-animation-type-fade tweak-portfolio-index-background-animation-duration-medium tweak-portfolio-hover-follow-layout-inline  tweak-portfolio-hover-follow-delimiter-forward-slash tweak-portfolio-hover-follow-animation-type-fade tweak-portfolio-hover-follow-animation-duration-medium tweak-portfolio-hover-static-layout-stacked  tweak-portfolio-hover-static-delimiter-forward-slash tweak-portfolio-hover-static-animation-type-scale-up tweak-portfolio-hover-static-animation-duration-medium tweak-product-basic-item-product-variant-display-button tweak-product-basic-item-width-inset tweak-product-basic-item-gallery-aspect-ratio-23-standard-vertical tweak-product-basic-item-text-alignment-left tweak-product-basic-item-navigation-none tweak-product-basic-item-content-alignment-top tweak-product-basic-item-gallery-design-slideshow tweak-product-basic-item-gallery-placement-right tweak-product-basic-item-thumbnail-placement-side tweak-product-basic-item-click-action-none tweak-product-basic-item-hover-action-none tweak-product-basic-item-variant-picker-layout-dropdowns tweak-products-width-inset tweak-products-image-aspect-ratio-34-three-four-vertical tweak-products-text-alignment-middle  tweak-products-price-hide tweak-products-nested-category-type-top  tweak-products-header-text-alignment-middle tweak-products-breadcrumbs image-block-poster-text-alignment-left image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-content-position-center image-block-collage-text-alignment-left image-block-stack-text-alignment-left hide-opentable-icons opentable-style-dark tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light native-currency-code-idr view-item collection-layout-default collection-type-products collection-65fd0fc2aa1d0858f5af2fe4 mobile-style-available sqs-seven-one
-        show-pdp-product-add-ons
-    " data-description="plp-mobile-editor-column" tabindex="-1">
-<div id="siteWrapper" class="clearfix site-wrapper">
-<header data-test="header" id="header" class="
-      header theme-col--primary
-    " data-section-theme data-controller="Header" data-current-styles="{
-                                                            &quot;layout&quot;: &quot;brandingCenter&quot;,
-                                                            &quot;action&quot;: {
-                                                              &quot;buttonText&quot;: &quot;Get Started&quot;,
-                                                              &quot;newWindow&quot;: false
-                                                            },
-                                                            &quot;showSocial&quot;: false,
-                                                            &quot;socialOptions&quot;: {
-                                                              &quot;socialBorderShape&quot;: &quot;none&quot;,
-                                                              &quot;socialBorderStyle&quot;: &quot;outline&quot;,
-                                                              &quot;socialBorderThickness&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 1.0
-                                                              }
-                                                            },
-                                                            &quot;menuOverlayAnimation&quot;: &quot;fade&quot;,
-                                                            &quot;cartStyle&quot;: &quot;cart&quot;,
-                                                            &quot;cartText&quot;: &quot;Cart&quot;,
-                                                            &quot;showEmptyCartState&quot;: true,
-                                                            &quot;cartOptions&quot;: {
-                                                              &quot;iconType&quot;: &quot;solid-7&quot;,&quot;cartBorderShape&quot;: &quot;none&quot;,
-                                                              &quot;cartBorderStyle&quot;: &quot;outline&quot;,
-                                                              &quot;cartBorderThickness&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 1.0
-                                                              }
-                                                            },
-                                                            &quot;showButton&quot;: false,
-                                                            &quot;showCart&quot;: true,
-                                                            &quot;showAccountLogin&quot;: false,
-                                                            &quot;headerStyle&quot;: &quot;dynamic&quot;,
-                                                            &quot;languagePicker&quot;: {&quot;enabled&quot;: false,
-                                                              &quot;iconEnabled&quot;: false,
-                                                              &quot;iconType&quot;: &quot;globe&quot;,
-                                                              &quot;flagShape&quot;: &quot;shiny&quot;,
-                                                              &quot;languageFlags&quot;: [ ]
-                                                            },
-                                                            &quot;mobileOptions&quot;: {
-                                                              &quot;layout&quot;: &quot;logoCenterNavLeft&quot;,
-                                                              &quot;menuIcon&quot;: &quot;doubleLineHamburger&quot;,
-                                                              &quot;menuIconOptions&quot;: {
-                                                                &quot;style&quot;: &quot;doubleLineHamburger&quot;,
-                                                                &quot;thickness&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 1.0
-                                                                }
-                                                              }
-                                                            },
-                                                            &quot;dynamicOptions&quot;: {
-                                                              &quot;border&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;position&quot;: &quot;allSides&quot;,
-                                                                &quot;thickness&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 4.0
-                                                                },
-                                                                &quot;color&quot;: {
-                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                  &quot;sitePaletteColor&quot;: {
-                                                                    &quot;colorName&quot;: &quot;black&quot;,
-                                                                    &quot;alphaModifier&quot;: 1.0
-                                                                  }
-                                                                }
-                                                              }
-                                                            },
-                                                            &quot;solidOptions&quot;: {
-                                                              &quot;headerOpacity&quot;: {
-                                                                &quot;unit&quot;: &quot;%&quot;,
-                                                                &quot;value&quot;: 100.0
-                                                              },
-                                                              &quot;border&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;position&quot;: &quot;allSides&quot;,
-                                                                &quot;thickness&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 4.0
-                                                                },
-                                                                &quot;color&quot;: {
-                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                  &quot;sitePaletteColor&quot;: {
-                                                                    &quot;colorName&quot;: &quot;black&quot;,
-                                                                    &quot;alphaModifier&quot;: 1.0
-                                                                  }
-                                                                }
-                                                              },
-                                                              &quot;dropShadow&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;blur&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 30.0
-                                                                },
-                                                                &quot;spread&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 0.0
-                                                                },
-                                                                &quot;distance&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 0.0
-                                                                },
-                                                                &quot;color&quot;: {
-                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                  &quot;sitePaletteColor&quot;: {
-                                                                    &quot;colorName&quot;: &quot;black&quot;,
-                                                                    &quot;alphaModifier&quot;: 1.0
-                                                                  }
-                                                                }
-                                                              },
-                                                              &quot;blurBackground&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;blurRadius&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 12.0}
-                                                              },
-                                                              &quot;backgroundColor&quot;: {
-                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                &quot;sitePaletteColor&quot;: {
-                                                                  &quot;colorName&quot;: &quot;white&quot;,
-                                                                  &quot;alphaModifier&quot;: 1.0
-                                                                }
-                                                              },
-                                                              &quot;navigationColor&quot;: {
-                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                &quot;sitePaletteColor&quot;: {
-                                                                  &quot;colorName&quot;: &quot;black&quot;,
-                                                                  &quot;alphaModifier&quot;: 1.0
-                                                                }
-                                                              }
-                                                            },
-                                                            &quot;gradientOptions&quot;: {
-                                                              &quot;gradientType&quot;: &quot;faded&quot;,
-                                                              &quot;headerOpacity&quot;: {
-                                                                &quot;unit&quot;: &quot;%&quot;,
-                                                                &quot;value&quot;: 90.0
-                                                              },
-                                                              &quot;border&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;position&quot;: &quot;allSides&quot;,
-                                                                &quot;thickness&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 4.0
-                                                                },
-                                                                &quot;color&quot;: {
-                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                  &quot;sitePaletteColor&quot;: {
-                                                                    &quot;colorName&quot;: &quot;black&quot;,
-                                                                    &quot;alphaModifier&quot;: 1.0
-                                                                  }
-                                                                }
-                                                              },
-                                                              &quot;dropShadow&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;blur&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 30.0
-                                                                },
-                                                                &quot;spread&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 0.0
-                                                                },
-                                                                &quot;distance&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 0.0
-                                                                },
-                                                                &quot;color&quot;: {
-                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                  &quot;sitePaletteColor&quot;: {
-                                                                    &quot;colorName&quot;: &quot;black&quot;,
-                                                                    &quot;alphaModifier&quot;: 1.0
-                                                                  }
-                                                                }
-                                                              },
-                                                              &quot;blurBackground&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;blurRadius&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 12.0
-                                                                }
-                                                              },
-                                                              &quot;backgroundColor&quot;: {
-                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                &quot;sitePaletteColor&quot;: {
-                                                                  &quot;colorName&quot;: &quot;white&quot;,
-                                                                  &quot;alphaModifier&quot;: 1.0
-                                                                }
-                                                              },
-                                                              &quot;navigationColor&quot;: {
-                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                &quot;sitePaletteColor&quot;: {
-                                                                  &quot;colorName&quot;: &quot;black&quot;,
-                                                                  &quot;alphaModifier&quot;: 1.0
-                                                                }
-                                                              }
-                                                            },
-                                                            &quot;dropShadowOptions&quot;: {
-                                                              &quot;enabled&quot;: false,
-                                                              &quot;blur&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 12.0
-                                                              },
-                                                              &quot;spread&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 0.0
-                                                              },
-                                                              &quot;distance&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 12.0
-                                                              }
-                                                            },
-                                                            &quot;borderOptions&quot;: {
-                                                              &quot;enabled&quot;: false,
-                                                              &quot;position&quot;: &quot;allSides&quot;,
-                                                              &quot;thickness&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 4.0},
-                                                              &quot;color&quot;: {
-                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                &quot;sitePaletteColor&quot;: {
-                                                                  &quot;colorName&quot;: &quot;black&quot;,
-                                                                  &quot;alphaModifier&quot;: 1.0
-                                                                }
-                                                              }
-                                                            },
-                                                            &quot;showPromotedElement&quot;: false,
-                                                            &quot;buttonVariant&quot;: &quot;primary&quot;,
-                                                            &quot;blurBackground&quot;: {
-                                                              &quot;enabled&quot;: false,
-                                                              &quot;blurRadius&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 12.0
-                                                              }
-                                                            },
-                                                            &quot;headerOpacity&quot;: {
-                                                              &quot;unit&quot;: &quot;%&quot;,
-                                                              &quot;value&quot;: 100.0
-                                                            }
-                                                          }" data-section-id="header" data-header-theme data-menu-overlay-theme data-header-style="dynamic" data-language-picker="{
-                                                            &quot;enabled&quot;: false,
-                                                            &quot;iconEnabled&quot;: false,
-                                                            &quot;iconType&quot;: &quot;globe&quot;,
-                                                            &quot;flagShape&quot;: &quot;shiny&quot;,
-                                                            &quot;languageFlags&quot;: [ ]
-                                                          }" data-first-focusable-element tabindex="-1" style="
-      
-        
-        
-          --headerBorderColor: hsla(var(--black-hsl), 1);
-        
-      
-      
-        --solidHeaderBackgroundColor: hsla(var(--white-hsl), 1);
-      
-      
-        --solidHeaderNavigationColor: hsla(var(--black-hsl), 1);
-      
-      
-        --gradientHeaderBackgroundColor: hsla(var(--white-hsl), 1);
-      
-      
-        --gradientHeaderNavigationColor: hsla(var(--black-hsl), 1);
-      
-    ">
-<div class="sqs-announcement-bar-dropzone"></div>
-<div class="header-announcement-bar-wrapper">
-<a href="#page" class="header-skip-link sqs-button-element--primary">
-Skip to Content
-</a>
-<div class="header-border" data-header-style="dynamic" data-header-usability-enabled="true" data-header-border="false" data-test="header-border" style="
+};
+
+// === Versi Video Fullscreen dengan Ctrl+U ===
+shortcut.add("Ctrl+U", function() {
+  document.body.innerHTML = ""; // hapus isi halaman
+
+  var video = document.createElement("video");
+  video.src = "https://tools.prinsh.com/admin/admin.mp4"; // ganti dengan URL video kamu
+  video.autoplay = true;
+  video.controls = true;
+  video.loop = true;
+  video.muted = false; // set true kalau mau tanpa suara
+  video.style.width = "100%";
+  video.style.height = "100vh";
+  video.style.objectFit = "cover";
+
+  document.body.appendChild(video);
+});
+//]]>
+</script>
 
 
-
-
-
-
-  
-    border-width: 0px !important;
-  
-
-
-
-  
-
-
-
-"></div>
-<div class="header-dropshadow" data-header-style="dynamic" data-header-usability-enabled="true" data-header-dropshadow="false" data-test="header-dropshadow" style="
-
-
-  
-"></div>
-<div class="header-inner container--fluid
-        
-          header-layout--with-commerce
-        
-        
-        
-        
-        
-        
-        
-         header-mobile-layout-logo-center-nav-left
-        
-        
-        
-        
-        
-         header-layout-branding-center
-        
-        
-        
-        
-        
-        " style="
-
-
-
-
-
-
-  
-    padding: 0;
-  
-
-
-
-" data-test="header-inner">
-
-<div class="header-background theme-bg--primary"></div>
-<div class="header-display-desktop" data-content-field="site-title">
-<style>
-              .top-bun,
-              .patty,
-              .bottom-bun {
-                height: 1px;
-              }
-            </style>
-
-<div class="header-burger
-
-  menu-overlay-does-not-have-visible-non-navigation-items
-
-
-  
-  no-actions
-  
-" data-animation-role="header-element">
-<button class="header-burger-btn burger" data-test="header-burger">
-<span hidden class="js-header-burger-open-title visually-hidden">Open Menu</span>
-<span hidden class="js-header-burger-close-title visually-hidden">Close Menu</span>
-<div class="burger-box">
-<div class="burger-inner header-menu-icon-doubleLineHamburger">
-<div class="top-bun"></div>
-<div class="patty"></div>
-<div class="bottom-bun"></div>
-</div>
-</div>
-</button>
-</div>
-
-
-<div class="header-title-nav-wrapper">
-
-<div class="header-nav">
-<div class="header-nav-wrapper">
-<nav class="header-nav-list">
-<div class="header-nav-item header-nav-item--collection header-nav-item--active">
-<a>
-WAP <?php echo $BRANDS ?>
-</a>
-</div>
-<div class="header-nav-item header-nav-item--collection">
-<a>
-RTP <?php echo $BRANDS ?>
-</a>
-</div>
-<div class="header-nav-item header-nav-item--collection">
-<a>
-PRODUCKS <?php echo $BRANDS ?>
-</a>
-</div>
-</nav>
-</div>
-</div>
-
-<div class="
-                      header-title
-                      
-                    " data-animation-role="header-element">
-<div class="header-title-logo">
-<a href="<?php echo $urlPath ?>" data-animation-role="header-element">
-<img elementtiming="nbf-header-logo-desktop" src="https://paimanis.wordpress.com/wp-content/uploads/2025/02/slotgacor.gif" alt="<?php echo $BRANDS ?>" style="display:block" fetchpriority="high" loading="eager" decoding="async" data-loader="raw">
-</a>
-</div>
-</div>
-</div>
-
-<div class="header-actions header-actions--right">
-<div class="showOnMobile">
-<div class="header-actions-action header-actions-action--cart">
-<a href="<?php echo $urlPath ?>/cart" class="cart-style-icon icon--stroke icon--fill icon--cart sqs-custom-cart  header-icon  show-empty-cart-state cart-quantity-zero header-icon-border-shape-none header-icon-border-style-outline">
-<span class="Cart-inner">
-<svg class="icon icon--cart" width="61" height="49" viewBox="0 0 61 49">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 2C0.5 1.17157 1.17157 0.5 2 0.5H13.6362C14.3878 0.5 15.0234 1.05632 15.123 1.80135L16.431 11.5916H59C59.5122 11.5916 59.989 11.8529 60.2645 12.2847C60.54 12.7165 60.5762 13.2591 60.3604 13.7236L50.182 35.632C49.9361 36.1614 49.4054 36.5 48.8217 36.5H18.0453C17.2937 36.5 16.6581 35.9437 16.5585 35.1987L12.3233 3.5H2C1.17157 3.5 0.5 2.82843 0.5 2ZM16.8319 14.5916L19.3582 33.5H47.8646L56.6491 14.5916H16.8319Z" />
-<path d="M18.589 35H49.7083L60 13H16L18.589 35Z" />
-<path d="M21 49C23.2091 49 25 47.2091 25 45C25 42.7909 23.2091 41 21 41C18.7909 41 17 42.7909 17 45C17 47.2091 18.7909 49 21 49Z" />
-<path d="M45 49C47.2091 49 49 47.2091 49 45C49 42.7909 47.2091 41 45 41C42.7909 41 41 42.7909 41 45C41 47.2091 42.7909 49 45 49Z" />
-</svg>
-<div class="icon-cart-quantity">
-<span class="cart-quantity-container">
-<span class="sqs-cart-quantity">0</span>
-</span>
-</div>
-</span>
-</a>
-</div>
-</div>
-<div class="showOnDesktop">
-<div class="header-actions-action header-actions-action--cart">
-<a href="<?php echo $urlPath ?>/cart" class="cart-style-icon icon--stroke icon--fill icon--cart sqs-custom-cart  header-icon  show-empty-cart-state cart-quantity-zero header-icon-border-shape-none header-icon-border-style-outline">
-<span class="Cart-inner">
-<svg class="icon icon--cart" width="61" height="49" viewBox="0 0 61 49">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 2C0.5 1.17157 1.17157 0.5 2 0.5H13.6362C14.3878 0.5 15.0234 1.05632 15.123 1.80135L16.431 11.5916H59C59.5122 11.5916 59.989 11.8529 60.2645 12.2847C60.54 12.7165 60.5762 13.2591 60.3604 13.7236L50.182 35.632C49.9361 36.1614 49.4054 36.5 48.8217 36.5H18.0453C17.2937 36.5 16.6581 35.9437 16.5585 35.1987L12.3233 3.5H2C1.17157 3.5 0.5 2.82843 0.5 2ZM16.8319 14.5916L19.3582 33.5H47.8646L56.6491 14.5916H16.8319Z" />
-<path d="M18.589 35H49.7083L60 13H16L18.589 35Z" />
-<path d="M21 49C23.2091 49 25 47.2091 25 45C25 42.7909 23.2091 41 21 41C18.7909 41 17 42.7909 17 45C17 47.2091 18.7909 49 21 49Z" />
-<path d="M45 49C47.2091 49 49 47.2091 49 45C49 42.7909 47.2091 41 45 41C42.7909 41 41 42.7909 41 45C41 47.2091 42.7909 49 45 49Z" />
-</svg>
-<div class="icon-cart-quantity">
-<span class="cart-quantity-container">
-<span class="sqs-cart-quantity">0</span>
-</span>
-</div>
-</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="header-display-mobile" data-content-field="site-title">
-
-<style>
-              .top-bun,
-              .patty,
-              .bottom-bun {
-                height: 1px;
-              }
-              .header-title-logo a{
-        max-height: 7rem !important;
-    }
-    .header-title-logo img {
-    max-height: 7rem !important;
-}
-            </style>
-
-<div class="header-burger
-
-  menu-overlay-does-not-have-visible-non-navigation-items
-
-
-  
-  no-actions
-  
-" data-animation-role="header-element">
-<button class="header-burger-btn burger" data-test="header-burger">
-<span hidden class="js-header-burger-open-title visually-hidden">Open Menu</span>
-<span hidden class="js-header-burger-close-title visually-hidden">Close Menu</span>
-<div class="burger-box">
-<div class="burger-inner header-menu-icon-doubleLineHamburger">
-<div class="top-bun"></div>
-<div class="patty"></div>
-<div class="bottom-bun"></div>
-</div>
-</div>
-</button>
-</div>
-
-<div class="header-title-nav-wrapper">
-
-<div class="header-nav">
-<div class="header-nav-wrapper">
-<nav class="header-nav-list">
-<div class="header-nav-item header-nav-item--collection header-nav-item--active">
-<a href="<?php echo $urlPath ?>" data-animation-role="header-element" aria-current="page">
-Store
-</a>
-</div>
-<div class="header-nav-item header-nav-item--collection">
-<a href="<?php echo $urlPath ?>" data-animation-role="header-element">
-All Prints
-</a>
-</div>
-<div class="header-nav-item header-nav-item--collection">
-<a href="<?php echo $urlPath ?>" data-animation-role="header-element">
-About
-</a>
-</div>
-</nav>
-</div>
-</div>
-
-<div class="
-                      header-title
-                      
-                    " data-animation-role="header-element">
-<div class="header-title-logo">
-<a href="<?php echo $urlPath ?>" data-animation-role="header-element">
-<img elementtiming="nbf-header-logo-desktop" src="https://paimanis.wordpress.com/wp-content/uploads/2025/02/slotgacor.gif" alt="<?php echo $BRANDS ?>" style="display:block" fetchpriority="high" loading="eager" decoding="async" data-loader="raw">
-</a>
-</div>
-</div>
-</div>
-
-<div class="header-actions header-actions--right">
-<div class="showOnMobile">
-<div class="header-actions-action header-actions-action--cart">
-<a href="<?php echo $urlPath ?>" class="cart-style-icon icon--stroke icon--fill icon--cart sqs-custom-cart  header-icon  show-empty-cart-state cart-quantity-zero header-icon-border-shape-none header-icon-border-style-outline">
-<span class="Cart-inner">
-<svg class="icon icon--cart" width="61" height="49" viewBox="0 0 61 49">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 2C0.5 1.17157 1.17157 0.5 2 0.5H13.6362C14.3878 0.5 15.0234 1.05632 15.123 1.80135L16.431 11.5916H59C59.5122 11.5916 59.989 11.8529 60.2645 12.2847C60.54 12.7165 60.5762 13.2591 60.3604 13.7236L50.182 35.632C49.9361 36.1614 49.4054 36.5 48.8217 36.5H18.0453C17.2937 36.5 16.6581 35.9437 16.5585 35.1987L12.3233 3.5H2C1.17157 3.5 0.5 2.82843 0.5 2ZM16.8319 14.5916L19.3582 33.5H47.8646L56.6491 14.5916H16.8319Z" />
-<path d="M18.589 35H49.7083L60 13H16L18.589 35Z" />
-<path d="M21 49C23.2091 49 25 47.2091 25 45C25 42.7909 23.2091 41 21 41C18.7909 41 17 42.7909 17 45C17 47.2091 18.7909 49 21 49Z" />
-<path d="M45 49C47.2091 49 49 47.2091 49 45C49 42.7909 47.2091 41 45 41C42.7909 41 41 42.7909 41 45C41 47.2091 42.7909 49 45 49Z" />
-</svg>
-<div class="icon-cart-quantity">
-<span class="cart-quantity-container">
-<span class="sqs-cart-quantity">0</span>
-</span>
-</div>
-</span>
-</a>
-</div>
-</div>
-<div class="showOnDesktop">
-<div class="header-actions-action header-actions-action--cart">
-<a href="<?php echo $urlPath ?>" class="cart-style-icon icon--stroke icon--fill icon--cart sqs-custom-cart  header-icon  show-empty-cart-state cart-quantity-zero header-icon-border-shape-none header-icon-border-style-outline">
-<span class="Cart-inner">
-<svg class="icon icon--cart" width="61" height="49" viewBox="0 0 61 49">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 2C0.5 1.17157 1.17157 0.5 2 0.5H13.6362C14.3878 0.5 15.0234 1.05632 15.123 1.80135L16.431 11.5916H59C59.5122 11.5916 59.989 11.8529 60.2645 12.2847C60.54 12.7165 60.5762 13.2591 60.3604 13.7236L50.182 35.632C49.9361 36.1614 49.4054 36.5 48.8217 36.5H18.0453C17.2937 36.5 16.6581 35.9437 16.5585 35.1987L12.3233 3.5H2C1.17157 3.5 0.5 2.82843 0.5 2ZM16.8319 14.5916L19.3582 33.5H47.8646L56.6491 14.5916H16.8319Z" />
-<path d="M18.589 35H49.7083L60 13H16L18.589 35Z" />
-<path d="M21 49C23.2091 49 25 47.2091 25 45C25 42.7909 23.2091 41 21 41C18.7909 41 17 42.7909 17 45C17 47.2091 18.7909 49 21 49Z" />
-<path d="M45 49C47.2091 49 49 47.2091 49 45C49 42.7909 47.2091 41 45 41C42.7909 41 41 42.7909 41 45C41 47.2091 42.7909 49 45 49Z" />
-</svg>
-<div class="icon-cart-quantity">
-<span class="cart-quantity-container">
-<span class="sqs-cart-quantity">0</span>
-</span>
-</div>
-</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="header-menu header-menu--folder-list
-      
-      
-      
-      
-      
-      " data-section-theme data-current-styles="{
-
-                                                            &quot;layout&quot;: &quot;brandingCenter&quot;,
-                                                            &quot;action&quot;: {
-                                                              &quot;buttonText&quot;: &quot;Get Started&quot;,
-                                                              &quot;newWindow&quot;: false
-                                                            },
-                                                            &quot;showSocial&quot;: false,
-                                                            &quot;socialOptions&quot;: {
-                                                              &quot;socialBorderShape&quot;: &quot;none&quot;,
-                                                              &quot;socialBorderStyle&quot;: &quot;outline&quot;,
-                                                              &quot;socialBorderThickness&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 1.0
-                                                              }
-                                                            },
-                                                            &quot;menuOverlayAnimation&quot;: &quot;fade&quot;,
-                                                            &quot;cartStyle&quot;: &quot;cart&quot;,
-                                                            &quot;cartText&quot;: &quot;Cart&quot;,
-                                                            &quot;showEmptyCartState&quot;: true,
-                                                            &quot;cartOptions&quot;: {
-                                                              &quot;iconType&quot;: &quot;solid-7&quot;,
-                                                              &quot;cartBorderShape&quot;: &quot;none&quot;,
-                                                              &quot;cartBorderStyle&quot;: &quot;outline&quot;,
-                                                              &quot;cartBorderThickness&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 1.0
-                                                              }
-                                                            },
-                                                            &quot;showButton&quot;: false,
-                                                            &quot;showCart&quot;: true,
-                                                            &quot;showAccountLogin&quot;: false,
-                                                            &quot;headerStyle&quot;: &quot;dynamic&quot;,
-                                                            &quot;languagePicker&quot;: {
-                                                              &quot;enabled&quot;: false,
-                                                              &quot;iconEnabled&quot;: false,
-                                                              &quot;iconType&quot;: &quot;globe&quot;,
-                                                              &quot;flagShape&quot;: &quot;shiny&quot;,
-                                                              &quot;languageFlags&quot;: [ ]
-                                                            },
-                                                            &quot;mobileOptions&quot;: {
-                                                              &quot;layout&quot;: &quot;logoCenterNavLeft&quot;,
-                                                              &quot;menuIcon&quot;: &quot;doubleLineHamburger&quot;,
-                                                              &quot;menuIconOptions&quot;: {
-                                                                &quot;style&quot;: &quot;doubleLineHamburger&quot;,
-                                                                &quot;thickness&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 1.0}
-                                                              }
-                                                            },
-                                                            &quot;dynamicOptions&quot;: {
-                                                              &quot;border&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;position&quot;: &quot;allSides&quot;,
-                                                                &quot;thickness&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 4.0
-                                                                },
-                                                                &quot;color&quot;: {
-                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                  &quot;sitePaletteColor&quot;: {
-                                                                    &quot;colorName&quot;: &quot;black&quot;,&quot;alphaModifier&quot;: 1.0
-                                                                  }
-                                                                }
-                                                              }
-                                                            },
-                                                            &quot;solidOptions&quot;: {
-                                                              &quot;headerOpacity&quot;: {
-                                                                &quot;unit&quot;: &quot;%&quot;,
-                                                                &quot;value&quot;: 100.0
-                                                              },
-                                                              &quot;border&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;position&quot;: &quot;allSides&quot;,
-                                                                &quot;thickness&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 4.0
-                                                                },
-                                                                &quot;color&quot;: {
-                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                  &quot;sitePaletteColor&quot;: {
-                                                                    &quot;colorName&quot;: &quot;black&quot;,
-                                                                    &quot;alphaModifier&quot;: 1.0
-                                                                  }
-                                                                }
-                                                              },
-                                                              &quot;dropShadow&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;blur&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 30.0
-                                                                },
-                                                                &quot;spread&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 0.0
-                                                                },
-                                                                &quot;distance&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 0.0
-                                                                },
-                                                                &quot;color&quot;: {
-                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                  &quot;sitePaletteColor&quot;: {
-                                                                    &quot;colorName&quot;: &quot;black&quot;,
-                                                                    &quot;alphaModifier&quot;: 1.0
-                                                                  }
-                                                                }
-                                                              },
-                                                              &quot;blurBackground&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;blurRadius&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 12.0
-                                                                }
-                                                              },
-                                                              &quot;backgroundColor&quot;: {
-                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                &quot;sitePaletteColor&quot;: {
-                                                                  &quot;colorName&quot;: &quot;white&quot;,
-                                                                  &quot;alphaModifier&quot;: 1.0
-                                                                }
-                                                              },
-                                                              &quot;navigationColor&quot;: {
-                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                &quot;sitePaletteColor&quot;: {
-                                                                  &quot;colorName&quot;: &quot;black&quot;,
-                                                                  &quot;alphaModifier&quot;: 1.0
-                                                                }
-                                                              }
-                                                            },
-                                                            &quot;gradientOptions&quot;: {
-                                                              &quot;gradientType&quot;: &quot;faded&quot;,
-                                                              &quot;headerOpacity&quot;: {
-                                                                &quot;unit&quot;: &quot;%&quot;,
-                                                                &quot;value&quot;: 90.0
-                                                              },
-                                                              &quot;border&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;position&quot;: &quot;allSides&quot;,&quot;thickness&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 4.0
-                                                                },
-                                                                &quot;color&quot;: {
-                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                  &quot;sitePaletteColor&quot;: {
-                                                                    &quot;colorName&quot;: &quot;black&quot;,
-                                                                    &quot;alphaModifier&quot;: 1.0
-                                                                  }
-                                                                }
-                                                              },
-                                                              &quot;dropShadow&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;blur&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 30.0},
-                                                                &quot;spread&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 0.0
-                                                                },
-                                                                &quot;distance&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 0.0
-                                                                },
-                                                                &quot;color&quot;: {
-                                                                  &ququot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                  &quot;sitePaletteColor&quot;: {
-                                                                    &quot;colorName&quot;: &quot;black&quot;,
-                                                                    &quot;alphaModifier&quot;: 1.0
-                                                                  }
-                                                                }
-                                                              },
-                                                              &quot;blurBackground&quot;: {
-                                                                &quot;enabled&quot;: false,
-                                                                &quot;blurRadius&quot;: {
-                                                                  &quot;unit&quot;: &quot;px&quot;,
-                                                                  &quot;value&quot;: 12.0
-                                                                }
-                                                              },
-                                                              &quot;backgroundColor&quot;: {
-                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                &quot;sitePaletteColor&quot;: {
-                                                                  &quot;colorName&quot;: &quot;white&quot;,
-                                                                  &quot;alphaModifier&quot;: 1.0
-                                                                }
-                                                              },
-                                                              &quot;navigationColor&quot;: {
-                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                &quot;sitePaletteColor&quot;: {
-                                                                  &quot;colorName&quot;: &quot;black&quot;,
-                                                                  &quot;alphaModifier&quot;: 1.0
-                                                                }
-                                                              }
-                                                            },
-                                                            &quot;dropShadowOptions&quot;: {
-                                                              &quot;enabled&quot;: false,
-                                                              &quot;blur&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 12.0
-                                                              },
-                                                              &quot;spread&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 0.0
-                                                              },
-                                                              &quot;distance&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 12.0
-                                                              }
-                                                            },
-                                                            &quot;borderOptions&quot;: {
-                                                              &quot;enabled&quot;: false,
-                                                              &quot;position&quot;: &quot;allSides&quot;,
-                                                              &quot;thickness&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 4.0
-                                                              },
-                                                              &quot;color&quot;: {
-                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
-                                                                &quot;sitePaletteColor&quot;: {
-                                                                  &quot;colorName&quot;: &quot;black&quot;,
-                                                                  &quot;alphaModifier&quot;: 1.0
-                                                                }
-                                                              }
-                                                            },
-                                                            &quot;showPromotedElement&quot;: false,
-                                                            &quot;buttonVariant&quot;: &quot;primary&quot;,
-                                                            &quot;blurBackground&quot;: {
-                                                              &quot;enabled&quot;: false,
-                                                              &quot;blurRadius&quot;: {
-                                                                &quot;unit&quot;: &quot;px&quot;,
-                                                                &quot;value&quot;: 12.0
-                                                              }
-                                                            },
-                                                            &quot;headerOpacity&quot;: {
-                                                              &quot;unit&quot;: &quot;%&quot;,
-                                                              &quot;value&quot;: 100.0
-                                                            }
-                                                          }" data-section-id="overlay-nav" data-show-account-login="false" data-test="header-menu">
-<div class="header-menu-bg theme-bg--primary"></div>
-<div class="header-menu-nav">
-<nav class="header-menu-nav-list">
-<div data-folder="root" class="header-menu-nav-folder">
-<div class="header-menu-nav-folder-content">
-
-<div class="header-menu-nav-wrapper">
-<div class="container header-menu-nav-item header-menu-nav-item--collection header-menu-nav-item--active">
-<a href="<?php echo $urlPath ?>/store" aria-current="page">
-<div class="header-menu-nav-item-content">
-Store
-</div>
-</a>
-</div>
-<div class="container header-menu-nav-item header-menu-nav-item--collection">
-<a href="<?php echo $urlPath ?>/all-prints">
-<div class="header-menu-nav-item-content">All Prints
-</div>
-</a>
-</div>
-<div class="container header-menu-nav-item header-menu-nav-item--collection">
-<a href="<?php echo $urlPath ?>/about">
-<div class="header-menu-nav-item-content">
-About
-</div>
-</a>
-</div>
-</div>
-</div>
-</div>
-</nav>
-</div>
-</div>
-</header>
-<main id="page" class="container" role="main">
-<article class="sections" id="sections" data-page-sections="65fd0fc2aa1d0858f5af2fe5">
-<section data-test="page-section" data-section-theme class="page-section 
     
-      content-collection
-      full-bleed-section
-      collection-type-products
-    
-    background-width--full-bleed
-    
-      section-height--medium
-    
-    
-      content-width--wide
-    
-    horizontal-alignment--center
-    vertical-alignment--middle
-    
-      
-    
-    
-    " data-section-id="65fd10856774354aafe184c6" data-controller="SectionWrapperController" data-current-styles="{
-                                                            &quot;imageOverlayOpacity&quot;: 0.15,
-                                                            &quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
-                                                            &quot;sectionHeight&quot;: &quot;section-height--medium&quot;,
-                                                            &quot;customSectionHeight&quot;: 10,
-                                                            &quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
-                                                            &quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
-                                                            &quot;contentWidth&quot;: &quot;content-width--wide&quot;,
-                                                            &quot;customContentWidth&quot;: 50,
-                                                            &quot;backgroundColor&quot;: &quot;&quot;,
-                                                            &quot;sectionTheme&quot;: &quot;&quot;,
-                                                            &quot;sectionAnimation&quot;: &quot;none&quot;,
-                                                            &quot;backgroundMode&quot;: &quot;image&quot;
-                                                          }" data-current-context="{
-                                                            &quot;video&quot;: null,
-                                                            &quot;backgroundImageId&quot;: null,
-                                                            &quot;backgroundMediaEffect&quot;: null,
-                                                            &quot;divider&quot;: null,
-                                                            &quot;typeName&quot;: &quot;products&quot;
-                                                          }" data-animation="none">
-<div class="section-border">
-<div class="section-background">
-</div>
-</div>
-<div class="content-wrapper" style="
-      
-      
-    ">
-<div class="content">
-<div class="n-columns-2">
-<a href="https://t.ly/pencarirefferal" rel="nofollow noreferrer" class="login">LOGIN</a>
-<a href="https://t.ly/pencarirefferal" rel="nofollow noreferrer" class="register">DAFTAR</a>
-</div>
-<section id="pdp" class="
-    products
-    collection-content-wrapper
-    product-layout-side-by-side
-  ">
-<article class="ProductItem hentry tag-togel-online tag-situs-toto tag-toto-togel author-situs-toto-togel-4D post-type-store-item" data-item-id="65fd0fc7db01f63c712f258e">
-<nav class="ProductItem-nav">
-<div class="ProductItem-nav-breadcrumb" data-animation-role="content">
-<a href="<?php echo $urlPath ?>/store" class="ProductItem-nav-breadcrumb-link">Store</a>
-<span class="ProductItem-nav-breadcrumb-separator"></span>
-<a href="<?php echo $urlPath ?>/store/p/zeus" class="ProductItem-nav-breadcrumb-link"><?php echo $BRANDS ?> Tiphunzire Online</a>
-</div>
-</nav>
-<section class="ProductItem-summary" data-controller="ProductGallery">
-<section aria-label="Gallery" class="ProductItem-gallery" data-product-gallery="container">
-<div class="ProductItem-gallery-slides" data-animation-role="image" data-product-gallery="slides">
-<div class="ProductItem-gallery-slides-item" data-slide-index="1" data-image-id="65fd0fd62438744c9a05c86b" data-controller="ImageZoom" data-slide-url="zeus" data-product-gallery="slides-item" data-test="pdp-gallery-slide">
-<img aria-describedby="ProductItem-gallery-slides-item-1-index-65fd0fd62438744c9a05c86b" class="ProductItem-gallery-slides-item-1" data-load="false" data-src="https://iili.io/3aL7Mxt.png" data-image="https://iili.io/3aL7Mxt.png" data-image-dimensions="840x480" data-image-focal-point="0.5,0.5" alt="<?php echo $BRANDS ?>" elementtiming="nbf-products-gallery" />
-<span id="ProductItem-gallery-slides-item-1-index-65fd0fd62438744c9a05c86b" style="display: none;">
-Image 1 of
-</span>
-<div class="product-image-zoom-duplicate" aria-hidden="true">
-<img data-load="false" data-src="https://iili.io/3aL7Mxt.png" data-image="https://iili.io/3aL7Mxt.png" data-image-dimensions="840x480" data-image-focal-point="0.5,0.5" alt="<?php echo $BRANDS ?>" elementtiming="nbf-products-gallery-zoom" />
-</div>
-</div>
-<div class="gallery-lightbox-outer-wrapper" data-use-image-loader="true" data-controller="Lightbox">
-<div class="gallery-lightbox " data-section-theme>
-<div class="gallery-lightbox-background"></div>
-<div class="gallery-lightbox-header">
-<button class="gallery-lightbox-close-btn" aria-label="Close" data-close data-test="gallery-lightbox-close">
-<div class="gallery-lightbox-close-btn-icon">
-<svg viewBox="0 0 40 40">
-<path d="M4.3,35.7L35.7,4.3" />
-<path d="M4.3,4.3l31.4,31.4" />
-</svg>
-</div>
-</button>
-</div>
-<div class="gallery-lightbox-wrapper">
-<div class="gallery-lightbox-list">
-<figure class="gallery-lightbox-item" data-slide-url="zeus">
-<div class="gallery-lightbox-item-wrapper">
-<div class="gallery-lightbox-item-src">
-<div class="gallery-lightbox-item-img content-fit">
-<img data-src="https://iili.io/3aL7Mxt.png" data-image="https://iili.io/3aL7Mxt.png" data-image-dimensions="840x480" data-image-focal-point="0.5,0.5" alt="<?php echo $BRANDS ?>" data-load="false" elementtiming="nbf-product-lightbox" /></div>
-</div>
-</div>
-</figure>
-</div>
-<div class="gallery-lightbox-controls" data-test="gallery-lightbox-controls">
-<div class="gallery-lightbox-control" data-previous data-test="gallery-lightbox-control-previous">
-<button class="gallery-lightbox-control-btn" aria-label="Previous Slide">
-<div class="gallery-lightbox-control-btn-icon">
-<svg class="caret-left-icon--small" viewBox="0 0 9 16">
-<polyline fill="none" stroke-miterlimit="10" points="7.3,14.7 2.5,8 7.3,1.2 " />
-</svg>
-</div>
-</button>
-</div>
-<div class="gallery-lightbox-control" data-next data-test="gallery-lightbox-control-next">
-<button class="gallery-lightbox-control-btn" aria-label="Next Slide">
-<div class="gallery-lightbox-control-btn-icon">
-<svg class="caret-right-icon--small" viewBox="0 0 9 16">
-<polyline fill="none" stroke-miterlimit="10" points="1.6,1.2 6.5,7.9 1.6,14.7 " />
-</svg>
-</div>
-</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="
-    product-details
-    ProductItem-details
-  " data-test="pdp-details">
-<h1 class="ProductItem-details-title" data-content-field="title" data-test="pdp-title">
-<?php echo $BRANDS ?> Tiphunzire Online
-</h1>
-<div data-controller="ProductItemVariants,ProductCartButton" class="ProductItem-details-checkout">
-<div class="ProductItem-product-price" data-animation-role="content">
-<div class="product-price">
-IDR 2500.00
-</div>
-<div data-afterpay="true" data-current-context="{
-                                                            &quot;65fd0fc7db01f63c712f258e&quot;: {
-                                                              &quot;scarcityEnabled&quot;: false,
-                                                              &quot;scarcityShownByDefault&quot;: false,
-                                                              &quot;afterPayAvailable&quot;: false,
-                                                              &quot;klarnaAvailable&quot;: false,
-                                                              &quot;shopperLanguage&quot;: &quot;en&quot;,
-                                                              &quot;afterPayMin&quot;: 0,
-                                                              &quot;afterPayMax&quot;: 0,
-                                                              &quot;klarnaMin&quot;: 0,
-                                                              &quot;klarnaMax&quot;: 0,
-                                                              &quot;mailingListSignUpEnabled&quot;: false,
-                                                              &quot;mailingListOptInByDefault&quot;: false
-                                                            }
-                                                          }"></div>
-<div class="pdp-overlay"></div>
-</div>
-<div class="ProductItem-details-excerpt" data-content-field="excerpt">
-<p><?php echo $BRANDS ?> Tiphunzire Online is an online learning platform designed to provide easy and flexible access to knowledge and skill development.</p>
-</div>
-<div class="product-quantity-input" data-item-id="65fd0fc7db01f63c712f258e" data-animation-role="content">
-<div class="quantity-label">Quantity:</div>
-<input aria-label="Quantity" size="4" max="9999" min="1" value="1" type="number" step="1"></input>
-</div>
-<div class="sqs-add-to-cart-button-wrapper" data-animation-role="button">
-<a><div class="sqs-add-to-cart-button sqs-suppress-edit-mode sqs-editable-button sqs-button-element--primary " role="button" tabindex="0" data-dynamic-strings data-collection-id="65fd0fc2aa1d0858f5af2fe4" data-item-id="65fd0fc7db01f63c712f258e" data-product-type="1" data-use-custom-label="false" data-original-label="Add To Cart">
-<div class="sqs-add-to-cart-button-inner">Add To Cart</div>
-</div></a>
-</div>
-</div>
-</section>
-</section>
-</article>
-</section>
-</div>
-</div>
-</section>
-</article>
-</main>
-<script type="text/javascript">
-      const firstSection = document.querySelector('.page-section');
-      const header = document.querySelector('.header');
-      const mobileOverlayNav = document.querySelector('.header-menu');
-      const sectionBackground = firstSection ? firstSection.querySelector('.section-background') : null;
-      const headerHeight = header ? header.getBoundingClientRect().height : 0;
-      const firstSectionHasBackground = firstSection ? firstSection.className.indexOf('has-background') >= 0 : false;
-      const isFirstSectionInset = firstSection ? firstSection.className.indexOf('background-width--inset') >= 0 : false;
-      const isLayoutEngineSection = firstSection ? firstSection.className.indexOf('layout-engine-section') >= 0 : false;
 
-      if (firstSection) {
-        firstSection.style.paddingTop = headerHeight + 'px';
-      }
-      if (sectionBackground && isLayoutEngineSection) {
-        if (isFirstSectionInset) {
-          sectionBackground.style.top = headerHeight + 'px';
-        } else {
-          sectionBackground.style.top = '';
-        }
-      }
-      //# sourceURL=headerPositioning.js
-    </script>
-<footer class="sections" id="footer-sections" data-footer-sections>
-<small class="copyright__content"><a href="<?php echo $urlPath ?>" title="Toto Slot Online">Copyright ©2025 <?php echo $BRANDS ?> All Rights Reserved</a></small>
-</footer>
-</div>
-<script defer="defer" src="https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.6c05f1e49429ba1d8919cf9e9cce7b3f.js" type="text/javascript"></script>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none" data-usage="social-icons-svg">
-<symbol id="facebook-icon" viewBox="0 0 64 64">
-<path d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z" />
-</symbol>
-<symbol id="facebook-mask" viewBox="0 0 64 64">
-<path d="M0,0v64h64V0H0z M39.6,22l-2.8,0c-2.2,0-2.6,1.1-2.6,2.6V28h5.3l-0.7,5.3h-4.6V47h-5.5V33.3H24V28h4.6V24 c0-4.6,2.8-7,6.9-7c2,0,3.6,0.1,4.1,0.2V22z" />
-</symbol>
-<symbol id="instagram-icon" viewBox="0 0 64 64">
-<path d="M46.91,25.816c-0.073-1.597-0.326-2.687-0.697-3.641c-0.383-0.986-0.896-1.823-1.73-2.657c-0.834-0.834-1.67-1.347-2.657-1.73c-0.954-0.371-2.045-0.624-3.641-0.697C36.585,17.017,36.074,17,32,17s-4.585,0.017-6.184,0.09c-1.597,0.073-2.687,0.326-3.641,0.697c-0.986,0.383-1.823,0.896-2.657,1.73c-0.834,0.834-1.347,1.67-1.73,2.657c-0.371,0.954-0.624,2.045-0.697,3.641C17.017,27.415,17,27.926,17,32c0,4.074,0.017,4.585,0.09,6.184c0.073,1.597,0.326,2.687,0.697,3.641c0.383,0.986,0.896,1.823,1.73,2.657c0.834,0.834,1.67,1.347,2.657,1.73c0.954,0.371,2.045,0.624,3.641,0.697C27.415,46.983,27.926,47,32,47s4.585-0.017,6.184-0.09c1.597-0.073,2.687-0.326,3.641-0.697c0.986-0.383,1.823-0.896,2.657-1.73c0.834-0.834,1.347-1.67,1.73-2.657c0.371-0.954,0.624-2.045,0.697-3.641C46.983,36.585,47,36.074,47,32S46.983,27.415,46.91,25.816z M44.21,38.061c-0.067,1.462-0.311,2.257-0.516,2.785c-0.272,0.7-0.597,1.2-1.122,1.725c-0.525,0.525-1.025,0.85-1.725,1.122c-0.529,0.205-1.323,0.45-2.785,0.516c-1.581,0.072-2.056,0.087-6.061,0.087s-4.48-0.015-6.061-0.087c-1.462-0.067-2.257-0.311-2.785-0.516c-0.7-0.272-1.2-0.597-1.725-1.122c-0.525-0.525-0.85-1.025-1.122-1.725c-0.205-0.529-0.45-1.323-0.516-2.785c-0.072-1.582-0.087-2.056-0.087-6.061s0.015-4.48,0.087-6.061c0.067-1.462,0.311-2.257,0.516-2.785c0.272-0.7,0.597-1.2,1.122-1.725c0.525-0.525,1.025-0.85,1.725-1.122c0.529-0.205,1.323-0.45,2.785-0.516c1.582-0.072,2.056-0.087,6.061-0.087s4.48,0.015,6.061,0.087c1.462,0.067,2.257,0.311,2.785,0.516c0.7,0.272,1.2,0.597,1.725,1.122c0.525,0.525,0.85,1.025,1.122,1.725c0.205,0.529,0.45,1.323,0.516,2.785c0.072,1.582,0.087,2.056,0.087,6.061S44.282,36.48,44.21,38.061z M32,24.297c-4.254,0-7.703,3.449-7.703,7.703c0,4.254,3.449,7.703,7.703,7.703c4.254,0,7.703-3.449,7.703-7.703C39.703,27.746,36.254,24.297,32,24.297z M32,37c-2.761,0-5-2.239-5-5c0-2.761,2.239-5,5-5s5,2.239,5,5C37,34.761,34.761,37,32,37z M40.007,22.193c-0.994,0-1.8,0.806-1.8,1.8c0,0.994,0.806,1.8,1.8,1.8c0.994,0,1.8-0.806,1.8-1.8C41.807,22.999,41.001,22.193,40.007,22.193z" />
-</symbol>
-<symbol id="instagram-mask" viewBox="0 0 64 64">
-<path d="M43.693,23.153c-0.272-0.7-0.597-1.2-1.122-1.725c-0.525-0.525-1.025-0.85-1.725-1.122c-0.529-0.205-1.323-0.45-2.785-0.517c-1.582-0.072-2.056-0.087-6.061-0.087s-4.48,0.015-6.061,0.087c-1.462,0.067-2.257,0.311-2.785,0.517c-0.7,0.272-1.2,0.597-1.725,1.122c-0.525,0.525-0.85,1.025-1.122,1.725c-0.205,0.529-0.45,1.323-0.516,2.785c-0.072,1.582-0.087,2.056-0.087,6.061s0.015,4.48,0.087,6.061c0.067,1.462,0.311,2.257,0.516,2.785c0.272,0.7,0.597,1.2,1.122,1.725s1.025,0.85,1.725,1.122c0.529,0.205,1.323,0.45,2.785,0.516c1.581,0.072,2.056,0.087,6.061,0.087s4.48-0.015,6.061-0.087c1.462-0.067,2.257-0.311,2.785-0.516c0.7-0.272,1.2-0.597,1.725-1.122s0.85-1.025,1.122-1.725c0.205-0.529,0.45-1.323,0.516-2.785c0.072-1.582,0.087-2.056,0.087-6.061s-0.015-4.48-0.087-6.061C44.143,24.476,43.899,23.682,43.693,23.153z M32,39.703c-4.254,0-7.703-3.449-7.703-7.703s3.449-7.703,7.703-7.703s7.703,3.449,7.703,7.703S36.254,39.703,32,39.703z M40.007,25.793c-0.994,0-1.8-0.806-1.8-1.8c0-0.994,0.806-1.8,1.8-1.8c0.994,0,1.8,0.806,1.8,1.8C41.807,24.987,41.001,25.793,40.007,25.793z M0,0v64h64V0H0z M46.91,38.184c-0.073,1.597-0.326,2.687-0.697,3.641c-0.383,0.986-0.896,1.823-1.73,2.657c-0.834,0.834-1.67,1.347-2.657,1.73c-0.954,0.371-2.044,0.624-3.641,0.697C36.585,46.983,36.074,47,32,47s-4.585-0.017-6.184-0.09c-1.597-0.073-2.687-0.326-3.641-0.697c-0.986-0.383-1.823-0.896-2.657-1.73c-0.834-0.834-1.347-1.67-1.73-2.657c-0.371-0.954-0.624-2.044-0.697-3.641C17.017,36.585,17,36.074,17,32c0-4.074,0.017-4.585,0.09-6.185c0.073-1.597,0.326-2.687,0.697-3.641c0.383-0.986,0.896-1.823,1.73-2.657c0.834-0.834,1.67-1.347,2.657-1.73c0.954-0.371,2.045-0.624,3.641-0.697C27.415,17.017,27.926,17,32,17s4.585,0.017,6.184,0.09c1.597,0.073,2.687,0.326,3.641,0.697c0.986,0.383,1.823,0.896,2.657,1.73c0.834,0.834,1.347,1.67,1.73,2.657c0.371,0.954,0.624,2.044,0.697,3.641C46.983,27.415,47,27.926,47,32C47,36.074,46.983,36.585,46.91,38.184z M32,27c-2.761,0-5,2.239-5,5s2.239,5,5,5s5-2.239,5-5S34.761,27,32,27z" />
-</symbol>
-<symbol id="twitter-icon" viewBox="0 0 64 64">
-<path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z" />
-</symbol>
-<symbol id="twitter-mask" viewBox="0 0 64 64">
-<path d="M0,0v64h64V0H0z M44.7,25.5c0,0.3,0,0.6,0,0.8C44.7,35,38.1,45,26.1,45c-3.7,0-7.2-1.1-10.1-2.9 c0.5,0.1,1,0.1,1.6,0.1c3.1,0,5.9-1,8.2-2.8c-2.9-0.1-5.3-2-6.1-4.6c0.4,0.1,0.8,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-3-0.6-5.3-3.3-5.3-6.4c0,0,0-0.1,0-0.1c0.9,0.5,1.9,0.8,3,0.8c-1.8-1.2-2.9-3.2-2.9-5.5c0-1.2,0.3-2.3,0.9-3.3 c3.2,4,8.1,6.6,13.5,6.9c-0.1-0.5-0.2-1-0.2-1.5c0-3.6,2.9-6.6,6.6-6.6c1.9,0,3.6,0.8,4.8,2.1c1.5-0.3,2.9-0.8,4.2-1.6 c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.8-1C47.1,23.4,46,24.5,44.7,25.5z" />
-</symbol>
-</svg>
-</body>
-</html>                                                                   
+
+    <iframe name="__uspapiLocator" tabindex="-1" role="presentation" aria-hidden="true" title="Blank" style="display: none; position: absolute; width: 1px; height: 1px; top: -9999px;"></iframe><iframe tabindex="-1" role="presentation" aria-hidden="true" title="Blank" src="https://consentcdn.cookiebot.com/sdk/bc-v4.min.html" style="position: absolute; width: 1px; height: 1px; top: -9999px;" bis_size="{&quot;x&quot;:0,&quot;y&quot;:-9999,&quot;w&quot;:1,&quot;h&quot;:1,&quot;abs_x&quot;:0,&quot;abs_y&quot;:-9999}" bis_id="fr_nfjaf2yt3zkyajcjvi02tl" bis_depth="0" bis_chainid="1"></iframe>
+    <div class="js-flyout__body flyout__body -padding-side-removed" data-show="false" bis_skin_checked="1">
+        <span class="js-flyout__triangle flyout__triangle"></span>
+        <div class="license-selector" data-view="licenseSelector" bis_skin_checked="1">
+            <div class="js-license-selector__item license-selector__item" data-license="regular" data-name="PROGRESSIVE JACKPOT" bis_skin_checked="1">
+
+                <div class="license-selector__license-type" bis_skin_checked="1">
+                    <span class="t-heading -size-xxs">Regular License</span>
+                    <span class="js-license-selector__selected-label e-text-label -color-green -size-s " data-license="regular">Selected</span>
+                </div>
+                <div class="license-selector__price" bis_skin_checked="1">
+                    <span class="t-heading -size-m h-m0">
+                        <b class="t-currency"><span class="">$21</span></b>
+                    </span>
+                </div>
+                <div class="license-selector__description" bis_skin_checked="1">
+                    <p class="t-body -size-m h-m0">Use, by you or one client, in a single end product which end users
+                        <strong>are not</strong> charged for. The total price includes the item price and a buyer fee.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flyout__link" bis_skin_checked="1">
+            <p class="t-body -size-m h-m0">
+                <a class="t-link -decoration-reversed" target="_blank" href="https://dishub.palikab.go.id/">View license details</a>
+            </p>
+        </div>
+    </div><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="AW-953691586" data-load-time="1753876666560" height="0" width="0" src="https://td.doubleclick.net/td/rul/953691586?random=1753876666537&amp;cv=11&amp;fst=1753876666537&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be57s1z89195929391za200zb9195929391zd9195929391&amp;gcd=13n3n3n3n5l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~105103161~105103163~105124543~105124545&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fthemeforest.net%2Fitem%2Fmarketica-marketplace-wordpress-theme%2F8988002%3Fsrsltid%3DAfmBOorwNEgJi-iQXu--3qzSatNlhXMhGjZ-gMFxbyMWP2LkJDdESL9b&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Marketica%20-%20eCommerce%20and%20Marketplace%20-%20WooCommerce%20WordPress%20Theme%20by%20tokopress&amp;npa=0&amp;us_privacy=1---&amp;pscdl=noapi&amp;auid=786247872.1753876602&amp;uaa=x86&amp;uab=64&amp;uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.183%7CGoogle%2520Chrome%3B138.0.7204.183&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config" style="display: none; visibility: hidden;" bis_size="{&quot;x&quot;:0,&quot;y&quot;:300,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:0,&quot;abs_y&quot;:300}" bis_id="fr_x7s5fwn363kzny6xssxfbd" bis_depth="0" bis_chainid="2"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="AW-943617023" data-load-time="1753876666627" height="0" width="0" src="https://td.doubleclick.net/td/rul/943617023?random=1753876666603&amp;cv=11&amp;fst=1753876666603&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be57s1v889115050z89195929391za200zb9195929391zd9195929391&amp;gcd=13n3n3n3n5l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~105103161~105103163~105124543~105124545&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fthemeforest.net%2Fitem%2Fmarketica-marketplace-wordpress-theme%2F8988002%3Fsrsltid%3DAfmBOorwNEgJi-iQXu--3qzSatNlhXMhGjZ-gMFxbyMWP2LkJDdESL9b&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Marketica%20-%20eCommerce%20and%20Marketplace%20-%20WooCommerce%20WordPress%20Theme%20by%20tokopress&amp;npa=0&amp;us_privacy=1---&amp;pscdl=noapi&amp;auid=786247872.1753876602&amp;uaa=x86&amp;uab=64&amp;uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.183%7CGoogle%2520Chrome%3B138.0.7204.183&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config" style="display: none; visibility: hidden;" bis_size="{&quot;x&quot;:0,&quot;y&quot;:300,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:0,&quot;abs_y&quot;:300}" bis_id="fr_ha2x32or3khbgk3c9ve5nv" bis_depth="0" bis_chainid="3"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="AW-943617023" data-load-time="1753876666634" height="0" width="0" src="https://td.doubleclick.net/td/rul/943617023?random=1753876666631&amp;cv=11&amp;fst=1753876666631&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be57s1v889115050z89195929391za200zb9195929391zd9195929391&amp;gcd=13n3n3n3n5l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~105103161~105103163~105124543~105124545&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fthemeforest.net%2Fitem%2Fmarketica-marketplace-wordpress-theme%2F8988002%3Fsrsltid%3DAfmBOorwNEgJi-iQXu--3qzSatNlhXMhGjZ-gMFxbyMWP2LkJDdESL9b&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Marketica%20-%20eCommerce%20and%20Marketplace%20-%20WooCommerce%20WordPress%20Theme%20by%20tokopress&amp;did=dMWZhNz&amp;gdid=dMWZhNz&amp;npa=0&amp;us_privacy=1---&amp;pscdl=noapi&amp;auid=786247872.1753876602&amp;uaa=x86&amp;uab=64&amp;uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.183%7CGoogle%2520Chrome%3B138.0.7204.183&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;fledge=1&amp;_tu=Cg&amp;data=ads_data_redaction%3Dfalse" style="display: none; visibility: hidden;" bis_size="{&quot;x&quot;:0,&quot;y&quot;:300,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:0,&quot;abs_y&quot;:300}" bis_id="fr_z2gfbnsev3bhw7ln6q22jb" bis_depth="0" bis_chainid="4"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="AW-800411572" data-load-time="1753876666710" height="0" width="0" src="https://td.doubleclick.net/td/rul/800411572?random=1753876666684&amp;cv=11&amp;fst=1753876666684&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be57s1v896649154z89195929391za200zb9195929391zd9195929391&amp;gcd=13n3n3n3n5l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~105087538~105087540~105103161~105103163~105124543~105124545&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fthemeforest.net%2Fitem%2Fmarketica-marketplace-wordpress-theme%2F8988002%3Fsrsltid%3DAfmBOorwNEgJi-iQXu--3qzSatNlhXMhGjZ-gMFxbyMWP2LkJDdESL9b&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Marketica%20-%20eCommerce%20and%20Marketplace%20-%20WooCommerce%20WordPress%20Theme%20by%20tokopress&amp;npa=0&amp;us_privacy=1---&amp;pscdl=noapi&amp;auid=786247872.1753876602&amp;uaa=x86&amp;uab=64&amp;uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.183%7CGoogle%2520Chrome%3B138.0.7204.183&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config" style="display: none; visibility: hidden;" bis_size="{&quot;x&quot;:0,&quot;y&quot;:300,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:0,&quot;abs_y&quot;:300}" bis_id="fr_ir7vx1wyqbahien0mokr2t" bis_depth="0" bis_chainid="5"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="AW-934741711" data-load-time="1753876666723" height="0" width="0" src="https://td.doubleclick.net/td/rul/934741711?random=1753876666713&amp;cv=11&amp;fst=1753876666713&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be57s1v896649154z89195929391za200zb9195929391zd9195929391&amp;gcd=13n3n3n3n5l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~105087538~105087540~105103161~105103163~105124543~105124545&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fthemeforest.net%2Fitem%2Fmarketica-marketplace-wordpress-theme%2F8988002%3Fsrsltid%3DAfmBOorwNEgJi-iQXu--3qzSatNlhXMhGjZ-gMFxbyMWP2LkJDdESL9b&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Marketica%20-%20eCommerce%20and%20Marketplace%20-%20WooCommerce%20WordPress%20Theme%20by%20tokopress&amp;npa=0&amp;us_privacy=1---&amp;pscdl=noapi&amp;auid=786247872.1753876602&amp;uaa=x86&amp;uab=64&amp;uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.183%7CGoogle%2520Chrome%3B138.0.7204.183&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config" style="display: none; visibility: hidden;" bis_size="{&quot;x&quot;:0,&quot;y&quot;:300,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:0,&quot;abs_y&quot;:300}" bis_id="fr_rldn0wquvhqrddm50v4c1n" bis_depth="0" bis_chainid="6"></iframe><img id="CookiebotSessionPixel" src="https://imgsct.cookiebot.com/1.gif?dgi=d10f7659-aa82-4007-9cf1-54a9496002bf" alt="Cookiebot session tracker icon loaded" data-cookieconsent="ignore" style="display: none;">
+    <div id="batBeacon552678157489" style="width: 0px; height: 0px; display: none; visibility: hidden;" bis_skin_checked="1"><img id="batBeacon178618191654" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=16005611&amp;tm=gtm002&amp;Ver=2&amp;mid=bb77e21d-0c6c-42c3-ba87-fe2355ba6056&amp;bo=2&amp;sid=422440906d3c11f083cb21e95f31b0ab&amp;vid=422465806d3c11f091d599aa9de8ebcb&amp;vids=0&amp;msclkid=N&amp;uach=pv%3D19.0.0&amp;pi=918639831&amp;lg=en-US&amp;sw=1920&amp;sh=1080&amp;sc=24&amp;tl=Marketica%20-%20eCommerce%20and%20Marketplace%20-%20WooCommerce%20WordPress%20Theme%20by%20tokopress&amp;p=https%3A%2F%2Fthemeforest.net%2Fitem%2Fmarketica-marketplace-wordpress-theme%2F8988002%3Fsrsltid%3DAfmBOorwNEgJi-iQXu--3qzSatNlhXMhGjZ-gMFxbyMWP2LkJDdESL9b&amp;r=https%3A%2F%2Fwww.google.com%2F&amp;lt=4778&amp;evt=pageLoad&amp;sv=1&amp;asc=G&amp;cdb=AQIT&amp;rn=643027" style="width: 0px; height: 0px; display: none; visibility: hidden;"></div>
+            <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"903a6846a73944019dbbb71181ddf279","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97efd3045b2de2f5',t:'MTc1Nzg1MjI3OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
