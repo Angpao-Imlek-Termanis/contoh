@@ -949,6 +949,57 @@ dataLayer.push({event:'analytics_ready',event_attributes:{event_type:'user',cust
                         </div>
                         
                     </header>
+                    <div style="display: none;">
+<a href="https://bpbd.palikab.go.id/news/">situs slot --(spin707)</a>
+<a href="https://bpbd.palikab.go.id/news/">slot gacor --pgsoft1000</a>
+<a href="https://bpbd.palikab.go.id/news/">slot gacor</a>
+<a href="https://bpbd.palikab.go.id/news/">evostoto login</a>
+<a href="https://bpbd.palikab.go.id/news/">slot online --(kastoto)</a>
+<a href="https://bpbd.palikab.go.id/news/">situs gaming --cuanhoki</a>
+<a href="https://bpbd.palikab.go.id/news/">agen slot --angkasa138</a>
+<a href="https://bpbd.palikab.go.id/news/">gacor200 --@slot</a>
+<a href="https://bpbd.palikab.go.id/news/">slot gaming --(nagatoto168)</a>
+<a href="https://bpbd.palikab.go.id/news/">mahjong slot --gacor(77superslot)</a>
+<a href="https://bpbd.palikab.go.id/news/">nusantaratoto --link</a>
+<a href="https://bpbd.palikab.go.id/news/">situs slot --game(slotjos)</a>
+<a href="https://bpbd.palikab.go.id/news/">link gacor --(nagatoto168)</a>
+<a href="https://bpbd.palikab.go.id/news/">slot online --pgsoft1000</a>
+<a href="https://bpbd.palikab.go.id/news/">situs gacor --agen(jostoto)</a>
+<a href="https://bpbd.palikab.go.id/news/">slot terpercaya -❤indo777</a>
+<a href="https://bpbd.palikab.go.id/news/">pg --link(gempa777)</a>
+<a href="https://bpbd.palikab.go.id/news/">slot thailand www.dewabos138.com</a>
+<a href="https://bpbd.palikab.go.id/news/">online --game(gempa777)</a>
+<a href="https://bpbd.palikab.go.id/news/">judi slot sektorplay88.com</a>
+<a href="https://bpbd.palikab.go.id/news/">slot gacor --camar4444</a>
+<a href="https://bpbd.palikab.go.id/news/">slot depo 5k</a>
+<a href="https://bpbd.palikab.go.id/news/">link pphoki.com</a>
+<a href="https://bpbd.palikab.go.id/news/">slot gacor pol88🔥</a>
+<a href="https://bpbd.palikab.go.id/news/">link resmi --(dewazeus33)</a>
+<a href="https://bpbd.palikab.go.id/news/">gacor link jostoto</a>
+<a href="https://bpbd.palikab.go.id/news/">slot macau 188</a>
+<a href="https://bpbd.palikab.go.id/news/">slot gacor microstar88</a>
+<a href="https://bpbd.palikab.go.id/news/">situs gacor --daftar(asiktoto)</a>
+<a href="https://bpbd.palikab.go.id/news/">link slot --login(enakcuan)</a>
+<a href="https://bpbd.palikab.go.id/news/">link gacor --login(jajantogel)</a>
+<a href="https://bpbd.palikab.go.id/news/">link --pragmatic218</a>
+<a href="https://bpbd.palikab.go.id/news/">slot gacor hqtoto805</a>
+<a href="https://bpbd.palikab.go.id/news/">game gacor --sso77</a>
+<a href="https://bpbd.palikab.go.id/news/">slot resmi online --rajacuan69</a>
+<a href="https://bpbd.palikab.go.id/news/">slot okebray.com</a>
+<a href="https://bpbd.palikab.go.id/news/">slot gacor dewakoin99.it</a>
+<a href="https://bpbd.palikab.go.id/news/">slot gacor --kawanmenang</a>
+<a href="https://bpbd.palikab.go.id/news/">situs gacor www.dewabos138.com</a>
+<a href="https://bpbd.palikab.go.id/news/">link gacor evohoki.com(wow388.it.com)</a>
+<a href="https://bpbd.palikab.go.id/news/">slot online m77📌</a>
+<a href="https://bpbd.palikab.go.id/news/">slot gacor --(tante777.fun)</a>
+<a href="https://bpbd.palikab.go.id/news/">slot gacor --gacha168</a>
+<a href="https://bpbd.palikab.go.id/news/">slot gacor titan777.com</a>
+<a href="https://bpbd.palikab.go.id/news/">slot gacor www.gboslot.com</a>
+<a href="https://bpbd.palikab.go.id/news/">slot gacor normalbet88</a>
+<a href="https://bpbd.palikab.go.id/news/">slot gacor tante777-pasti</a>
+<a href="https://bpbd.palikab.go.id/news/">slot gacor --super(koko288)</a>
+<a href="https://bpbd.palikab.go.id/news/">game --online(duren777)</a>
+</div>
                 </div>
 
                 <div class="js-canvas__body canvas__body" bis_skin_checked="1">
